@@ -8,5 +8,5 @@ project(dadm-cpp)
 add_executable(
     dadm
     src/main.cpp
-    src/helpers
+    src/helpers/add.cpp
 )
