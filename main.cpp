@@ -1,5 +1,5 @@
 #include <iostream>
-#include "libraries/add/add.h"
+#include "./libraries/add/add.h"
 
 int main() {
     std::cout << "Hello_world\n";
