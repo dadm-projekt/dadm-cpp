@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dadm2019/Code/dadm-cpp/src/helpers/add.cpp
+add.h
+/home/dadm2019/Code/dadm-cpp/src/helpers/add.h
+
+/home/dadm2019/Code/dadm-cpp/src/helpers/add.h
+
+/home/dadm2019/Code/dadm-cpp/src/main.cpp
+QApplication
+-
+window.h
+/home/dadm2019/Code/dadm-cpp/src/window.h
+
+/home/dadm2019/Code/dadm-cpp/src/view/window.cpp
+window.h
+/home/dadm2019/Code/dadm-cpp/src/view/window.h
+
+/home/dadm2019/Code/dadm-cpp/src/view/window.h
+QWidget
+-
+

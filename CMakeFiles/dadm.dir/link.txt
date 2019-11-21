@@ -1,0 +1,1 @@
+/usr/bin/c++    -std=c++14 -g   CMakeFiles/dadm.dir/src/main.cpp.o CMakeFiles/dadm.dir/src/helpers/add.cpp.o CMakeFiles/dadm.dir/src/view/window.cpp.o  -o dadm -rdynamic 
