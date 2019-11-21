@@ -5,6 +5,27 @@ language:
 compiler:
   - gcc
 
+matrix:
+    fast_finish: true
+    include:
+        - os: linux
+          compiler: gcc
+          env: TARGET=desktop
+          addons:
+              apt:
+                  sources:
+                      - ubuntu-toolchain-r-test
+                      - sourceline: "ppa:beineri/opt-qt-5.10.1-trusty"
+                  packages:
+                      - g++-5
+                      - qt510-meta-minimal
+                      - qt510script
+        - os: osx
+          osx_image: xcode10
+        - os: windows
+    allow_failures:
+        - os: windows
+
 addons:
   apt:
     sources:
