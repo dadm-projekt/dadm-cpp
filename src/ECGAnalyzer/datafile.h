@@ -13,7 +13,7 @@ public:
     int age = 0;
     QString gender = "";
 
-   // inne pola mozliwe do wyciagniecia z pliku
+   //jezeli sa to tez inne pola mozliwe do wyciagniecia z pliku
 
     QList<double> *data;
 

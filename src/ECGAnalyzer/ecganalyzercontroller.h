@@ -16,7 +16,7 @@ public:
 signals:
 
 public slots:
-    void dataLoaded(); // polaczony z sygnalem z dataloader?
+    void dataLoaded(); // polaczony z sygnalem z dataloader, reaguje na zaladowanie pliku
 };
 
 #endif // ECGANALYZERCONTROLLER_H

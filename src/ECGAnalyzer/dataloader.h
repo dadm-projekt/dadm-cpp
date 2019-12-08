@@ -17,10 +17,12 @@ public:
 
 
 signals:
-    void dataLoaded();
+    void dataLoaded(); // do ecganalyzercontroller
 
 public slots:
-    void loadData();
+    void loadData(); // reaguje na sygnal z przycisku 'load data'przy wyborze pliku
+    //tylko za bardzo nie wiem skad ma isc ten sygnal
+
 
 };
 

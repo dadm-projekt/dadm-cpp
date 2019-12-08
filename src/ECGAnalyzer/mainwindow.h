@@ -17,6 +17,9 @@ public:
 
 private:
     Ui::MainWindow *ui;
+
+private slots:
+    //sloty np on_pushButton_clicked(); dla przycisku 'zaladuj dane' itp
 };
 
 #endif // MAINWINDOW_H

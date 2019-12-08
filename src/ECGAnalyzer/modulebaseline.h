@@ -11,7 +11,7 @@ class ModuleBaseline : public Module
 {
 public:
 
-    FilterType filter;
+    FilterType filterType;
     QList<double> inputData;
     QList<double> outputData;
 
