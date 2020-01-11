@@ -1,0 +1,3 @@
+/Users/Typer/Desktop/projekt/dadm-cpp-master/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/Typer/Desktop/projekt/dadm-cpp-master/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/Typer/Desktop/projekt/dadm-cpp-master/cmake-build-debug/CMakeFiles/dadm.dir
