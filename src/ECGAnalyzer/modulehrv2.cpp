@@ -177,6 +177,18 @@ QVector<double> ModuleHrv2::HistogramY()
     }
     return data;
 }
+QVector<double> HistogramY(){
+    QVector<double> dataY;
+
+    int a=25;
+    for(int i=0; i<40; i++){
+        dataY.push_back(a);
+        a=+50;
+    }
+
+    return dataY;
+}
+
 
 double ModuleHrv2::Tinn(QList<double> RRList)
 {
@@ -190,7 +202,7 @@ double ModuleHrv2::Tinn(QList<double> RRList)
 
 double ModuleHrv2::Poincare()
 {
-    double x=1;
+    double x=1; // tu nic nie ma to na razie jest żeby sie nie czepiało
  return x;
 }
 double ModuleHrv2::HRVindex(QList<double> RRList)

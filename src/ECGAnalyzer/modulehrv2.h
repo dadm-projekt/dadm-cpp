@@ -28,6 +28,7 @@ public:
 
 //    void AnalyzeSignal(); // wywoluje ponizsze metody
     QVector<double> HistogramY();
+    QVector<double> HistogramX();
     double Tinn(QList<double>);
     double Poincare();
     double HRVindex(QList<double>);
