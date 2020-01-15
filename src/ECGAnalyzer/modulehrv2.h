@@ -2,12 +2,14 @@
 #define MODULEHRV2_H
 
 #include <QObject>
+#include <QVector>
 #include <QDebug>
+#include <QCoreApplication>
 #include "module.h"
 
 class ModuleHrv2 : public Module
 {
-
+    QVector<double> RRvector;
     double HRVi;
     double SD1;
     double SD2;
@@ -22,7 +24,7 @@ public:
     //outputs:
 
 
-    ModuleHrv2();
+    ModuleHrv2(QList<double>);
     ~ModuleHrv2();
 
     void AnalyzeSignal(); // wywoluje ponizsze metody

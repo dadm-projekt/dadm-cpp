@@ -1,7 +1,27 @@
 #include "modulehrv2.h"
 
-ModuleHrv2::ModuleHrv2()
+ModuleHrv2::ModuleHrv2(QList<double> RRList)
 {
+
+     RRvector = RRList.toVector();
+
+     int sum = 0;
+        for(int i=0; i<RRvector.length(); i++){
+            sum += RRvector.value(i);
+        }
+
+        double mean = static_cast<double>(sum) / RRvector.count();
+
+        for(int i=0; i<RRvector.length();i++){
+            double m2 = mean*2;
+            if(RRvector.value(i)>m2){
+                RRvector.remove(i);
+            }
+        }
+
+  for(int i=0; i<RRvector.length(); i++){
+    qDebug()<<RRvector.value(i) ;
+    }
 
     qInfo() << "konstruktor dziala";
 //    qInfo( "C Style Info Message" );
