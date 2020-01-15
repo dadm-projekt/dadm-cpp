@@ -19,9 +19,9 @@ ModuleHrv2::ModuleHrv2(QList<double> RRList)
             }
         }
 
-  for(int i=0; i<RRvector.length(); i++){
-    qDebug()<<RRvector.value(i) ;
-    }
+//  for(int i=0; i<RRvector.length(); i++){
+//    qDebug()<<RRvector.value(i) ;
+//    }
 
     qInfo() << "konstruktor dziala";
 //    qInfo( "C Style Info Message" );
