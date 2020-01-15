@@ -2,6 +2,7 @@
 #define MODULEHRV2_H
 
 #include <QObject>
+#include <QDebug>
 #include "module.h"
 
 class ModuleHrv2 : public Module
