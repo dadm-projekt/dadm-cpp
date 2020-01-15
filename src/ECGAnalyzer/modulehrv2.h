@@ -4,7 +4,6 @@
 #include <QObject>
 #include <QVector>
 #include <QDebug>
-#include <QCoreApplication>
 #include "module.h"
 
 class ModuleHrv2 : public Module
@@ -27,13 +26,12 @@ public:
     ModuleHrv2(QList<double>);
     ~ModuleHrv2();
 
-    void AnalyzeSignal(); // wywoluje ponizsze metody
-    double Histogram();
+//    void AnalyzeSignal(); // wywoluje ponizsze metody
+    QVector<double> HistogramY();
     double Tinn(QList<double>);
     double Poincare();
     double HRVindex(QList<double>);
 
-    //itd
 };
 
 #endif // MODULEHRV2_H
