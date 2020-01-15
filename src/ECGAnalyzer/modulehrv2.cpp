@@ -49,9 +49,11 @@ double ModuleHrv2::Poincare()
     double x=1;
  return x;
 }
-double ModuleHrv2::HRVindex()
+double ModuleHrv2::HRVindex(QList<double> RRList)
 {
-    double x=1;
- return x;
+   int allNN=RRList.length();
+   double max = *std::max_element(RRList.begin(), RRList.end());
+   double HRVi = allNN/max;
+ return HRVi;
 }
 

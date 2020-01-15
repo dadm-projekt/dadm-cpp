@@ -29,7 +29,7 @@ public:
     double Histogram();
     double Tinn(QList<double>);
     double Poincare();
-    double HRVindex();
+    double HRVindex(QList<double>);
 
     //itd
 };
