@@ -7,7 +7,16 @@
 
 class ModuleHrv2 : public Module
 {
+
+    double HRVi;
+    double SD1;
+    double SD2;
+    double TINN;
+
+
+
 public:
+
 
     QList<double> inputData; //R_Peaks
     //outputs:
@@ -17,8 +26,11 @@ public:
     ~ModuleHrv2();
 
     void AnalyzeSignal(); // wywoluje ponizsze metody
-    void Histogram();
-    void Tinn();
+    double Histogram();
+    double Tinn(QList<double>);
+    double Poincare();
+    double HRVindex();
+
     //itd
 };
 
