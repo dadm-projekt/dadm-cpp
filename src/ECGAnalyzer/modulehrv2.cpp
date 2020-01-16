@@ -200,10 +200,48 @@ double ModuleHrv2::Tinn(QList<double> RRList)
     return TINN;
 }
 
-double ModuleHrv2::Poincare()
+QVector<double> ModuleHrv2::PoincareX()
 {
-    double x=1; // tu nic nie ma to na razie jest żeby sie nie czepiało
- return x;
+    QVector<double> P1 = RRvector;
+    P1.pop_back();
+    return P1;
+}
+QVector<double> ModuleHrv2::PoincareY()
+{
+    QVector<double> P2 = RRvector;
+    P2.pop_front();
+    return P2;
+}
+//double ModuleHrv2::calcSD1(){
+//    double SD1;
+//}
+double ModuleHrv2::calcSD2(){
+     double SD2=0;
+     QVector<double> V1 ={1,1};
+     QVector<double> V2 ={2,2};
+     QVector<double> P1 = RRvector;
+     P1.pop_back();
+     QVector<double> P2 = RRvector;
+     P2.pop_front();
+     QVector<double>R1x(P1.length());
+     R1x.fill(0);
+     QVector<double>R1y(P1.length());
+     R1y.fill(0);
+     for(int i=0; i<P1.length(); i++){
+         double ui = ((P1.value(i)-V1.value(1))*(V2.value(1)-V1.value(1))+(P2.value(i)-V1.value(2))*(V2.value(2)-V1.value(2)))/
+                 (pow((V1.value(1)-V2.value(2)),2))+(pow((V1.value(2)-V2.value(2)),2));
+
+         R1x.replace(i,(V1.value(1)-((V1.value(1)-V2.value(1))*ui)));
+//         R1y.replace(i,(V1.value(2)-((V1.value(2)-V2.value(2))*ui)));
+     }
+    QVector<double>R1od;
+    R1od.fill(0);
+    for(int i=1; i<P1.length();i++){
+        R1od.push_back(abs(R1x.value(i)-R1x.value(1))*sqrt(2));
+    }
+
+
+     return SD2;
 }
 double ModuleHrv2::HRVindex(QList<double> RRList)
 {

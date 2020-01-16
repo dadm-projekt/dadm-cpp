@@ -5,6 +5,8 @@
 #include <QVector>
 #include <QDebug>
 #include "module.h"
+#include <cmath>
+#include <cstdlib>
 
 class ModuleHrv2 : public Module
 {
@@ -30,7 +32,10 @@ public:
     QVector<double> HistogramY();
     QVector<double> HistogramX();
     double Tinn(QList<double>);
-    double Poincare();
+    QVector<double> PoincareX();
+    QVector<double> PoincareY();
+    double calcSD1();
+    double calcSD2();
     double HRVindex(QList<double>);
 
 };
