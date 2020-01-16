@@ -18,8 +18,6 @@ ModuleHrv2::ModuleHrv2(QList<double> RRList)
                 RRvector.remove(i);
             }
         }
-
-//  for(int i=0; i<RRvector.length(); i++){
 //    qDebug()<<RRvector.value(i) ;
 //    }
 
@@ -28,13 +26,6 @@ ModuleHrv2::ModuleHrv2(QList<double> RRList)
 
 //    qDebug() << "C++ Style Debug Message";
 //    qDebug( "C Style Debug Message" );
-
-//    qWarning() << "C++ Style Warning Message";
-//    qWarning( "C Style Warning Message" );
-
-//    qCritical() << "C++ Style Critical Error Message";
-//    qCritical( "C Style Critical Error Message" );
-
 
 }
 
@@ -212,9 +203,34 @@ QVector<double> ModuleHrv2::PoincareY()
     P2.pop_front();
     return P2;
 }
-//double ModuleHrv2::calcSD1(){
-//    double SD1;
-//}
+double ModuleHrv2::calcSD1(){
+    double SD1=0;
+    QVector<double> W1 ={2,4};
+    QVector<double> W2 ={4,2};
+    QVector<double> P1 = RRvector;
+    P1.pop_back();
+    QVector<double> P2 = RRvector;
+    P2.pop_front();
+    QVector<double>R2x(P1.length());
+    R2x.fill(0);
+    QVector<double>R2y(P1.length());
+    R2y.fill(0);
+    for(int i=0; i<P1.length(); i++){
+        double ui2 = ((P1.value(i)-W1.value(1))*(W2.value(1)-W1.value(1))+(P2.value(i)-W1.value(2))*(W2.value(2)-W1.value(2)))/
+            (pow((W1.value(1)-W2.value(2)),2))+(pow((W1.value(2)-W2.value(2)),2));
+
+        R2x.replace(i,(W1.value(1)-((W1.value(1)-W2.value(1))*ui2)));
+//         R1y.replace(i,(W1.value(2)-((W1.value(2)-W2.value(2))*ui2)));
+    }
+    QVector<double>R2od;
+    R2od.fill(0);
+    for(int i=1; i<P1.length();i++){
+         R2od.push_back(abs(R2x.value(i)-R2x.value(1))*sqrt(2));
+    }
+
+
+    return SD1;
+}
 double ModuleHrv2::calcSD2(){
      double SD2=0;
      QVector<double> V1 ={1,1};
