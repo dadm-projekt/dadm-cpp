@@ -12,6 +12,8 @@ class ModuleBaseline : public Module
 {
 public:
 
+ //Testuje QT
+
   ModuleBaseline();
   ~ModuleBaseline();
 
