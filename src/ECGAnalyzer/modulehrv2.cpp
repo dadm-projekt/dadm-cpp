@@ -228,6 +228,18 @@ double ModuleHrv2::calcSD1(){
          R2od.push_back(abs(R2x.value(i)-R2x.value(1))*sqrt(2));
     }
 
+    int sum2 = 0;
+    for(int i=0; i<R2od.length(); i++){
+           sum2 += R2od.value(i);
+    }
+
+    double mean2 = static_cast<double>(sum2) / R2od.count();
+    int sum3 =0;
+    for(int i=0; i<R2od.length(); i++){
+        sum3 += pow((R2od.value(i)-mean2),2);
+    }
+
+    SD1 = sqrt(sum3/R2od.length());
 
     return SD1;
 }
@@ -256,6 +268,18 @@ double ModuleHrv2::calcSD2(){
         R1od.push_back(abs(R1x.value(i)-R1x.value(1))*sqrt(2));
     }
 
+    int sum4 = 0;
+    for(int i=0; i<R1od.length(); i++){
+           sum4 += R1od.value(i);
+    }
+
+    double mean3 = static_cast<double>(sum4) / R1od.count();
+    int sum5 =0;
+    for(int i=0; i<R1od.length(); i++){
+        sum5 += pow((R1od.value(i)-mean3),2);
+    }
+
+    SD2 = sqrt(sum5/R1od.length());
 
      return SD2;
 }
