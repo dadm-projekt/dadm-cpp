@@ -4,8 +4,8 @@
 #include <QObject>
 #include "module.h"
 
-enum FilterType{ Butterworth, ButterworthHP, Elliptic };// to trzeba uzupelnic filtrami ktore beda uzywane w tym module
-enum SampleFrequency { '100', '150', '200', '250', '360' }; //ogarnąć
+enum FilterType{ Butterworth, ButterworthHP, Elliptic };
+enum SampleFrequency { '100', '200', '250', '360', '500' };
 
 
 class ModuleBaseline : public Module
@@ -31,7 +31,7 @@ public:
     QVector<double> ButterworthFilter(QVector<double>,QVector<double>,QVector<double>);
     QVector<double> ButterworthFilterHP(QVector<double>,QVector<double>,QVector<double>);
     QVector<double> EllipticFilter(QVector<double>,QVector<double>,QVector<double>);
-    //dodac metody dla pozostalych filtrow
+
 };
 
 
