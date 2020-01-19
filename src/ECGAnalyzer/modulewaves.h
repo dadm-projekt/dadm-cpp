@@ -61,6 +61,8 @@ public:
 
     void detectQRS();
 
+    void detectWaves();
+
     void AnalyzeSignal();
 };
 

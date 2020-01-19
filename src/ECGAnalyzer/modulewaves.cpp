@@ -196,9 +196,100 @@ void ModuleWaves::detectQRS()
     this->setQRSEnd(qrsEnd);
 }
 
+void ModuleWaves::detectWaves()
+{
+    int i;
+    QList<double> tOnset;
+    for(i = 0; i < this->qrsEnd.length() - 1; i++)
+    {
+        double length_temp =this->qrsOnset.at(i+1) - this->qrsEnd.at(i);
+        QList<double> s_temp = this->inputData.mid(this->qrsEnd.at(i), length_temp);
+        int h;
+        for(h = 10; h < s_temp.length() - 1; h++)
+        {
+            if(s_temp.at(h+1) > s_temp.at(h))
+            {
+                tOnset.insert(i, h);
+                break;
+            }
+        }
+        this->setTOnset(tOnset);
+
+        s_temp = this->differentiation(s_temp);
+
+        double value;
+        for(h = 0; h < s_temp.length(); h++)
+        {
+            value = s_temp.at(h) * s_temp.at(h);
+            s_temp.replace(h, value);
+        }
+
+        s_temp = this->integration(s_temp, 20);
+
+        double max = 0;
+        for(h = 0; h < s_temp.length(); h++)
+        {
+            if(s_temp.at(h) > max)
+            {
+                max = s_temp.at(h);
+            }
+
+        }
+        for(h = 0; h < s_temp.length(); h++)
+        {
+            value = s_temp.at(h) / max;
+            s_temp.replace(h, value);
+        }
+
+        //tEnd
+        int j;
+        int index;
+        QList<double> tEnd;
+        for(j = 30; j < s_temp.length(); j++)
+        {
+            if(s_temp.at(j) < 0.02)
+            {
+                index = j + this->qrsEnd.at(i);
+                tEnd.insert(i, index);
+                break;
+            }
+        }
+        this->setTEnd(tEnd);
+
+        //pOnset
+        QList<double> pOnset;
+        int start_index = this->tEnd.at(i) - this->qrsEnd.at(i) + 10;
+        for(j = start_index; j < s_temp.length() -1 ; j++)
+        {
+            if(s_temp.at(j+1) - s_temp.at(j) > 0.03)
+            {
+                index = j + this->qrsEnd.at(i);
+                pOnset.insert(i, index);
+                break;
+            }
+        }
+        this->setPOnset(pOnset);
+
+        //pEnd
+        QList<double> pEnd;
+        start_index = this->pOnset.at(i) - this->qrsEnd.at(i) + 5;
+        for(j = start_index; j < s_temp.length() -1 ; j++)
+        {
+            if(s_temp.at(j) - s_temp.at(j+1) > 0.03)
+            {
+                index = j + this->qrsEnd.at(i);
+                pEnd.insert(i, index);
+                break;
+            }
+        }
+        this->setPEnd(pEnd);
+    }
+}
+
 void ModuleWaves::AnalyzeSignal()
 {
     this->detectQRS();
+    this->detectWaves();
 }
 
 
