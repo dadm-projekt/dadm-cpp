@@ -33,7 +33,10 @@ SOURCES += main.cpp\
     modulehrvdfa.cpp \
     viewmodulehrvdfa.cpp \
     modulestsegment.cpp \
-    viewmodulestsegment.cpp
+    viewmodulestsegment.cpp \
+    detectmorfology_emxutil.cpp \
+    detectmorfology_emxapi.cpp \
+    detectingmorfology.cpp
 
 HEADERS  += mainwindow.h \
     ecganalyzercontroller.h \
@@ -54,6 +57,12 @@ HEADERS  += mainwindow.h \
     modulehrvdfa.h \
     viewmodulehrvdfa.h \
     modulestsegment.h \
-    viewmodulestsegment.h
+    viewmodulestsegment.h \
+    detectmorfology_types.h \
+    detectmorfology_emxutil.h \
+    rtwtypes.h \
+    detectmorfology_emxapi.h \
+    detectingmorfology.h \
+    tmwtypes.h
 
 FORMS    += mainwindow.ui

@@ -10,9 +10,9 @@ ModuleWaves::~ModuleWaves()
 
 }
 
-void ModuleWaves::AnalyzeSignal()
-{
+//void ModuleWaves::AnalyzeSignal()
+//{
 
-}
+//}
 
 
