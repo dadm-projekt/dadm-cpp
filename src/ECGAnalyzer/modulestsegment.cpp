@@ -10,8 +10,7 @@ ModuleStSegment::~ModuleStSegment()
 
 }
 
-void ModuleStSegment::AnalyzeSignal()
-{
+//void ModuleStSegment::AnalyzeSignal()
+//{
 
-}
-
+//}

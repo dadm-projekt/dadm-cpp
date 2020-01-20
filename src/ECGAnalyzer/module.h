@@ -13,8 +13,8 @@ public:
     explicit Module(QObject *parent = 0);
     virtual ~Module();
 
-    //virtual void AnalyzeSignal() = 0;
-    virtual void setParams(double &) = 0;
+    virtual void AnalyzeSignal() = 0;
+    //virtual void setParams(double &) = 0;
 };
 
 #endif // MODULE_H
