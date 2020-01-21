@@ -68,4 +68,4 @@ HEADERS  += mainwindow.h \
     tmwtypes.h
 
 FORMS    += mainwindow.ui
-LIBS +="C:\Users\rados\Desktop\dadm-cpp\src\build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug\libfftw3-3.dll"
+
