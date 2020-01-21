@@ -1,23 +1,12 @@
-/*
- * Academic License - for use in teaching, academic research, and meeting
- * course requirements at degree granting institutions only.  Not for
- * government, commercial, or other organizational use.
- *
- * detectingMorfology.h
- *
- * Code generation for function 'detectingMorfology'
- *
- */
-
-#ifndef DETECTINGMORFOLOGY_H
-#define DETECTINGMORFOLOGY_H
+#ifndef MODULESTSEGMENT_H
+#define MODULESTSEGMENT_H
 
 /* Include files */
 #include <QObject>
 #include "module.h"
 
 /* Type Definitions */
-class DetectingMorfology : public Module
+class ModuleStSegment : public Module
 {
 public:
     QList<double> inputData; //z ecg_baseline
@@ -26,11 +15,11 @@ public:
 
     QList<double> morfology;
 
-    DetectingMorfology();
+    ModuleStSegment();
 
-    DetectingMorfology(QList<double> inputData, QList<double> inputRPeaks);
+    ModuleStSegment(QList<double> inputData, QList<double> qrsEnd, QList<double> tOnset);
 
-    ~DetectingMorfology();
+    ~ModuleStSegment();
 
 
     QList<double> getInputData();
@@ -49,7 +38,9 @@ public:
 
     void setMorfology(QList<double> morfology);
 
+    void detectMorfology();
+
     void AnalyzeSignal();
 };
 
-#endif // DETECTINGMORFOLOGY_H
+#endif // MODULESTSEGMENT_H

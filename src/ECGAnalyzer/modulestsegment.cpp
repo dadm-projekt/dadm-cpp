@@ -1,85 +1,70 @@
-/*
- * Academic License - for use in teaching, academic research, and meeting
- * course requirements at degree granting institutions only.  Not for
- * government, commercial, or other organizational use.
- *
- * detectingMorfology.cpp
- *
- * Code generation for function 'detectingMorfology'
- *
- */
-
-/* Include files */
-#include "detectingMorfology.h"
-
+#include "modulestsegment.h"
+#include <math.h>
 
 /* Function Definitions */
-DetectingMorfology::detectingMorfology()
+ModuleStSegment::ModuleStSegment()
 {
 
 }
 
-DetectingMorfology::DetectingMorfology(QList<double> inputData, QList<double> inputqrsEnd,  QList<double> inputtOnset)
+ModuleStSegment::ModuleStSegment(QList<double> inputData, QList<double> inputqrsEnd, QList<double> inputtOnset)
 {
-    this->inputData = inputData;
-    this->inputqrsEnd = inputqrsEnd;
-    this->inputtOnset = inputtOnset;
+this-> inputData      = inputData;
+this-> inputqrsEnd    = inputqrsEnd ;
+this-> inputtOnset    = inputtOnset;
+}
+ModuleStSegment::~ModuleStSegment()
+{
+
 }
 
-DetectingMorfology::~DetectingMorfology()
-{
-
-}
-
-QList<double> DetectingMorfology::getInputData()
+QList<double> ModuleStSegment::getInputData()
 {
     return inputData;
 }
 
-QList<double> DetectingMorfology::getInputQRSEnd()
+QList<double> ModuleStSegment::getInputQRSEnd()
 {
     return inputqrsEnd;
 }
 
-QList<double> DetectingMorfology::getInputTOnset()
+QList<double> ModuleStSegment::getInputTOnset()
 {
     return inputtOnset;
 }
 
 
-QList<double> DetectingMorfology::getMorfology()
+QList<double> ModuleStSegment::getMorfology()
 {
     return morfology;
 }
 
-
-
-void DetectingMorfology::setInputData(QList<double> inputData)
+void ModuleStSegment::setInputData(QList<double> inputData)
 {
     this->inputData = inputData;
 }
 
-void DetectingMorfologys::setInputQRSEnd(QList<double> inputqrsEnd)
+void ModuleStSegment::setInputQRSEnd(QList<double> inputqrsEnd)
 {
     this->inputqrsEnd = inputqrsEnd;
 }
 
-void DetectingMorfology::setInputTOnset(QList<double> inputtOnset)
+void ModuleStSegment::setInputTOnset(QList<double> inputtOnset)
 {
     this->inputtOnset = inputtOnset;
 }
 
-
-void DetectingMorfology::setMorfology(QList<double> morfology)
+void ModuleStSegment::setMorfology(QList<double> morfology)
 {
     this->morfology = morfology;
 }
 
-void DetectingMorfology::detectMorfology()
+void ModuleStSegment::detectMorfology()
 {
     int i;
     int j;
     int temp = 0;
+    int sum;
     QList<double> t;
     //wektor czasu
     for(i = 0; i < inputData.length() - 1; i++)
@@ -127,7 +112,7 @@ void DetectingMorfology::detectMorfology()
                      temp=temp+betweenQRSendiTonset.at(i);
                      j=j+1;
                     }
-            mVinterpolacja.insert(i, mV.at(distanceSTpoint.at(i));
+            mVinterpolacja.insert(i, mV.at(distanceSTpoint.at(i)));
         }
 
 
@@ -145,7 +130,7 @@ void DetectingMorfology::detectMorfology()
     //classification
         for(i = 0; i < this->inputtOnset.length() - 1; i++)
         {
-            if(-0.05<=this->inputData.at(this->inputqrsEnd.at(i))) && this->inputData.at(this->inputqrsEnd.at(i)))<=0.1)
+            if(((-0.05<=this->inputData.at(this->inputqrsEnd.at(i))) && (this->inputData.at(this->inputqrsEnd.at(i))))<=0.1)
             {
                  wherenormal.insert(i,1);
             }
@@ -157,7 +142,7 @@ void DetectingMorfology::detectMorfology()
 
         for(i = 0; i < this->inputtOnset.length() - 1; i++)
         {
-            if(this->inputData.at(this->inputqrsEnd.at(i)))>0.1)
+            if((this->inputData.at(this->inputqrsEnd.at(i)))>0.1)
             {
                  whereelevation.insert(i,1);
             }
@@ -168,7 +153,7 @@ void DetectingMorfology::detectMorfology()
 
         for(i = 0; i < this->inputtOnset.length() - 1; i++)
         {
-            if(this->inputData.at(this->inputqrsEnd.at(i)))<-0.05)
+            if((this->inputData.at(this->inputqrsEnd.at(i)))<-0.05)
             {
                  wheredepression.insert(i,1);
             }
@@ -182,38 +167,36 @@ void DetectingMorfology::detectMorfology()
    //if normal 0, if elevation convax 2...
  for(i = 0; i < this->inputtOnset.length() - 1; i++){
     if (wherenormal.at(i) == 1) {
-        morfology.insert = (i,0);}
+        morfology.insert(i,0);}
     else if (whereelevation.at(i) == 1){
         if (this->inputData.at(STmiddle.at(i))-mVinterpolacja.at(i)>=0){
-          morfology.insert = (i,1);
+          morfology.insert(i,1);
         }
         if (this->inputData.at(STmiddle.at(i))-mVinterpolacja.at(i)<0){
          //display('concave elevation')
-         morfology.insert = (i,2);
+         morfology.insert(i,2);
         }
     }
     else if (wheredepression.at(i) == 1)  {
         if (-0.4 <= dslopeI.at(i) &&  dslopeI.at(i)<= 0.5){
         //display('hotizontal depression')
-         morfology.insert = (i,3);
+         morfology.insert(i,3);
         }
         if (dslopeI.at(i) > 0.5){
        //display('upsloping depression')
-         morfology.insert = (i,4);}
+         morfology.insert(i,4);}
 
         if (dslopeI.at(i) < -0.4){
        //display('downsloping depression')
-         morfology.insert = (i,5);
+         morfology.insert(i,5);
         }
      }
- }
     this->setMorfology(morfology);
+ }
 
+}
 
-void DetectingMorfology::AnalyzeSignal()
+void ModuleStSegment::AnalyzeSignal()
 {
     this->detectMorfology();
 }
-
-
-/* End of code generation (detectingMorfology.cpp) */

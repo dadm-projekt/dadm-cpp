@@ -41,9 +41,11 @@ SOURCES += main.cpp\
 HEADERS  += mainwindow.h \
     ecganalyzercontroller.h \
     dataloader.h \
+    fftw3.h \
     module.h \
     datafile.h \
     modulebaseline.h \
+    spline.h \
     viewmodule.h \
     viewmodulebaseline.h \
     modulerpeaks.h \
@@ -66,3 +68,4 @@ HEADERS  += mainwindow.h \
     tmwtypes.h
 
 FORMS    += mainwindow.ui
+
