@@ -26,9 +26,9 @@ class detectingMorfology :public ModuleWaves
  public:
   detectingMorfology();
   ~detectingMorfology();
-  void AnalyzeSignal(const emxArray_real_T*, const emxArray_real_T*, const emxArray_real_T*);
+  void detectMorfology(const emxArray_real_T*, const emxArray_real_T*, const emxArray_real_T*);
   //void AnalyzeSignal(const emxArray_real_T* filtred_ecg, const emxArray_real_T* QRS_end, const emxArray_real_T* T_onset)=0;
-  void setParams(double& parameters);
+  //void setParams(double& parameters);
 };
 
 #endif

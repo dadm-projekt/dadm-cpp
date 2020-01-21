@@ -1,30 +1,55 @@
-#ifndef MODULESTSEGMENT_H
-#define MODULESTSEGMENT_H
+/*
+ * Academic License - for use in teaching, academic research, and meeting
+ * course requirements at degree granting institutions only.  Not for
+ * government, commercial, or other organizational use.
+ *
+ * detectingMorfology.h
+ *
+ * Code generation for function 'detectingMorfology'
+ *
+ */
 
+#ifndef DETECTINGMORFOLOGY_H
+#define DETECTINGMORFOLOGY_H
+
+/* Include files */
 #include <QObject>
 #include "module.h"
-#include "rtwtypes.h"
-#include "detectmorfology_types.h"
 
-class ModuleStSegment : public Module
+/* Type Definitions */
+class DetectingMorfology : public Module
 {
 public:
-    QList<double> inputData; //sygnal ecg_baseline
-    QList<double> inputWaves; //dane z waves, moga byc w 1 zmiennej jakiegos typu lub podzielone
+    QList<double> inputData; //z ecg_baseline
+    QList<double> inputqrsEnd; //z modulu module waves
+    QList<double> inputtOnset; //z modulu module waves
 
-    //outputs:
-    //tu trzeba dodac dane wyjsciowe np w formie list jak inputData
+    QList<double> morfology;
 
-    ModuleStSegment();
-    //ModuleStSegment(QList<double> inputData, QList<double> inputData )
-    ~ModuleStSegment();
+    DetectingMorfology();
 
-    //void AnalyzeSignal();
-   virtual void AnalyzeSignal(const emxArray_real_T*, const emxArray_real_T*, const emxArray_real_T*)=0;
+    DetectingMorfology(QList<double> inputData, QList<double> inputRPeaks);
+
+    ~DetectingMorfology();
+
+
+    QList<double> getInputData();
+
+    QList<double> getInputQRSEnd();
+
+    QList<double> getInputTOnset();
+
+    QList<double> getMorfology();
+
+    void setInputData(QList<double> inputData);
+
+    void setInputQRSEnd(QList<double> inputqrsEnd);
+
+    void setInputTOnset(QList<double> inputtOnset);
+
+    void setMorfology(QList<double> morfology);
+
+    void AnalyzeSignal();
 };
 
-#endif // MODULESTSEGMENT_H
-
-
-
-
+#endif // DETECTINGMORFOLOGY_H

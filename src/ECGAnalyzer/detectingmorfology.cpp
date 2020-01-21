@@ -18,12 +18,12 @@
 static real_T rt_roundd_snf(real_T u);
 
 /* Function Definitions */
-void detectingMorfology::setParams(double& parameters)
-{
+//void detectingMorfology::setParams(double& parameters)
+//{
+//
+//}
 
-}
-
-void detectingMorfology::AnalyzeSignal(const emxArray_real_T *filtred_ecg,
+void detectingMorfology::detectMorfology(const emxArray_real_T *filtred_ecg,
   const emxArray_real_T *QRS_end, const emxArray_real_T *T_onset)
 {
   emxArray_real_T *t;
