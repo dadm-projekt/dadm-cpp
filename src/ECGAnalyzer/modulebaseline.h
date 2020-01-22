@@ -5,14 +5,14 @@
 #include "module.h"
 
 enum FilterType{ Butterworth, ButterworthHP, Elliptic };
-enum SampleFrequency { '100', '200', '250', '360', '500' };
+enum SampleFrequency { fp100, fp150, fp200, fp250, fp360 };
 
 
 class ModuleBaseline : public Module
 {
 public:
 
- //Testuje QT
+
 
   ModuleBaseline();
   ~ModuleBaseline();
@@ -23,16 +23,16 @@ public:
     QVector<double> outputData;
     //QList<double> inputData;
     //QList<double> outputData;
-    QVector< QVector<double> >  coeffAB;
-    QVector< QVector<double> >  HPcoeffAB;
-    QVector< QVector<double> >  EEcoeffAB;
+    QVector<double> B_coeffA, B_coeffB, HP_coeffA, HP_coeffB, E_coeffA, E_coeffB;
+    int np;
+
 
 
 
     void AnalyzeSignal();
-    QVector<double> ButterworthFilter(QVector<double>,QVector<double>,QVector<double>);
-    QVector<double> ButterworthFilterHP(QVector<double>,QVector<double>,QVector<double>);
-    QVector<double> EllipticFilter(QVector<double>,QVector<double>,QVector<double>);
+    QVector<double> ButterworthFilter(QVector<double>, QVector<double>, QVector<double> inputData, int);
+    QVector<double> ButterworthFilterHP(QVector<double>,QVector<double>,QVector<double>,int);
+    QVector<double> EllipticFilter(QVector<double>,QVector<double>,QVector<double>,int);
 
 };
 
