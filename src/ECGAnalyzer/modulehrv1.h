@@ -19,6 +19,7 @@ class ModuleHrv1 : public Module
 public:
 
     QList<double> inputRPeaks; //z R_Peaks
+
     //outputs:
     QList<double> timeParams;
     QList<double> freqParams;
@@ -36,29 +37,33 @@ public:
     ModuleHrv1(QList<double> inputRPeaks);
     ~ModuleHrv1();
 
-    void AnalyzeSignal();
-    void FindTimeParams();
-    void FindFreqParams();
 
-    QVector<double> gethrvx_fromRR(QList<double> inputRPeaks);
-    QVector<double> gethrvy_fromRR(QList<double> inputRPeaks);
+    QList<double> getInputRPeaks();
+    QList<double> getTimeParams();
+    QList<double> getFreqParams();
+    QList<double> getpsdx();
+    QList<double> getfxx();
+    QList<double> getx();
+    QList<double> gety();
     QVector<double> gethrvx();
     QVector<double> gethrvy();
+
+    void setInputRPeaks(QList<double> inputRPeaks);
+    void settimeParams(QList<double> timeParams);
+    void setfreqParams(QList<double> freqParams);
+    void setpsdx(QList<double> psdx);
+    void setfxx(QList<double> fxx);
+    void setx(QList<double> x);
+    void sety(QList<double> y);
     void sethrvx(QVector<double> hrvx);
     void sethrvy(QVector<double> hrvy);
 
-    QList<double> getx();
-    QList<double> gety();
-    QList<double> getTimeParams();
-    QList<double> getpsdx();
-    QList<double> getfxx();
-    QList<double> getFreqParams();
-    void setx(QList<double> x);
-    void sety(QList<double> y);
-    void settimeParams(QList<double> timeParams);
-    void setpsdx(QList<double> psdx);
-    void setfxx(QList<double> fxx);
-    void setfreqParams(QList<double> freqParams);
+    QVector<double> gethrvx_fromRR(QList<double> inputRPeaks);
+    QVector<double> gethrvy_fromRR(QList<double> inputRPeaks);
+
+    void FindTimeParams();
+    void FindFreqParams();
+    void AnalyzeSignal();
 
 };
 

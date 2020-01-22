@@ -4,22 +4,29 @@
 #include <QObject>
 #include "module.h"
 
-enum Method{ PanTompkins, Hilbert };
-
+// Struktura w której każdy kolejny pomiar ma przypisany numer próbki
+struct piki{
+    unsigned int numer;
+    double pomiar;
+};
 class ModuleRPeaks : public Module
 {
 public:
 
-    Method method;
     QList<double> inputData;
-    QList<double> outputData;
+    QList<double> RPeaks;
 
     ModuleRPeaks();
     ~ModuleRPeaks();
 
+    QList<double> getInputData();
+    QList<double> getRPeaks();
+
+    void setRPeaks(QList<double> RPeaks);
+    void setInputData(QList<double> inputData);
+
     void AnalyzeSignal(); // wywoluje metode pantompkins lub hilbetrt
     void PanTompkins();
-    void Hilbert();
 };
 
 #endif // MODULERPEAKS_H

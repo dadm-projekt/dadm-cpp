@@ -9,6 +9,10 @@ ModuleHrv1::~ModuleHrv1()
 {
 
 }
+QList<double> ModuleHrv1::getInputRPeaks()
+{
+    return inputRPeaks;
+}
 QVector<double> ModuleHrv1::gethrvx()
 {
     return hrvx;
@@ -43,6 +47,11 @@ QList<double> ModuleHrv1::getFreqParams()
 {
     return freqParams;
 }
+void ModuleHrv1::setInputRPeaks(QList<double> inputRPeaks)
+{
+    this->inputRPeaks = inputRPeaks;
+}
+
 void ModuleHrv1::sethrvx(QVector<double> hrvx)
 {
     this->hrvx=hrvx;
