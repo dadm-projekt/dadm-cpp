@@ -19,6 +19,7 @@ private:
     Ui::MainWindow *ui;
 
 private slots:
+    void on_pushButton_clicked();
     //sloty np on_pushButton_clicked(); dla przycisku 'zaladuj dane' itp
 };
 

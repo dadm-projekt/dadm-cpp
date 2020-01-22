@@ -291,5 +291,3 @@ void ModuleWaves::AnalyzeSignal()
     this->detectQRS();
     this->detectWaves();
 }
-
-
