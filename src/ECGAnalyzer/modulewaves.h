@@ -23,7 +23,6 @@ public:
     ModuleWaves(QList<double> inputData, QList<double> inputRPeaks);
 
     ~ModuleWaves();
-<<<<<<< HEAD
 
     QList<double> getInputData();
 
@@ -65,11 +64,8 @@ public:
 
     void detectWaves();
 
-=======
-    //virtual void AnalyzeSignal(const emxArray_real_T* filtred_ecg, const emxArray_real_T* QRS_end, const emxArray_real_T* T_onset)=0;
->>>>>>> refs/remotes/origin/master
     void AnalyzeSignal();
-    //virtual void AnalyzeSignal(const emxArray_real_T*, const emxArray_real_T*, const emxArray_real_T*)=0;
+
 };
 
 #endif // MODULEWAVES_H
