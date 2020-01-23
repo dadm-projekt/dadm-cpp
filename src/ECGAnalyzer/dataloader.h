@@ -27,3 +27,14 @@ public slots:
 };
 
 #endif // DATALOADER_H
+
+
+
+//QFile file("file.txt");
+//if(file.open(QIODevice::ReadOnly | QIODevice::Text)){ // metoda open w otwiera plik w trybie tylko do odczytu z zamianą znaków \r\n ma \n
+//    QTextStream in(&file);
+//    qDebug() << in.readAll();
+//    file.close();
+//}
+
+
