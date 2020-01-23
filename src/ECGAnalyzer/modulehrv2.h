@@ -5,7 +5,7 @@
 #include <QVector>
 #include <QDebug>
 #include "module.h"
-#include <cmath>
+#include <QtMath>
 #include <cstdlib>
 
 class ModuleHrv2 : public Module
