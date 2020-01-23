@@ -28,7 +28,7 @@ public:
     ModuleHrv2(QList<double>);
     ~ModuleHrv2();
 
-//    void AnalyzeSignal(); // wywoluje ponizsze metody
+  void AnalyzeSignal(); // wywoluje ponizsze metody
     QVector<double> HistogramY();
     QVector<double> HistogramX();
     double Tinn(QList<double>);
