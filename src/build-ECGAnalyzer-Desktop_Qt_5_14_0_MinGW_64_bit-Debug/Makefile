@@ -20,7 +20,7 @@ CXXFLAGS      = -fno-keep-inline-dllexport -g -std=gnu++1y -Wall -Wextra -Wextra
 INCPATH       = -I..\ECGAnalyzer -I. -IC:\Qt\Qt5.14.0\5.14.0\mingw73_64\include -IC:\Qt\Qt5.14.0\5.14.0\mingw73_64\include\QtWidgets -IC:\Qt\Qt5.14.0\5.14.0\mingw73_64\include\QtGui -IC:\Qt\Qt5.14.0\5.14.0\mingw73_64\include\QtANGLE -IC:\Qt\Qt5.14.0\5.14.0\mingw73_64\include\QtCore -I. -I. -I/include -IC:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\win32-g++ 
 LINKER      =        g++
 LFLAGS        =        -Wl,-subsystem,windows -mthreads
-LIBS        =        C:\Qt\Qt5.14.0\5.14.0\mingw73_64\lib\libQt5Widgets.a C:\Qt\Qt5.14.0\5.14.0\mingw73_64\lib\libQt5Gui.a C:\Qt\Qt5.14.0\5.14.0\mingw73_64\lib\libQt5Core.a  -lmingw32 C:\Qt\Qt5.14.0\5.14.0\mingw73_64\lib\libqtmain.a -LC:\openssl\lib -LC:\Utils\my_sql\mysql-5.7.25-winx64\lib -LC:\Utils\postgresql\pgsql\lib -lshell32 
+LIBS        =        C:\Users\Weronika\Desktop\dadm-cpp\src\build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug\libfftw3-3.dll C:\Qt\Qt5.14.0\5.14.0\mingw73_64\lib\libQt5Widgets.a C:\Qt\Qt5.14.0\5.14.0\mingw73_64\lib\libQt5Gui.a C:\Qt\Qt5.14.0\5.14.0\mingw73_64\lib\libQt5Core.a  -lmingw32 C:\Qt\Qt5.14.0\5.14.0\mingw73_64\lib\libqtmain.a -LC:\openssl\lib -LC:\Utils\my_sql\mysql-5.7.25-winx64\lib -LC:\Utils\postgresql\pgsql\lib -lshell32 
 QMAKE         = C:\Qt\Qt5.14.0\5.14.0\mingw73_64\bin\qmake.exe
 DEL_FILE      = del
 CHK_DIR_EXISTS= if not exist
@@ -3456,11 +3456,7 @@ viewmodulehrvdfa.o: ../ECGAnalyzer/viewmodulehrvdfa.cpp ../ECGAnalyzer/viewmodul
 		../ECGAnalyzer/viewmodule.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o viewmodulehrvdfa.o ..\ECGAnalyzer\viewmodulehrvdfa.cpp
 
-modulestsegment.o: ../ECGAnalyzer/modulestsegment.cpp ../ECGAnalyzer/detectingMorfology.h \
-		../ECGAnalyzer/rtwtypes.h \
-		../ECGAnalyzer/tmwtypes.h \
-		../ECGAnalyzer/detectmorfology_types.h \
-		../ECGAnalyzer/module.h \
+modulestsegment.o: ../ECGAnalyzer/modulestsegment.cpp ../ECGAnalyzer/modulestsegment.h \
 		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QObject \
 		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobject.h \
 		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobjectdefs.h \
@@ -3514,7 +3510,7 @@ modulestsegment.o: ../ECGAnalyzer/modulestsegment.cpp ../ECGAnalyzer/detectingMo
 		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvarlengtharray.h \
 		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
 		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
-		../ECGAnalyzer/modulewaves.h
+		../ECGAnalyzer/module.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o modulestsegment.o ..\ECGAnalyzer\modulestsegment.cpp
 
 viewmodulestsegment.o: ../ECGAnalyzer/viewmodulestsegment.cpp ../ECGAnalyzer/viewmodulestsegment.h \
