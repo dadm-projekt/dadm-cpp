@@ -2,7 +2,6 @@
 #include <QApplication>
 #include "datafile.h"
 
-//xd2
 int main(int argc, char *argv[])
 {
 

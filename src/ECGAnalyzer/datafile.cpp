@@ -3,7 +3,6 @@
 
 DataFile::DataFile(QObject *parent):QObject(parent)
 {
-
 }
 
 DataFile::~DataFile(){
@@ -15,43 +14,29 @@ QList<double> DataFile::openFile(QString path)
 {
     QFile file(path);
     qDebug() << file.exists();
-    qInfo() << "ujebiecie";
 
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-       qInfo() << "error message here";
+       qInfo() << "error";
     }
     QList<double> wynik;
     while (!file.atEnd()) {
         QString line = file.readLine();
-        //milivoltageResults.push_back(extractMilivoltage(line));
         QString result = extractMilivoltage(line);
         bool ok = false;
-        double Dresult = result.toDouble(&ok);
-        qInfo() << Dresult;
-        wynik.push_back(Dresult);
+        double double_result = result.toDouble(&ok);
+        qInfo() << double_result;
+        wynik.push_back(double_result);
     }
+    for (auto&& num: wynik) {
+            qInfo() << num;
+        }
     return wynik;
+
 }
-
-
-void DataFile::setAge(){
-       //
-}
-
-void DataFile::setGender(){
-       //
-}
-
-//void DataFile::setData(){
-   // data = new QList<double>();
-       //
-
-//}
 
 
 QString DataFile::extractMilivoltage (QString line){
 
-        //int whiteSpaceCounter = 0;
         QString milivoltageResult;
         bool comaEncountered = false;
 
