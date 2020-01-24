@@ -14,7 +14,11 @@ class ModuleHrv2 : public Module
     double HRVi;
     double SD1;
     double SD2;
-    double TINN;
+    double Tinn;
+    QVector<double> PoincareX;
+    QVector<double> PoincareY;
+    QVector<double> HistogramX;
+    QVector<double> HistogramY;
 
 
 
@@ -29,14 +33,32 @@ public:
     ~ModuleHrv2();
 
   void AnalyzeSignal(); // wywoluje ponizsze metody
-    QVector<double> HistogramY();
-    QVector<double> HistogramX();
-    double Tinn(QList<double>);
-    QVector<double> PoincareX();
-    QVector<double> PoincareY();
-    double calcSD1();
-    double calcSD2();
-    double HRVindex(QList<double>);
+
+
+  double getSD1();
+  double getSD2();
+  double getHRVi();
+  double getTinn();
+  void setSD1(double);
+  void setSD2(double);
+  void setHRVi(double);
+  void setTinn(double);
+  QVector<double> getHistogramY();
+  QVector<double> getHistogramX();
+  QVector<double> getPoincareY();
+  QVector<double> getPoincareX();
+  void setHistogramY(QVector<double>);
+  void setHistogramX(QVector<double>);
+  void setPoincareY(QVector<double>);
+  void setPoincareX(QVector<double>);
+  QVector<double> calcHistogramY();
+  QVector<double> calcHistogramX();
+  QVector<double> calcPoincareX();
+  QVector<double> calcPoincareY();
+  double calcTinn();
+  double calcSD1();
+  double calcSD2();
+  double calcHRVindex();
 
 };
 

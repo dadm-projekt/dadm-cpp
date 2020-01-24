@@ -1,9 +1,9 @@
 #include "modulehrv2.h"
 
-ModuleHrv2::ModuleHrv2(QList<double> RRList)
+ModuleHrv2::ModuleHrv2(QList<double> inputData)
 {
 
-     RRvector = RRList.toVector();
+     RRvector = inputData.toVector();
 
      int sum = 0;
         for(int i=0; i<RRvector.length(); i++){
@@ -18,15 +18,9 @@ ModuleHrv2::ModuleHrv2(QList<double> RRList)
                 RRvector.remove(i);
             }
         }
-//    qDebug()<<RRvector.value(i) ;
-//    }
-
-    qInfo() << "konstruktor dziala";
-//    qInfo( "C Style Info Message" );
-
-//    qDebug() << "C++ Style Debug Message";
-//    qDebug( "C Style Debug Message" );
-
+        for(int i=0; i<RRvector.length();i++){
+            RRvector.replace(i, RRvector[i] *1000);
+        }
 }
 
 ModuleHrv2::~ModuleHrv2()
@@ -36,10 +30,66 @@ ModuleHrv2::~ModuleHrv2()
 
 void ModuleHrv2::AnalyzeSignal()
 {
-
+    this->setSD1(calcSD1());
+    this->setSD2(calcSD2());
+    this->setHRVi(calcHRVindex());
+    this->setTinn(calcTinn());
+    this->setPoincareX(calcPoincareX());
+    this->setPoincareY(calcPoincareY());
+    this->setHistogramX(calcHistogramX());
+    this->setHistogramY(calcHistogramY());
 }
 
-QVector<double> ModuleHrv2::HistogramY()
+double ModuleHrv2::getSD1(){
+    return SD1;
+}
+double ModuleHrv2::getSD2(){
+    return SD2;
+}
+double ModuleHrv2::getHRVi(){
+    return HRVi;
+}
+double ModuleHrv2::getTinn(){
+    return Tinn;
+}
+QVector<double> ModuleHrv2::getHistogramY(){
+    return HistogramY;
+}
+QVector<double> ModuleHrv2::getHistogramX(){
+    return HistogramX;
+}
+QVector<double> ModuleHrv2::getPoincareY(){
+    return PoincareY;
+}
+QVector<double> ModuleHrv2::getPoincareX(){
+    return PoincareX;
+}
+void ModuleHrv2::setSD1(double SD1){
+    this->SD1 = SD1;
+}
+void ModuleHrv2::setSD2(double SD2){
+    this->SD2 = SD2;
+}
+void ModuleHrv2::setHRVi(double HRVi){
+    this->HRVi = HRVi;
+}
+void ModuleHrv2::setTinn(double Tinn){
+    this->Tinn = Tinn;
+}
+void ModuleHrv2::setHistogramX(QVector<double> HistogramX){
+    this->HistogramX = HistogramX;
+}
+void ModuleHrv2::setHistogramY(QVector<double> HistogramY){
+    this->HistogramY = HistogramY;
+}
+void ModuleHrv2::setPoincareX(QVector<double> PoincareX){
+    this->PoincareX = PoincareX;
+}
+void ModuleHrv2::setPoincareY(QVector<double> PoincareY){
+    this->PoincareY = PoincareY;
+}
+
+QVector<double> ModuleHrv2::calcHistogramY()
 {
     QVector<double>data(40);
     data.fill(0);
@@ -56,7 +106,7 @@ QVector<double> ModuleHrv2::HistogramY()
     return data;
     }
 
-QVector<double> ModuleHrv2::HistogramX(){
+QVector<double> ModuleHrv2::calcHistogramX(){
     QVector<double> dataX(40);
 
     int a=25;
@@ -69,23 +119,23 @@ QVector<double> ModuleHrv2::HistogramX(){
 }
 
 
-double ModuleHrv2::Tinn(QList<double> RRList)
+double ModuleHrv2::calcTinn()
 {
-    double min = *std::min_element(RRList.begin(), RRList.end());
-    double max = *std::max_element(RRList.begin(), RRList.end());
+    double min = *std::min_element(RRvector.begin(), RRvector.end());
+    double max = *std::max_element(RRvector.begin(), RRvector.end());
     double TINN;
     TINN= max-min;
 
     return TINN;
 }
 
-QVector<double> ModuleHrv2::PoincareX()
+QVector<double> ModuleHrv2::calcPoincareX()
 {
     QVector<double> P1 = RRvector;
     P1.pop_back();
     return P1;
 }
-QVector<double> ModuleHrv2::PoincareY()
+QVector<double> ModuleHrv2::calcPoincareY()
 {
     QVector<double> P2 = RRvector;
     P2.pop_front();
@@ -172,10 +222,10 @@ double ModuleHrv2::calcSD2(){
 
      return SD2;
 }
-double ModuleHrv2::HRVindex(QList<double> RRList)
+double ModuleHrv2::calcHRVindex()
 {
-   int allNN=RRList.length();
-   double max = *std::max_element(RRList.begin(), RRList.end());
+   int allNN=RRvector.length();
+   double max = *std::max_element(RRvector.begin(), RRvector.end());
    double HRVi = allNN/max;
  return HRVi;
 }
