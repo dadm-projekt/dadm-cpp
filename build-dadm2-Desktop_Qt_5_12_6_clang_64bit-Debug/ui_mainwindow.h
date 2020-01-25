@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QComboBox>
 #include <QtWidgets/QDialogButtonBox>
 #include <QtWidgets/QGraphicsView>
 #include <QtWidgets/QLCDNumber>
@@ -21,7 +22,6 @@
 #include <QtWidgets/QSpinBox>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTabWidget>
-#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -35,8 +35,8 @@ public:
     QGraphicsView *graphicsView;
     QLabel *label_4;
     QLabel *label_5;
-    QSpinBox *spinBox;
-    QSpinBox *spinBox_2;
+    QComboBox *comboBox_2;
+    QComboBox *comboBox_3;
     QWidget *tab_2;
     QWidget *tab_3;
     QGraphicsView *graphicsView_4;
@@ -66,11 +66,11 @@ public:
     QLabel *label;
     QLabel *label_2;
     QLabel *label_3;
-    QTextEdit *textEdit;
-    QTextEdit *textEdit_2;
     QPushButton *pushButton_4;
     QDialogButtonBox *buttonBox;
     QPushButton *pushButton_5;
+    QComboBox *comboBox;
+    QSpinBox *spinBox_3;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -106,12 +106,21 @@ public:
         label_5 = new QLabel(tab);
         label_5->setObjectName(QString::fromUtf8("label_5"));
         label_5->setGeometry(QRect(420, 120, 171, 16));
-        spinBox = new QSpinBox(tab);
-        spinBox->setObjectName(QString::fromUtf8("spinBox"));
-        spinBox->setGeometry(QRect(420, 60, 131, 22));
-        spinBox_2 = new QSpinBox(tab);
-        spinBox_2->setObjectName(QString::fromUtf8("spinBox_2"));
-        spinBox_2->setGeometry(QRect(420, 140, 131, 22));
+        comboBox_2 = new QComboBox(tab);
+        comboBox_2->addItem(QString());
+        comboBox_2->addItem(QString());
+        comboBox_2->addItem(QString());
+        comboBox_2->addItem(QString());
+        comboBox_2->addItem(QString());
+        comboBox_2->setObjectName(QString::fromUtf8("comboBox_2"));
+        comboBox_2->setGeometry(QRect(420, 60, 131, 32));
+        comboBox_3 = new QComboBox(tab);
+        comboBox_3->addItem(QString());
+        comboBox_3->addItem(QString());
+        comboBox_3->addItem(QString());
+        comboBox_3->addItem(QString());
+        comboBox_3->setObjectName(QString::fromUtf8("comboBox_3"));
+        comboBox_3->setGeometry(QRect(420, 140, 131, 32));
         appTabBar->addTab(tab, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QString::fromUtf8("tab_2"));
@@ -204,13 +213,7 @@ public:
         label_2->setGeometry(QRect(30, 40, 47, 13));
         label_3 = new QLabel(centralwidget);
         label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setGeometry(QRect(150, 40, 47, 13));
-        textEdit = new QTextEdit(centralwidget);
-        textEdit->setObjectName(QString::fromUtf8("textEdit"));
-        textEdit->setGeometry(QRect(60, 35, 58, 23));
-        textEdit_2 = new QTextEdit(centralwidget);
-        textEdit_2->setObjectName(QString::fromUtf8("textEdit_2"));
-        textEdit_2->setGeometry(QRect(180, 35, 58, 23));
+        label_3->setGeometry(QRect(160, 40, 47, 13));
         pushButton_4 = new QPushButton(centralwidget);
         pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
         pushButton_4->setGeometry(QRect(550, 20, 191, 32));
@@ -355,6 +358,16 @@ public:
 #endif
         pushButton_5->setPalette(palette1);
         pushButton_5->setAutoFillBackground(false);
+        comboBox = new QComboBox(centralwidget);
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->setObjectName(QString::fromUtf8("comboBox"));
+        comboBox->setGeometry(QRect(60, 30, 91, 32));
+        spinBox_3 = new QSpinBox(centralwidget);
+        spinBox_3->setObjectName(QString::fromUtf8("spinBox_3"));
+        spinBox_3->setGeometry(QRect(190, 30, 71, 31));
+        spinBox_3->setMaximum(100);
+        spinBox_3->setValue(20);
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -377,6 +390,17 @@ public:
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
         label_4->setText(QApplication::translate("MainWindow", "Wyb\303\263r cz\304\231stotliwo\305\233ci", nullptr));
         label_5->setText(QApplication::translate("MainWindow", "Wybierz filtr", nullptr));
+        comboBox_2->setItemText(0, QApplication::translate("MainWindow", "100", nullptr));
+        comboBox_2->setItemText(1, QApplication::translate("MainWindow", "150", nullptr));
+        comboBox_2->setItemText(2, QApplication::translate("MainWindow", "200", nullptr));
+        comboBox_2->setItemText(3, QApplication::translate("MainWindow", "250", nullptr));
+        comboBox_2->setItemText(4, QApplication::translate("MainWindow", "360", nullptr));
+
+        comboBox_3->setItemText(0, QApplication::translate("MainWindow", "Butterworth", nullptr));
+        comboBox_3->setItemText(1, QApplication::translate("MainWindow", "ButterworthHP", nullptr));
+        comboBox_3->setItemText(2, QApplication::translate("MainWindow", "Elliptic", nullptr));
+        comboBox_3->setItemText(3, QApplication::translate("MainWindow", "FIRBlackman", nullptr));
+
         appTabBar->setTabText(appTabBar->indexOf(tab), QApplication::translate("MainWindow", "ECG Baseline", nullptr));
         appTabBar->setTabText(appTabBar->indexOf(tab_2), QApplication::translate("MainWindow", "R_Peaks", nullptr));
         label_12->setText(QApplication::translate("MainWindow", "Wykres 1", nullptr));
@@ -397,18 +421,14 @@ public:
         label->setText(QApplication::translate("MainWindow", "Patient", nullptr));
         label_2->setText(QApplication::translate("MainWindow", "Sex", nullptr));
         label_3->setText(QApplication::translate("MainWindow", "Age", nullptr));
-        textEdit->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:8.25pt;\"><br /></p></body></html>", nullptr));
-        textEdit_2->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:8.25pt;\"><br /></p></body></html>", nullptr));
         pushButton_4->setText(QApplication::translate("MainWindow", "WYBIERZ DANE", nullptr));
         pushButton_5->setText(QApplication::translate("MainWindow", "START", nullptr));
+        comboBox->setItemText(0, QApplication::translate("MainWindow", "Female", nullptr));
+        comboBox->setItemText(1, QApplication::translate("MainWindow", "Male", nullptr));
+
+#ifndef QT_NO_TOOLTIP
+        spinBox_3->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><br/></p></body></html>", nullptr));
+#endif // QT_NO_TOOLTIP
     } // retranslateUi
 
 };
