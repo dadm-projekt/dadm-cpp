@@ -21,6 +21,7 @@ private:
 private slots:
     void on_pushButton_clicked();
     //sloty np on_pushButton_clicked(); dla przycisku 'zaladuj dane' itp
+    void on_pushButton_2_clicked();
 };
 
 #endif // MAINWINDOW_H
