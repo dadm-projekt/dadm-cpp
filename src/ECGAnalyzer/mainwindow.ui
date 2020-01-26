@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>796</width>
-    <height>497</height>
+    <width>858</width>
+    <height>560</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,35 +19,30 @@
      <rect>
       <x>30</x>
       <y>100</y>
-      <width>741</width>
-      <height>341</height>
+      <width>801</width>
+      <height>391</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>6</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab1">
      <attribute name="title">
       <string>ECG Baseline</string>
      </attribute>
-     <widget class="QGraphicsView" name="graphicsView_5">
-      <property name="geometry">
-       <rect>
-        <x>40</x>
-        <y>30</y>
-        <width>351</width>
-        <height>241</height>
-       </rect>
-      </property>
-     </widget>
      <widget class="QComboBox" name="comboBox_2">
       <property name="geometry">
        <rect>
         <x>510</x>
         <y>50</y>
-        <width>62</width>
+        <width>101</width>
         <height>22</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
       </property>
       <item>
        <property name="text">
@@ -74,9 +69,85 @@
       <property name="geometry">
        <rect>
         <x>510</x>
-        <y>110</y>
-        <width>62</width>
+        <y>140</y>
+        <width>101</width>
         <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>100</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>150</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>200</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>250</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>360</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>20</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Filter type</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>110</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sampel frequency</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_8">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>40</y>
+        <width>361</width>
+        <height>251</height>
        </rect>
       </property>
      </widget>
@@ -90,63 +161,347 @@
      <attribute name="title">
       <string>HRV 1</string>
      </attribute>
-     <widget class="QGraphicsView" name="graphicsView_7">
+     <widget class="QTabWidget" name="tabWidget_2">
       <property name="geometry">
        <rect>
-        <x>380</x>
-        <y>50</y>
-        <width>301</width>
-        <height>201</height>
+        <x>0</x>
+        <y>0</y>
+        <width>801</width>
+        <height>371</height>
        </rect>
       </property>
-     </widget>
-     <widget class="QGraphicsView" name="graphicsView_6">
-      <property name="geometry">
-       <rect>
-        <x>40</x>
-        <y>50</y>
-        <width>271</width>
-        <height>201</height>
-       </rect>
+      <property name="currentIndex">
+       <number>0</number>
       </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Plots</string>
+       </attribute>
+       <widget class="QGraphicsView" name="graphicsView_6">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>50</y>
+          <width>361</width>
+          <height>251</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="graphicsView_7">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>50</y>
+          <width>361</width>
+          <height>251</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Tables</string>
+       </attribute>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>50</y>
+          <width>211</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <property name="gridStyle">
+         <enum>Qt::SolidLine</enum>
+        </property>
+        <attribute name="horizontalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderCascadingSectionResizes">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+         <bool>false</bool>
+        </attribute>
+        <row>
+         <property name="text">
+          <string>RR[ms]</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>SDNN[ms]</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>RMSSD[ms]</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>NN50[-]</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>pNN50[%]</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>SDANNsrstd[ms]</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>SDANNstdsr[ms]</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>SDSD[ms]</string>
+         </property>
+        </row>
+       </widget>
+       <widget class="QTableWidget" name="tableWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>50</y>
+          <width>256</width>
+          <height>191</height>
+         </rect>
+        </property>
+        <row>
+         <property name="text">
+          <string>Power[ms^2]</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>HV[ms^2]</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>LF[ms^2]</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>VLF[ms^2]</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>ULF[ms^2]</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>LF/HF[-]</string>
+         </property>
+        </row>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>30</y>
+          <width>47</width>
+          <height>14</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Time</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>30</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Frequency</string>
+        </property>
+       </widget>
+      </widget>
      </widget>
     </widget>
     <widget class="QWidget" name="tab4">
      <attribute name="title">
       <string>HRV 2</string>
      </attribute>
-     <widget class="QGraphicsView" name="graphicsView_2">
+     <widget class="QTabWidget" name="tabWidget_3">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>20</y>
-        <width>271</width>
-        <height>201</height>
+        <x>0</x>
+        <y>0</y>
+        <width>801</width>
+        <height>371</height>
        </rect>
       </property>
-     </widget>
-     <widget class="QGraphicsView" name="graphicsView_3">
-      <property name="geometry">
-       <rect>
-        <x>360</x>
-        <y>20</y>
-        <width>301</width>
-        <height>201</height>
-       </rect>
+      <property name="currentIndex">
+       <number>1</number>
       </property>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Plots</string>
+       </attribute>
+       <widget class="QGraphicsView" name="graphicsView_9">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>60</y>
+          <width>361</width>
+          <height>251</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QGraphicsView" name="graphicsView_10">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>60</y>
+          <width>361</width>
+          <height>251</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>40</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Histogram</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>40</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Poincare</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Table</string>
+       </attribute>
+       <widget class="QTableWidget" name="tableWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>90</y>
+          <width>256</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <row>
+         <property name="text">
+          <string>HRV Index</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Nowy wiersz</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>SD1</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>SD2</string>
+         </property>
+        </row>
+       </widget>
+       <widget class="QListView" name="listView">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>80</y>
+          <width>256</width>
+          <height>192</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
      </widget>
     </widget>
     <widget class="QWidget" name="tab5">
      <attribute name="title">
       <string>Waves</string>
      </attribute>
-     <widget class="QGraphicsView" name="graphicsView">
+     <widget class="QGraphicsView" name="graphicsView_11">
       <property name="geometry">
        <rect>
-        <x>170</x>
-        <y>40</y>
-        <width>351</width>
-        <height>241</height>
+        <x>30</x>
+        <y>60</y>
+        <width>361</width>
+        <height>251</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>60</y>
+        <width>256</width>
+        <height>192</height>
        </rect>
       </property>
      </widget>
@@ -303,7 +658,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>796</width>
+     <width>858</width>
      <height>22</height>
     </rect>
    </property>
