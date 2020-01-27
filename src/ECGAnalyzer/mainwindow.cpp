@@ -26,17 +26,12 @@ void MainWindow::on_pushButton_2_clicked()
     QMessageBox::information(this, "..", file_name);
 }
 
-void MainWindow::on_comboBox_2_currentTextChanged(const QString &arg1)
-{
-    printf("Halko");
-}
-
 void MainWindow::on_comboBox_2_activated(const QString &arg1)
 {
     QMessageBox::information(this, "..", arg1);
 }
 
-void MainWindow::on_comboBox_3_activated(int index)
+void MainWindow::on_comboBox_3_activated(const QString &arg2)
 {
-    QMessageBox::information(this, "..", index);
+    QMessageBox::information(this, "..", arg2);
 }
