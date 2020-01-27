@@ -18,7 +18,7 @@ public:
     Method method;
     QList<double> inputData;
     QList<double> outputData;
-
+    ModuleRPeaks();
     ModuleRPeaks(QList<double> inputData);
     ~ModuleRPeaks();
     QList<double> getInputRPeaks();

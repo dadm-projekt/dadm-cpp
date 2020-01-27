@@ -1,5 +1,10 @@
 #include "modulerpeaks.h"
 
+ModuleRPeaks::ModuleRPeaks()
+{
+
+}
+
 ModuleRPeaks::ModuleRPeaks(QList<double> inputData)
 {
 this->inputData=inputData;
