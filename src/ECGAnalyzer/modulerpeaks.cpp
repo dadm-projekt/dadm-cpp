@@ -65,5 +65,6 @@ void ModuleRPeaks::PanTompkins()
                 Pomocniczy.clear();
             }
         }
+    Rpiki *= 360; //Piki przeformatowane na czas (TO JEST MOJE WYJŚCIE!)
 }
 
