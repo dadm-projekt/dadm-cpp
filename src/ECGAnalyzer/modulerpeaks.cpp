@@ -24,9 +24,10 @@ void ModuleRPeaks::PanTompkins()
         /*---------------------------------------------------*/
         QList<double>pomiar;
         unsigned int p0 = this->inputData.size();
-        double p1 = this->inputData.at(i);
+        
             for (unsigned int i = 0; i < p0; i++)
         {
+            double p1 = this->inputData.at(i);
             pomiar.push_back(p1);
         }
 
@@ -55,7 +56,7 @@ void ModuleRPeaks::PanTompkins()
         // PROGOWANIE
         double prog = 0.00345; // Należy dobrać dla poszczegulnego sygału
         int kompensacja_filtracji = 8; // To samo co poprzednie
-        for (unsigned int i = 0; i < pomiar.size(); i++) {
+        for (int i = 0; i < pomiar.size(); i++) {
             if (pomiar[i] >= prog) {
                 while (pomiar[i] >= prog && i < pomiar.size())
                 {
