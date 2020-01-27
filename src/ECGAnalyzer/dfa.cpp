@@ -1,5 +1,11 @@
 #include "dfa.h"
 
+// Constructor
+DFA::DFA(QList<double> y, int x) {
+    this->y = y;
+    this->x = x;
+}
+
 // Getters
 QList<double> DFA::getY() {
     return this->y;
@@ -166,12 +172,13 @@ double &analyze(std::vector<double> data, double &win_length, int order) {
 
     double output;
     output = sqrt(sum / N1);
+
     return output;
 }
 
-void DFA::prepare(QList<double> y, int x) {
-    this->setY(y);
-    this->setX(x);
+void DFA::prepare() {
+    QList<double> y = this->getY();
+    int x = this->getX();
 
     std::vector<double> vec;
 
@@ -215,6 +222,7 @@ void DFA::prepare(QList<double> y, int x) {
     }
 
     Eigen::VectorXd a11 = Eigen::Map<Eigen::VectorXd, Eigen::Unaligned>(a1.data(), a1.size());
+
     for (int i = 0; i <= 3; i++) {
         a2[i] = log10(Fn[i]);
     }
@@ -249,7 +257,7 @@ void DFA::prepare(QList<double> y, int x) {
 
     this->setGui2(gui2);
 
-/////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////
     std::vector<double> a3(13);
     std::vector<double> a4(13);
     std::vector<double> A2(2);
@@ -272,14 +280,17 @@ void DFA::prepare(QList<double> y, int x) {
     std::vector<std::vector<double>> fitting3(2, A11);
 
     Eigen::MatrixXd fitting4(2, 2);
+
     for (int i = 0; i < 2; i++) {
         fitting4.row(i) = Eigen::VectorXd::Map(&fitting3[i][0], fitting3[i].size());
     }
+
     fitting4 = polyfit(a33, a44, 1);
     /////////////////////////////////////////////////////////////////////////////////////////////
     double alpha1big, alpha2big;
     alpha1big = fitting4(1);
     alpha2big = fitting4(0);
+
     QList<double> gui3 = QList<double>();
     gui3.append(alpha1big);
 

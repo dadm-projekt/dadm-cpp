@@ -12,11 +12,15 @@
 
 class DFA : public Module {
 public:
-    //input
+
+    // Constructor
+    DFA(QList<double>, int);
+
+    // Input
     QList<double> y; //z modulehrv1
     int x; //tutaj wybieramy ile probek chcemy analizowac wybierane przez użytkownika
 
-    //outputs
+    // Outputs
     QList<double> Wiz1;
     QList<double> Wiz2;
     QList<double> Wiz3;
@@ -28,7 +32,7 @@ public:
     QList<double> gui4;
     //end of outputs
 
-    void prepare(QList<double> y, int x);
+    void prepare();
 
     QList<double> getY();
 
