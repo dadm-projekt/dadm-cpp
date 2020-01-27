@@ -10,11 +10,25 @@ ModuleRPeaks::~ModuleRPeaks()
 
 }
 
-void ModuleRPeaks::AnalyzeSignal()
+QList<double> ModuleRPeaks::getInputRPeaks()
 {
-    this-> PanTompkins();
+    return inputData;
 }
 
+QList<double> ModuleRPeaks::getoutputData()
+{
+    return outputData;
+}
+
+void ModuleRPeaks::setInputRPeaks(QList<double> inputRPeaks)
+{
+    this->inputData = inputData;
+}
+
+void ModuleRPeaks::setoutputData(QList<double> outputData)
+{
+    this->outputData=outputData;
+}
 void ModuleRPeaks::PanTompkins()
 {
 
@@ -70,3 +84,7 @@ void ModuleRPeaks::PanTompkins()
         }
 }
 
+void ModuleRPeaks::AnalyzeSignal()
+{
+    this-> PanTompkins();
+}
