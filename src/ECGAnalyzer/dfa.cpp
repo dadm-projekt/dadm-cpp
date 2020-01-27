@@ -117,7 +117,7 @@ double &DFA(vector<double> data, double &win_length, int order) {
 }
 
 
-int main2() {
+void AnalyzeSignal() {
     ifstream fin("C:\\Users\\Daria AKIN\\Desktop\\LAB3\\nsr001.dat");
     double num;
     vector<double> vec;

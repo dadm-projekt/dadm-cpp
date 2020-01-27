@@ -28,6 +28,6 @@ public:
 
     double polyfit();
     double polyval();
-    int main2();
+    void AnalyzeSignal();
 };
 #endif // DFA_H
