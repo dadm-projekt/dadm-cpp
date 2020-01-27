@@ -1,8 +1,8 @@
 #include "modulebaseline.h"
 
-ModuleBaseline::ModuleBaseline()
+ModuleBaseline::ModuleBaseline(QList<double> inputData)
 {
-
+    data = inputData.toVector();
 }
 
 ModuleBaseline::~ModuleBaseline()
@@ -94,46 +94,57 @@ void ModuleBaseline ::AnalyzeSignal()
 
   case Butterworth:
 {
-    QVector<double> outputData = ButterworthFilter(B_coeffA, B_coeffB,inputData);
+    QVector<double> outputData = ButterworthFilter(B_coeffA, B_coeffB);
+    this->setOutData(outputData);
     break;
 }
   case ButterworthHP:
 {
-    QVector<double> outputData = ButterworthFilterHP(HP_coeffA, HP_coeffB,inputData);
+    QVector<double> outputData = ButterworthFilterHP(HP_coeffA, HP_coeffB);
+    this->setOutData(outputData);
     break;
 }
   case Elliptic:
 {
-    QVector<double> outputData = EllipticFilter(E_coeffA, E_coeffB,inputData);
+    QVector<double> outputData = EllipticFilter(E_coeffA, E_coeffB);
+    this->setOutData(outputData);
     break;
   }
   case FIRBlackman:
 {
-    QVector<double> outputData = FIR_Blackman(inputData, ow);
+    QVector<double> outputData = FIR_Blackman(ow);
+    this->setOutData(outputData);
     break;
   }
 }
 
 }
 
+QList<double> ModuleBaseline::getOutData(){
+    return outData;
+}
+
+void ModuleBaseline::setOutData(QVector<double> outputData){
+    this -> outData = outputData.toList();
+}
 
 
-QVector<double> ModuleBaseline::ButterworthFilter(QVector<double> a,QVector<double> b,QVector<double> inputData)
+QVector<double> ModuleBaseline::ButterworthFilter(QVector<double> a,QVector<double> b)
 {
   int i,j;
   int ord = 4; //filtr 4 rzędu
 
 
 
-    QVector<double> outputData(inputData.size()); // wektor output który bedzie wypełniany
-    int np=inputData.size()-1;
+    QVector<double> outputData(data.size()); // wektor output który bedzie wypełniany
+    int np=data.size()-1;
 
           //y[0]=b[0]*x[0];
           for (i=1;i<ord+1;i++)
           {
 
           for (j=0;j<i+1;j++)
-                  outputData[i]=outputData[i]+b[j]*inputData[i-j];
+                  outputData[i]=outputData[i]+b[j]*data[i-j];
           for (j=0;j<i;j++)
                   outputData[i]=outputData[i]-a[j+1]*outputData[i-j-1];
           }
@@ -141,7 +152,7 @@ QVector<double> ModuleBaseline::ButterworthFilter(QVector<double> a,QVector<doub
           for (i=ord+1;i<np+1;i++)
           {
                           for (j=0;j<ord+1;j++)
-                                  outputData[i]=outputData[i]+b[j]*inputData[i-j];
+                                  outputData[i]=outputData[i]+b[j]*data[i-j];
                           for (j=0;j<ord;j++)
                                   outputData[i]=outputData[i]-a[j+1]*outputData[i-j-1];
           }
@@ -151,22 +162,23 @@ QVector<double> ModuleBaseline::ButterworthFilter(QVector<double> a,QVector<doub
 return outputData;
 }
 
-QVector<double> ModuleBaseline::ButterworthFilterHP(QVector<double> a,QVector<double> b,QVector<double> inputData)
+
+QVector<double> ModuleBaseline::ButterworthFilterHP(QVector<double> a,QVector<double> b)
 {
   int i,j;
   int ord = 4; //filtr 4 rzędu
 
 
 
-    QVector<double> outputData(inputData.size()); // wektor output który bedzie wypełniany
-    int np=inputData.size()-1;
+    QVector<double> outputData(data.size()); // wektor output który bedzie wypełniany
+    int np=data.size()-1;
 
           //y[0]=b[0]*x[0];
           for (i=1;i<ord+1;i++)
           {
 
           for (j=0;j<i+1;j++)
-                  outputData[i]=outputData[i]+b[j]*inputData[i-j];
+                  outputData[i]=outputData[i]+b[j]*data[i-j];
           for (j=0;j<i;j++)
                   outputData[i]=outputData[i]-a[j+1]*outputData[i-j-1];
           }
@@ -174,7 +186,7 @@ QVector<double> ModuleBaseline::ButterworthFilterHP(QVector<double> a,QVector<do
           for (i=ord+1;i<np+1;i++)
           {
                           for (j=0;j<ord+1;j++)
-                                  outputData[i]=outputData[i]+b[j]*inputData[i-j];
+                                  outputData[i]=outputData[i]+b[j]*data[i-j];
                           for (j=0;j<ord;j++)
                                   outputData[i]=outputData[i]-a[j+1]*outputData[i-j-1];
           }
@@ -185,22 +197,22 @@ return outputData;
 
 
 
-QVector<double> ModuleBaseline::EllipticFilter(QVector<double> a,QVector<double> b,QVector<double> inputData)
+QVector<double> ModuleBaseline::EllipticFilter(QVector<double> a,QVector<double> b)
 {
   int i,j;
   int ord = 4; //filtr 4 rzędu
-  int np=inputData.size()-1;
+  int np=data.size()-1;
 
 
 
-    QVector<double> outputData(inputData.size()); // wektor output który bedzie wypełniany
+    QVector<double> outputData(data.size()); // wektor output który bedzie wypełniany
 
           //y[0]=b[0]*x[0];
           for (i=1;i<ord+1;i++)
           {
 
           for (j=0;j<i+1;j++)
-                  outputData[i]=outputData[i]+b[j]*inputData[i-j];
+                  outputData[i]=outputData[i]+b[j]*data[i-j];
           for (j=0;j<i;j++)
                   outputData[i]=outputData[i]-a[j+1]*outputData[i-j-1];
           }
@@ -208,7 +220,7 @@ QVector<double> ModuleBaseline::EllipticFilter(QVector<double> a,QVector<double>
           for (i=ord+1;i<np+1;i++)
           {
                           for (j=0;j<ord+1;j++)
-                                  outputData[i]=outputData[i]+b[j]*inputData[i-j];
+                                  outputData[i]=outputData[i]+b[j]*data[i-j];
                           for (j=0;j<ord;j++)
                                   outputData[i]=outputData[i]-a[j+1]*outputData[i-j-1];
           }
@@ -216,10 +228,10 @@ QVector<double> ModuleBaseline::EllipticFilter(QVector<double> a,QVector<double>
 return outputData;
 }
 
-QVector<double> ModuleBaseline::FIR_Blackman(QVector<double> inputData, QVector<double> ow)
+QVector<double> ModuleBaseline::FIR_Blackman(QVector<double> ow)
 {
   int n;
-  int inputDataLen = inputData.size();
+  int inputDataLen = data.size();
   int owLen = ow.size();
     QVector<double> outputData(inputDataLen);
 
@@ -234,7 +246,7 @@ QVector<double> ModuleBaseline::FIR_Blackman(QVector<double> inputData, QVector<
 
     for (k = kmin; k <= kmax; k++)
     {
-      outputData[n] += inputData[k] * ow[n - k];
+      outputData[n] += data[k] * ow[n - k];
     }
   }
   return outputData;
