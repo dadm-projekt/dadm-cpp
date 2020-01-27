@@ -1,4 +1,5 @@
 main.o
+dfa.o
 mainwindow.o
 ecganalyzercontroller.o
 dataloader.o

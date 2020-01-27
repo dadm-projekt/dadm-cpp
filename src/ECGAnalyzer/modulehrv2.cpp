@@ -1,5 +1,8 @@
 #include "modulehrv2.h"
+ModuleHrv2::ModuleHrv2()
+{
 
+}
 ModuleHrv2::ModuleHrv2(QList<double> inputData)
 {
 

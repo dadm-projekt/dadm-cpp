@@ -14,6 +14,7 @@ TEMPLATE = app
 CONFIG += c++14
 
 SOURCES += main.cpp\
+    dfa.cpp \
         mainwindow.cpp \
     ecganalyzercontroller.cpp \
     dataloader.cpp \
@@ -39,6 +40,7 @@ SOURCES += main.cpp\
     detectingmorfology.cpp
 
 HEADERS  += mainwindow.h \
+    dfa.h \
     ecganalyzercontroller.h \
     dataloader.h \
     fftw3.h \
@@ -68,4 +70,5 @@ HEADERS  += mainwindow.h \
     tmwtypes.h
 
 FORMS    += mainwindow.ui
-LIBS += "C:\Users\K\Desktop\Projekty\dadm-cpp\src\build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug\libfftw3-3.dll"
+LIBS+= "C:\Users\Weronika\Desktop\dadm-cpp\src\build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug\libfftw3-3.dll"
+INCLUDEPATH += "C:\Users\Weronika\Desktop\dadm-cpp\eigen-3.3.7"

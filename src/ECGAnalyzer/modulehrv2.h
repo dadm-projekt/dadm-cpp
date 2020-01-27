@@ -28,7 +28,7 @@ public:
     QList<double> inputData; //R_Peaks
     //outputs:
 
-
+    ModuleHrv2();
     ModuleHrv2(QList<double>);
     ~ModuleHrv2();
 
