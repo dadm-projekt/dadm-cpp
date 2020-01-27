@@ -5,6 +5,10 @@ ModuleHrv1::ModuleHrv1(QList<double> inputRPeaks)
  this->inputRPeaks = inputRPeaks;
 }
 
+ModuleHrv1::ModuleHrv1()
+{
+
+}
 ModuleHrv1::~ModuleHrv1()
 {
 

@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_ECGAnalyzerController_t {
-    QByteArrayData data[3];
-    char stringdata0[34];
+    QByteArrayData data[10];
+    char stringdata0[143];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -34,10 +34,20 @@ static const qt_meta_stringdata_ECGAnalyzerController_t qt_meta_stringdata_ECGAn
     {
 QT_MOC_LITERAL(0, 0, 21), // "ECGAnalyzerController"
 QT_MOC_LITERAL(1, 22, 10), // "dataLoaded"
-QT_MOC_LITERAL(2, 33, 0) // ""
+QT_MOC_LITERAL(2, 33, 0), // ""
+QT_MOC_LITERAL(3, 34, 20), // "setParamsECGBaseline"
+QT_MOC_LITERAL(4, 55, 15), // "setParamsRPeaks"
+QT_MOC_LITERAL(5, 71, 15), // "setParamsnWaves"
+QT_MOC_LITERAL(6, 87, 13), // "setParamsHRV1"
+QT_MOC_LITERAL(7, 101, 13), // "setParamsHRV2"
+QT_MOC_LITERAL(8, 115, 15), // "setParamsHRVDFA"
+QT_MOC_LITERAL(9, 131, 11) // "setParamsST"
 
     },
-    "ECGAnalyzerController\0dataLoaded\0"
+    "ECGAnalyzerController\0dataLoaded\0\0"
+    "setParamsECGBaseline\0setParamsRPeaks\0"
+    "setParamsnWaves\0setParamsHRV1\0"
+    "setParamsHRV2\0setParamsHRVDFA\0setParamsST"
 };
 #undef QT_MOC_LITERAL
 
@@ -47,7 +57,7 @@ static const uint qt_meta_data_ECGAnalyzerController[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       1,   14, // methods
+       8,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -55,9 +65,23 @@ static const uint qt_meta_data_ECGAnalyzerController[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   19,    2, 0x0a /* Public */,
+       1,    0,   54,    2, 0x0a /* Public */,
+       3,    0,   55,    2, 0x0a /* Public */,
+       4,    0,   56,    2, 0x0a /* Public */,
+       5,    0,   57,    2, 0x0a /* Public */,
+       6,    0,   58,    2, 0x0a /* Public */,
+       7,    0,   59,    2, 0x0a /* Public */,
+       8,    0,   60,    2, 0x0a /* Public */,
+       9,    0,   61,    2, 0x0a /* Public */,
 
  // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
 
        0        // eod
@@ -70,6 +94,13 @@ void ECGAnalyzerController::qt_static_metacall(QObject *_o, QMetaObject::Call _c
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->dataLoaded(); break;
+        case 1: _t->setParamsECGBaseline(); break;
+        case 2: _t->setParamsRPeaks(); break;
+        case 3: _t->setParamsnWaves(); break;
+        case 4: _t->setParamsHRV1(); break;
+        case 5: _t->setParamsHRV2(); break;
+        case 6: _t->setParamsHRVDFA(); break;
+        case 7: _t->setParamsST(); break;
         default: ;
         }
     }
@@ -105,13 +136,13 @@ int ECGAnalyzerController::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 1)
+        if (_id < 8)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 1;
+        _id -= 8;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 1)
+        if (_id < 8)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 1;
+        _id -= 8;
     }
     return _id;
 }

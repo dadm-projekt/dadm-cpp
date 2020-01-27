@@ -20,7 +20,7 @@ CXXFLAGS      = -fno-keep-inline-dllexport -g -std=gnu++1y -Wall -Wextra -Wextra
 INCPATH       = -I..\ECGAnalyzer -I. -I..\..\eigen-3.3.7 -IC:\Qt\Qt5.14.0\5.14.0\mingw73_64\include -IC:\Qt\Qt5.14.0\5.14.0\mingw73_64\include\QtWidgets -IC:\Qt\Qt5.14.0\5.14.0\mingw73_64\include\QtGui -IC:\Qt\Qt5.14.0\5.14.0\mingw73_64\include\QtANGLE -IC:\Qt\Qt5.14.0\5.14.0\mingw73_64\include\QtCore -I. -I. -I/include -IC:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\win32-g++ 
 LINKER      =        g++
 LFLAGS        =        -Wl,-subsystem,windows -mthreads
-LIBS        =        C:\Qt\Qt5.14.0\5.14.0\mingw73_64\lib\libQt5Widgets.a C:\Qt\Qt5.14.0\5.14.0\mingw73_64\lib\libQt5Gui.a C:\Qt\Qt5.14.0\5.14.0\mingw73_64\lib\libQt5Core.a  -lmingw32 C:\Qt\Qt5.14.0\5.14.0\mingw73_64\lib\libqtmain.a -LC:\openssl\lib -LC:\Utils\my_sql\mysql-5.7.25-winx64\lib -LC:\Utils\postgresql\pgsql\lib -lshell32 
+LIBS        =        C:\Users\Weronika\Desktop\dadm-cpp\src\build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug\libfftw3-3.dll C:\Qt\Qt5.14.0\5.14.0\mingw73_64\lib\libQt5Widgets.a C:\Qt\Qt5.14.0\5.14.0\mingw73_64\lib\libQt5Gui.a C:\Qt\Qt5.14.0\5.14.0\mingw73_64\lib\libQt5Core.a  -lmingw32 C:\Qt\Qt5.14.0\5.14.0\mingw73_64\lib\libqtmain.a -LC:\openssl\lib -LC:\Utils\my_sql\mysql-5.7.25-winx64\lib -LC:\Utils\postgresql\pgsql\lib -lshell32 
 QMAKE         = C:\Qt\Qt5.14.0\5.14.0\mingw73_64\bin\qmake.exe
 DEL_FILE      = del
 CHK_DIR_EXISTS= if not exist
@@ -807,6 +807,43 @@ moc_ecganalyzercontroller.cpp: ../ECGAnalyzer/ecganalyzercontroller.h \
 		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvarlengtharray.h \
 		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
 		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
+		../ECGAnalyzer/dataloader.h \
+		../ECGAnalyzer/datafile.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QMetaType \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QVector \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QDataStream \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qdatastream.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qiodevice.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QFile \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qfile.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qfiledevice.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QString \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QTextStream \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtextstream.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlocale.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvariant.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmap.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qdebug.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qhash.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qset.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontiguouscache.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsharedpointer.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qshareddata.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsharedpointer_impl.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QStringRef \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QDebug \
+		../ECGAnalyzer/modulebaseline.h \
+		../ECGAnalyzer/module.h \
+		../ECGAnalyzer/modulehrv1.h \
+		../ECGAnalyzer/spline.h \
+		../ECGAnalyzer/fftw3.h \
+		../ECGAnalyzer/modulehrv2.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QtMath \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmath.h \
+		../ECGAnalyzer/modulehrvdfa.h \
+		../ECGAnalyzer/modulerpeaks.h \
+		../ECGAnalyzer/modulestsegment.h \
+		../ECGAnalyzer/modulewaves.h \
 		moc_predefs.h \
 		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/bin/moc.exe
 	C:\Qt\Qt5.14.0\5.14.0\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/Weronika/Desktop/dadm-cpp/src/build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug/moc_predefs.h -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/mkspecs/win32-g++ -IC:/Users/Weronika/Desktop/dadm-cpp/src/ECGAnalyzer -IC:/Users/Weronika/Desktop/dadm-cpp/eigen-3.3.7 -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtWidgets -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtANGLE -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore -I. -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.14.0/Tools/mingw730_64/x86_64-w64-mingw32/include ..\ECGAnalyzer\ecganalyzercontroller.h -o moc_ecganalyzercontroller.cpp
@@ -2511,7 +2548,44 @@ ecganalyzercontroller.o: ../ECGAnalyzer/ecganalyzercontroller.cpp ../ECGAnalyzer
 		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmetatype.h \
 		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvarlengtharray.h \
 		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobject_impl.h
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
+		../ECGAnalyzer/dataloader.h \
+		../ECGAnalyzer/datafile.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QMetaType \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QVector \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QDataStream \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qdatastream.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qiodevice.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QFile \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qfile.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qfiledevice.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QString \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QTextStream \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtextstream.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlocale.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvariant.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmap.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qdebug.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qhash.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qset.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontiguouscache.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsharedpointer.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qshareddata.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsharedpointer_impl.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QStringRef \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QDebug \
+		../ECGAnalyzer/modulebaseline.h \
+		../ECGAnalyzer/module.h \
+		../ECGAnalyzer/modulehrv1.h \
+		../ECGAnalyzer/spline.h \
+		../ECGAnalyzer/fftw3.h \
+		../ECGAnalyzer/modulehrv2.h \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QtMath \
+		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmath.h \
+		../ECGAnalyzer/modulehrvdfa.h \
+		../ECGAnalyzer/modulerpeaks.h \
+		../ECGAnalyzer/modulestsegment.h \
+		../ECGAnalyzer/modulewaves.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ecganalyzercontroller.o ..\ECGAnalyzer\ecganalyzercontroller.cpp
 
 dataloader.o: ../ECGAnalyzer/dataloader.cpp ../ECGAnalyzer/dataloader.h \

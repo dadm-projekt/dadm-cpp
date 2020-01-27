@@ -3,29 +3,30 @@
 
 #include <QObject>
 #include "module.h"
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
+#include <algorithm>
 
-// Struktura w której każdy kolejny pomiar ma przypisany numer próbki
-struct piki{
-    unsigned int numer;
-    double pomiar;
-};
+enum Method{ PanTompkins, Hilbert };
+
 class ModuleRPeaks : public Module
 {
 public:
 
+    Method method;
     QList<double> inputData;
-    QList<double> RPeaks;
-
+    QList<double> outputData;
     ModuleRPeaks();
+    ModuleRPeaks(QList<double> inputData);
     ~ModuleRPeaks();
+    QList<double> getInputRPeaks();
+    QList<double> getoutputData();
+    void setInputRPeaks(QList<double> inputRPeaks);
+    void setoutputData(QList<double> outputData);
 
-    QList<double> getInputData();
-    QList<double> getRPeaks();
-
-    void setRPeaks(QList<double> RPeaks);
-    void setInputData(QList<double> inputData);
-
-    void AnalyzeSignal(); // wywoluje metode pantompkins lub hilbetrt
+    void AnalyzeSignal(); // wywoluje metode pantompkins
     void PanTompkins();
 };
 
