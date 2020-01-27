@@ -23,9 +23,11 @@ void ModuleRPeaks::PanTompkins()
         // kopiowanie wektora
         /*---------------------------------------------------*/
         QList<double>pomiar;
-            for (unsigned int i = 0; i < this->inputData.size(); i++)
+        unsigned int p0 = this->inputData.size();
+        double p1 = this->inputData.at(i);
+            for (unsigned int i = 0; i < p0; i++)
         {
-            pomiar.push_back(this->inputData.at(i));
+            pomiar.push_back(p1);
         }
 
         /*----------------------------------------------------*/
@@ -61,10 +63,9 @@ void ModuleRPeaks::PanTompkins()
                     ++i;
                 }
                 std::sort(Pomocniczy.begin(), Pomocniczy.end());
-                Rpiki.push_back(Pomocniczy.at(0) + kompensacja_filtracji);
+                Rpiki.push_back((Pomocniczy.at(0) + kompensacja_filtracji)*360); // TO JEST WYJŚCIE!
                 Pomocniczy.clear();
             }
         }
-    Rpiki *= 360; //Piki przeformatowane na czas (TO JEST MOJE WYJŚCIE!)
 }
 
