@@ -21,6 +21,7 @@ SOURCES += main.cpp\
     module.cpp \
     datafile.cpp \
     modulebaseline.cpp \
+    polynomial_fitting.cpp \
     viewmodule.cpp \
     viewmodulebaseline.cpp \
     modulerpeaks.cpp \
