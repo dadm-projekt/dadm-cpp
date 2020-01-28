@@ -36,7 +36,15 @@ SOURCES += main.cpp\
     viewmodulestsegment.cpp \
     detectmorfology_emxutil.cpp \
     detectmorfology_emxapi.cpp \
-    detectingmorfology.cpp
+    detectingmorfology.cpp \
+    qcustomplot.cpp\
+    ecgplotting.cpp \
+    tachogram.cpp \
+    hrvperiodogram.cpp \
+    hrvhisto.cpp \
+    hrvpoincare.cpp \
+    plotdfa1.cpp \
+    plotdfa2.cpp
 
 HEADERS  += mainwindow.h \
     ecganalyzercontroller.h \
@@ -65,7 +73,26 @@ HEADERS  += mainwindow.h \
     rtwtypes.h \
     detectmorfology_emxapi.h \
     detectingmorfology.h \
-    tmwtypes.h
+    tmwtypes.h \
+    qcustomplot.h \
+    ecgplotting.h \
+    tachogram.h \
+    hrvperiodogram.h \
+    hrvhisto.h \
+    hrvpoincare.h \
+    plotdfa1.h \
+    plotdfa2.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+            ecgplotting.ui \
+            tachogram.ui \
+            hrvperiodogram.ui \
+            hrvhisto.ui \
+            hrvpoincare.ui \
+            plotdfa1.ui \
+            plotdfa2.ui
+
 LIBS+= "C:\Users\Weronika\Desktop\dadm-cpp\src\build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug\libfftw3-3.dll"
+
+DISTFILES += \
+    ECGAnalyzer.pro.user
