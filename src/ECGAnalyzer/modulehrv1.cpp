@@ -368,4 +368,3 @@ void ModuleHrv1::FindFreqParams()
     this->setfreqParams(freqParams);
 }
 
-
