@@ -98,7 +98,7 @@ void ModuleHrv1::AnalyzeSignal()
      QVector<double> hrvx2;
      for (int i=0; i<inputRPeaks.size(); i++)
      {
-         hrvx[i]=inputRPeaks[i];
+         hrvx.insert(i,inputRPeaks[i]);
      }
 
 
@@ -106,7 +106,7 @@ void ModuleHrv1::AnalyzeSignal()
      for (int i = 0; i< hrvx.size(); i++)
      {
          hrvx[i]=hrvx[i]*1000;
-         hrvx2[i]=hrvx[i];
+         hrvx2.insert(i,hrvx[i]);
      }
 
      hrvx2.erase (hrvx2.end()-1);
@@ -295,13 +295,8 @@ void ModuleHrv1::FindFreqParams()
     double LF = 0;
     double VLF = 0;
     double ULF = 0;
-    vector<double> hrvx1;
-    vector<double> hrvy1;
-    for (int i=0; i<hrvy.size(); i++)
-    {
-        hrvx1[i]= hrvx[i];
-        hrvy1[i]=hrvy[i];
-    }
+    vector<double> hrvx1(begin(hrvx),end(hrvx));
+    vector<double> hrvy1(begin(hrvy),end(hrvy));
 
     tk::spline s;
     s.set_points(hrvx1,hrvy1);
@@ -372,4 +367,5 @@ void ModuleHrv1::FindFreqParams()
     this->setfxx(fxx);
     this->setfreqParams(freqParams);
 }
+
 
