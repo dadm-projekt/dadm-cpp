@@ -39,7 +39,9 @@ public:
     QLabel *label_4;
     QLabel *label_5;
     QGraphicsView *graphicsView_8;
+    QPushButton *ECGBaseline_Start;
     QWidget *tab2;
+    QPushButton *rPeaks_Start;
     QWidget *tab3;
     QTabWidget *tabWidget_2;
     QWidget *tab;
@@ -50,6 +52,7 @@ public:
     QTableWidget *tableWidget_2;
     QLabel *label_6;
     QLabel *label_7;
+    QPushButton *HRV1_Start;
     QWidget *tab4;
     QTabWidget *tabWidget_3;
     QWidget *tab_3;
@@ -60,12 +63,16 @@ public:
     QWidget *tab_4;
     QTableWidget *tableWidget_3;
     QListView *listView;
+    QPushButton *HRV2_Start;
     QWidget *tab5;
     QGraphicsView *graphicsView_11;
     QTableWidget *tableWidget_4;
+    QPushButton *Waves_Start;
     QWidget *tab6;
     QGraphicsView *graphicsView_4;
+    QPushButton *STSegment_Start;
     QWidget *tab7;
+    QPushButton *DFA_Start;
     QLabel *label;
     QLabel *label_2;
     QLabel *label_3;
@@ -121,9 +128,15 @@ public:
         graphicsView_8 = new QGraphicsView(tab1);
         graphicsView_8->setObjectName(QString::fromUtf8("graphicsView_8"));
         graphicsView_8->setGeometry(QRect(50, 40, 361, 251));
+        ECGBaseline_Start = new QPushButton(tab1);
+        ECGBaseline_Start->setObjectName(QString::fromUtf8("ECGBaseline_Start"));
+        ECGBaseline_Start->setGeometry(QRect(490, 240, 141, 51));
         tabWidget->addTab(tab1, QString());
         tab2 = new QWidget();
         tab2->setObjectName(QString::fromUtf8("tab2"));
+        rPeaks_Start = new QPushButton(tab2);
+        rPeaks_Start->setObjectName(QString::fromUtf8("rPeaks_Start"));
+        rPeaks_Start->setGeometry(QRect(550, 260, 121, 41));
         tabWidget->addTab(tab2, QString());
         tab3 = new QWidget();
         tab3->setObjectName(QString::fromUtf8("tab3"));
@@ -197,6 +210,9 @@ public:
         label_7->setObjectName(QString::fromUtf8("label_7"));
         label_7->setGeometry(QRect(490, 30, 71, 16));
         label_7->setFont(font2);
+        HRV1_Start = new QPushButton(tab_2);
+        HRV1_Start->setObjectName(QString::fromUtf8("HRV1_Start"));
+        HRV1_Start->setGeometry(QRect(530, 270, 141, 41));
         tabWidget_2->addTab(tab_2, QString());
         tabWidget->addTab(tab3, QString());
         tab4 = new QWidget();
@@ -235,29 +251,41 @@ public:
         QTableWidgetItem *__qtablewidgetitem17 = new QTableWidgetItem();
         tableWidget_3->setVerticalHeaderItem(3, __qtablewidgetitem17);
         tableWidget_3->setObjectName(QString::fromUtf8("tableWidget_3"));
-        tableWidget_3->setGeometry(QRect(80, 90, 256, 131));
+        tableWidget_3->setGeometry(QRect(20, 30, 256, 131));
         listView = new QListView(tab_4);
         listView->setObjectName(QString::fromUtf8("listView"));
-        listView->setGeometry(QRect(490, 80, 256, 192));
+        listView->setGeometry(QRect(330, 30, 256, 192));
+        HRV2_Start = new QPushButton(tab_4);
+        HRV2_Start->setObjectName(QString::fromUtf8("HRV2_Start"));
+        HRV2_Start->setGeometry(QRect(620, 240, 111, 41));
         tabWidget_3->addTab(tab_4, QString());
         tabWidget->addTab(tab4, QString());
         tab5 = new QWidget();
         tab5->setObjectName(QString::fromUtf8("tab5"));
         graphicsView_11 = new QGraphicsView(tab5);
         graphicsView_11->setObjectName(QString::fromUtf8("graphicsView_11"));
-        graphicsView_11->setGeometry(QRect(30, 60, 361, 251));
+        graphicsView_11->setGeometry(QRect(20, 40, 361, 251));
         tableWidget_4 = new QTableWidget(tab5);
         tableWidget_4->setObjectName(QString::fromUtf8("tableWidget_4"));
-        tableWidget_4->setGeometry(QRect(490, 60, 256, 192));
+        tableWidget_4->setGeometry(QRect(440, 40, 256, 192));
+        Waves_Start = new QPushButton(tab5);
+        Waves_Start->setObjectName(QString::fromUtf8("Waves_Start"));
+        Waves_Start->setGeometry(QRect(570, 260, 131, 41));
         tabWidget->addTab(tab5, QString());
         tab6 = new QWidget();
         tab6->setObjectName(QString::fromUtf8("tab6"));
         graphicsView_4 = new QGraphicsView(tab6);
         graphicsView_4->setObjectName(QString::fromUtf8("graphicsView_4"));
         graphicsView_4->setGeometry(QRect(180, 30, 351, 241));
+        STSegment_Start = new QPushButton(tab6);
+        STSegment_Start->setObjectName(QString::fromUtf8("STSegment_Start"));
+        STSegment_Start->setGeometry(QRect(630, 280, 101, 41));
         tabWidget->addTab(tab6, QString());
         tab7 = new QWidget();
         tab7->setObjectName(QString::fromUtf8("tab7"));
+        DFA_Start = new QPushButton(tab7);
+        DFA_Start->setObjectName(QString::fromUtf8("DFA_Start"));
+        DFA_Start->setGeometry(QRect(590, 260, 101, 41));
         tabWidget->addTab(tab7, QString());
         label = new QLabel(centralWidget);
         label->setObjectName(QString::fromUtf8("label"));
@@ -311,8 +339,8 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(0);
-        tabWidget_2->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(6);
+        tabWidget_2->setCurrentIndex(1);
         tabWidget_3->setCurrentIndex(1);
 
 
@@ -335,7 +363,9 @@ public:
 
         label_4->setText(QCoreApplication::translate("MainWindow", "Filter type", nullptr));
         label_5->setText(QCoreApplication::translate("MainWindow", "Sampel frequency", nullptr));
+        ECGBaseline_Start->setText(QCoreApplication::translate("MainWindow", "START", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab1), QCoreApplication::translate("MainWindow", "ECG Baseline", nullptr));
+        rPeaks_Start->setText(QCoreApplication::translate("MainWindow", "START", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab2), QCoreApplication::translate("MainWindow", "R_Peaks", nullptr));
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab), QCoreApplication::translate("MainWindow", "Plots", nullptr));
         QTableWidgetItem *___qtablewidgetitem = tableWidget->verticalHeaderItem(0);
@@ -368,6 +398,7 @@ public:
         ___qtablewidgetitem13->setText(QCoreApplication::translate("MainWindow", "LF/HF[-]", nullptr));
         label_6->setText(QCoreApplication::translate("MainWindow", "Time", nullptr));
         label_7->setText(QCoreApplication::translate("MainWindow", "Frequency", nullptr));
+        HRV1_Start->setText(QCoreApplication::translate("MainWindow", "START", nullptr));
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_2), QCoreApplication::translate("MainWindow", "Tables", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab3), QCoreApplication::translate("MainWindow", "HRV 1", nullptr));
         label_8->setText(QCoreApplication::translate("MainWindow", "Histogram", nullptr));
@@ -381,10 +412,14 @@ public:
         ___qtablewidgetitem16->setText(QCoreApplication::translate("MainWindow", "SD1", nullptr));
         QTableWidgetItem *___qtablewidgetitem17 = tableWidget_3->verticalHeaderItem(3);
         ___qtablewidgetitem17->setText(QCoreApplication::translate("MainWindow", "SD2", nullptr));
+        HRV2_Start->setText(QCoreApplication::translate("MainWindow", "START", nullptr));
         tabWidget_3->setTabText(tabWidget_3->indexOf(tab_4), QCoreApplication::translate("MainWindow", "Table", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab4), QCoreApplication::translate("MainWindow", "HRV 2", nullptr));
+        Waves_Start->setText(QCoreApplication::translate("MainWindow", "START", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab5), QCoreApplication::translate("MainWindow", "Waves", nullptr));
+        STSegment_Start->setText(QCoreApplication::translate("MainWindow", "START", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab6), QCoreApplication::translate("MainWindow", "ST Segment", nullptr));
+        DFA_Start->setText(QCoreApplication::translate("MainWindow", "START", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab7), QCoreApplication::translate("MainWindow", "HRV DFA", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "Patient", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "Sex", nullptr));

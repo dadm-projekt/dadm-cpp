@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>6</number>
     </property>
     <widget class="QWidget" name="tab1">
      <attribute name="title">
@@ -151,11 +151,37 @@
        </rect>
       </property>
      </widget>
+     <widget class="QPushButton" name="ECGBaseline_Start">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>240</y>
+        <width>141</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>START</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab2">
      <attribute name="title">
       <string>R_Peaks</string>
      </attribute>
+     <widget class="QPushButton" name="rPeaks_Start">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>260</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>START</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab3">
      <attribute name="title">
@@ -171,7 +197,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -350,6 +376,19 @@
          <string>Frequency</string>
         </property>
        </widget>
+       <widget class="QPushButton" name="HRV1_Start">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>270</y>
+          <width>141</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>START</string>
+        </property>
+       </widget>
       </widget>
      </widget>
     </widget>
@@ -441,8 +480,8 @@
        <widget class="QTableWidget" name="tableWidget_3">
         <property name="geometry">
          <rect>
-          <x>80</x>
-          <y>90</y>
+          <x>20</x>
+          <y>30</y>
           <width>256</width>
           <height>131</height>
          </rect>
@@ -471,11 +510,24 @@
        <widget class="QListView" name="listView">
         <property name="geometry">
          <rect>
-          <x>490</x>
-          <y>80</y>
+          <x>330</x>
+          <y>30</y>
           <width>256</width>
           <height>192</height>
          </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="HRV2_Start">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>240</y>
+          <width>111</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>START</string>
         </property>
        </widget>
       </widget>
@@ -488,8 +540,8 @@
      <widget class="QGraphicsView" name="graphicsView_11">
       <property name="geometry">
        <rect>
-        <x>30</x>
-        <y>60</y>
+        <x>20</x>
+        <y>40</y>
         <width>361</width>
         <height>251</height>
        </rect>
@@ -498,11 +550,24 @@
      <widget class="QTableWidget" name="tableWidget_4">
       <property name="geometry">
        <rect>
-        <x>490</x>
-        <y>60</y>
+        <x>440</x>
+        <y>40</y>
         <width>256</width>
         <height>192</height>
        </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Waves_Start">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>260</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>START</string>
       </property>
      </widget>
     </widget>
@@ -520,11 +585,37 @@
        </rect>
       </property>
      </widget>
+     <widget class="QPushButton" name="STSegment_Start">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>280</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>START</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab7">
      <attribute name="title">
       <string>HRV DFA</string>
      </attribute>
+     <widget class="QPushButton" name="DFA_Start">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>260</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>START</string>
+      </property>
+     </widget>
     </widget>
    </widget>
    <widget class="QLabel" name="label">
