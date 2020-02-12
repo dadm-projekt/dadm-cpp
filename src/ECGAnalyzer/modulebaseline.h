@@ -17,13 +17,6 @@ class ModuleBaseline : public Module
 
 public:
 
-QList<double> inputData;  // inputData form dataFile
-
-  ModuleBaseline(QList<double>);
-  ~ModuleBaseline();
-
-    FilterType filterType;
-    SampleFrequency sampleFrequency;
 
  //   QVector<double> outputData;  //
     QVector<double> B_coeffA, B_coeffB, HP_coeffA, HP_coeffB, E_coeffA, E_coeffB;
@@ -32,7 +25,20 @@ QList<double> inputData;  // inputData form dataFile
 //    int owLen;
 //    int np;
 
+  ModuleBaseline();
+  ~ModuleBaseline();
 
+    FilterType filterType;
+    SampleFrequency sampleFrequency;
+    QVector<double> inputData;
+    QVector<double> outputData;
+    //QList<double> inputData;
+    //QList<double> outputData;
+    QVector<double> B_coeffA, B_coeffB, HP_coeffA, HP_coeffB, E_coeffA, E_coeffB;
+    QVector<double>ow;
+    int inputDataLen;
+    int owLen;
+    int np;
 
 
 
@@ -41,10 +47,13 @@ QList<double> inputData;  // inputData form dataFile
     QList<double> getOutData();
     void setOutData(QVector<double>);
 
-    QVector<double> ButterworthFilter(QVector<double>, QVector<double>);
-    QVector<double> ButterworthFilterHP(QVector<double>,QVector<double>);
-    QVector<double> EllipticFilter(QVector<double>,QVector<double>);
-    QVector<double> FIR_Blackman(QVector<double>);
+    void setFilterType(int filterType);
+    void setFrequency(int frequency);
+    void AnalyzeSignal();
+    QVector<double> ButterworthFilter(QVector<double>, QVector<double>, QVector<double>);
+    QVector<double> ButterworthFilterHP(QVector<double>,QVector<double>,QVector<double>);
+    QVector<double> EllipticFilter(QVector<double>,QVector<double>,QVector<double>);
+    QVector<double> FIR_Blackman(QVector<double>,QVector<double>);
 
 };
 

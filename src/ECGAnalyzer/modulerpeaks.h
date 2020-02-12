@@ -3,6 +3,11 @@
 
 #include <QObject>
 #include "module.h"
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
+#include <algorithm>
 
 enum Method{ PanTompkins, Hilbert };
 
@@ -13,13 +18,16 @@ public:
     Method method;
     QList<double> inputData;
     QList<double> outputData;
-
     ModuleRPeaks();
+    ModuleRPeaks(QList<double> inputData);
     ~ModuleRPeaks();
+    QList<double> getInputRPeaks();
+    QList<double> getoutputData();
+    void setInputRPeaks(QList<double> inputRPeaks);
+    void setoutputData(QList<double> outputData);
 
-    void AnalyzeSignal(); // wywoluje metode pantompkins lub hilbetrt
+    void AnalyzeSignal(); // wywoluje metode pantompkins
     void PanTompkins();
-    void Hilbert();
 };
 
 #endif // MODULERPEAKS_H
