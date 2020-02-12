@@ -39,11 +39,12 @@ void MainWindow::on_pushButton_2_clicked()
 
 void MainWindow::on_comboBox_2_activated(const QString &arg1)
 {
+    filtertype=arg1;
 }
 
 void MainWindow::on_comboBox_3_activated(const QString &arg2)
 {
-//    ModuleHrv1 hrv1();
+    frequency=arg2;
 }
 
 void MainWindow::on_pushButton_3_clicked()
@@ -60,6 +61,8 @@ void MainWindow::on_tableWidget_3_cellActivated(int row, int column)
 void MainWindow::on_baseline_Start_clicked()
 {
     ModuleBaseline *baseline = new ModuleBaseline(data);
+    baseline->setFilterType(1);
+    baseline->setFrequency(1);
     baseline->AnalyzeSignal();
 
 }
