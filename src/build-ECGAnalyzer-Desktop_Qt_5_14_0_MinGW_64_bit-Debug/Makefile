@@ -17,7 +17,7 @@ CXX           = g++
 DEFINES       = -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -DQT_QML_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NEEDS_QMAIN
 CFLAGS        = -fno-keep-inline-dllexport -g -Wall -Wextra -Wextra $(DEFINES)
 CXXFLAGS      = -fno-keep-inline-dllexport -g -std=gnu++1y -Wall -Wextra -Wextra -fexceptions -mthreads $(DEFINES)
-INCPATH       = -I..\ECGAnalyzer -I. -I..\..\eigen-3.3.7 -IC:\Qt\Qt5.14.0\5.14.0\mingw73_64\include -IC:\Qt\Qt5.14.0\5.14.0\mingw73_64\include\QtWidgets -IC:\Qt\Qt5.14.0\5.14.0\mingw73_64\include\QtGui -IC:\Qt\Qt5.14.0\5.14.0\mingw73_64\include\QtANGLE -IC:\Qt\Qt5.14.0\5.14.0\mingw73_64\include\QtCore -I. -I. -I/include -IC:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\win32-g++ 
+INCPATH       = -I..\ECGAnalyzer -I. -I..\..\eigen-3.3.7 -IC:\Qt-OS\5.14.0\mingw73_64\include -IC:\Qt-OS\5.14.0\mingw73_64\include\QtWidgets -IC:\Qt-OS\5.14.0\mingw73_64\include\QtGui -IC:\Qt-OS\5.14.0\mingw73_64\include\QtANGLE -IC:\Qt-OS\5.14.0\mingw73_64\include\QtCore -I. -I. -I/include -IC:\Qt-OS\5.14.0\mingw73_64\mkspecs\win32-g++ 
 LINKER      =        g++
 LFLAGS        =        -Wl,-subsystem,windows -mthreads
 LIBS        =        C:\Users\K\Desktop\Projekty\dadm-cpp\src\build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug\libfftw3-3.dll C:\Qt-OS\5.14.0\mingw73_64\lib\libQt5Widgets.a C:\Qt-OS\5.14.0\mingw73_64\lib\libQt5Gui.a C:\Qt-OS\5.14.0\mingw73_64\lib\libQt5Core.a  -lmingw32 C:\Qt-OS\5.14.0\mingw73_64\lib\libqtmain.a -LC:\openssl\lib -LC:\Utils\my_sql\mysql-5.7.25-winx64\lib -LC:\Utils\postgresql\pgsql\lib -lshell32 
@@ -610,7 +610,7 @@ qmake: FORCE
 qmake_all: FORCE
 
 dist:
-	$(ZIP) ECGAnalyzer.zip $(SOURCES) $(DIST) ..\ECGAnalyzer\ECGAnalyzer.pro C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\spec_pre.prf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\qdevice.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\device_config.prf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\common\sanitize.conf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\common\gcc-base.conf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\common\g++-base.conf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\common\angle.conf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\win32\windows_vulkan_sdk.prf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\common\windows-vulkan.conf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\common\g++-win32.conf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\common\windows-desktop.conf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\qconfig.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3danimation.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3danimation_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dcore.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dcore_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dextras.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dextras_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dinput.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dinput_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dlogic.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dlogic_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dquick.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dquick_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dquickanimation.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dquickanimation_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dquickextras.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dquickextras_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dquickinput.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dquickinput_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dquickrender.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dquickrender_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dquickscene2d.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dquickscene2d_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3drender.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3drender_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_accessibility_support_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_axbase.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_axbase_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_axcontainer.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_axcontainer_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_axserver.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_axserver_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_bluetooth.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_bluetooth_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_bodymovin_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_bootstrap_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_charts.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_charts_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_concurrent.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_concurrent_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_core.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_core_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_datavisualization.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_datavisualization_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_dbus.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_dbus_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_designer.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_designer_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_designercomponents_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_devicediscovery_support_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_edid_support_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_egl_support_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_eventdispatcher_support_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_fb_support_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_fontdatabase_support_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_gamepad.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_gamepad_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_gui.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_gui_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_help.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_help_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_location.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_location_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_multimedia.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_multimedia_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_multimediawidgets.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_multimediawidgets_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_network.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_network_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_networkauth.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_networkauth_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_nfc.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_nfc_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_opengl.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_opengl_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_openglextensions.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_openglextensions_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_packetprotocol_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_platformcompositor_support_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_positioning.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_positioning_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_positioningquick.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_positioningquick_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_printsupport.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_printsupport_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_purchasing.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_purchasing_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_qml.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_qml_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_qmldebug_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_qmldevtools_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_qmlmodels.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_qmlmodels_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_qmltest.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_qmltest_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_qmlworkerscript.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_qmlworkerscript_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_qtmultimediaquicktools_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quick.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quick3d.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quick3d_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quick3dassetimport.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quick3dassetimport_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quick3drender.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quick3drender_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quick3druntimerender.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quick3druntimerender_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quick3dutils.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quick3dutils_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quick_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quickcontrols2.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quickcontrols2_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quickparticles_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quickshapes_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quicktemplates2.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quicktemplates2_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quickwidgets.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quickwidgets_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_remoteobjects.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_remoteobjects_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_repparser.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_repparser_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_script.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_script_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_scripttools.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_scripttools_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_scxml.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_scxml_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_sensors.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_sensors_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_serialbus.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_serialbus_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_serialport.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_serialport_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_sql.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_sql_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_svg.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_svg_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_testlib.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_testlib_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_texttospeech.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_texttospeech_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_theme_support_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_uiplugin.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_uitools.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_uitools_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_virtualkeyboard.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_virtualkeyboard_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_vulkan_support_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_webchannel.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_webchannel_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_websockets.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_websockets_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_widgets.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_widgets_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_windowsuiautomation_support_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_winextras.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_winextras_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_xml.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_xml_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_xmlpatterns.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\modules\qt_lib_xmlpatterns_private.pri C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\qt_functions.prf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\qt_config.prf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\win32-g++\qmake.conf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\spec_post.prf .qmake.stash C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\exclusive_builds.prf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\toolchain.prf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\default_pre.prf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\win32\default_pre.prf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\resolve_config.prf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\default_post.prf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\qml_debug.prf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\precompile_header.prf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\warn_on.prf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\qt.prf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\resources_functions.prf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\resources.prf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\moc.prf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\win32\opengl.prf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\uic.prf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\qmake_use.prf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\file_copies.prf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\win32\windows.prf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\testcase_targets.prf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\exceptions.prf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\yacc.prf C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\lex.prf ..\ECGAnalyzer\ECGAnalyzer.pro C:\Qt\Qt5.14.0\5.14.0\mingw73_64\lib\Qt5Widgets.prl C:\Qt\Qt5.14.0\5.14.0\mingw73_64\lib\Qt5Gui.prl C:\Qt\Qt5.14.0\5.14.0\mingw73_64\lib\Qt5Core.prl C:\Qt\Qt5.14.0\5.14.0\mingw73_64\lib\qtmain.prl    C:\Qt\Qt5.14.0\5.14.0\mingw73_64\mkspecs\features\data\dummy.cpp ..\ECGAnalyzer\mainwindow.h ..\ECGAnalyzer\dfa.h ..\ECGAnalyzer\ecganalyzercontroller.h ..\ECGAnalyzer\dataloader.h ..\ECGAnalyzer\fftw3.h ..\ECGAnalyzer\module.h ..\ECGAnalyzer\datafile.h ..\ECGAnalyzer\modulebaseline.h ..\ECGAnalyzer\spline.h ..\ECGAnalyzer\viewmodule.h ..\ECGAnalyzer\viewmodulebaseline.h ..\ECGAnalyzer\modulerpeaks.h ..\ECGAnalyzer\viewmodulerpeaks.h ..\ECGAnalyzer\modulehrv1.h ..\ECGAnalyzer\viewmodulehrv1.h ..\ECGAnalyzer\modulehrv2.h ..\ECGAnalyzer\viewmodulehrv2.h ..\ECGAnalyzer\modulewaves.h ..\ECGAnalyzer\viewmodulewaves.h ..\ECGAnalyzer\modulehrvdfa.h ..\ECGAnalyzer\viewmodulehrvdfa.h ..\ECGAnalyzer\modulestsegment.h ..\ECGAnalyzer\viewmodulestsegment.h ..\ECGAnalyzer\detectmorfology_types.h ..\ECGAnalyzer\detectmorfology_emxutil.h ..\ECGAnalyzer\rtwtypes.h ..\ECGAnalyzer\detectmorfology_emxapi.h ..\ECGAnalyzer\detectingmorfology.h ..\ECGAnalyzer\tmwtypes.h  ..\ECGAnalyzer\main.cpp ..\ECGAnalyzer\dfa.cpp ..\ECGAnalyzer\mainwindow.cpp ..\ECGAnalyzer\ecganalyzercontroller.cpp ..\ECGAnalyzer\dataloader.cpp ..\ECGAnalyzer\module.cpp ..\ECGAnalyzer\datafile.cpp ..\ECGAnalyzer\modulebaseline.cpp ..\ECGAnalyzer\viewmodule.cpp ..\ECGAnalyzer\viewmodulebaseline.cpp ..\ECGAnalyzer\modulerpeaks.cpp ..\ECGAnalyzer\viewmodulerpeaks.cpp ..\ECGAnalyzer\modulehrv1.cpp ..\ECGAnalyzer\viewmodulehrv1.cpp ..\ECGAnalyzer\modulehrv2.cpp ..\ECGAnalyzer\viewmodulehrv2.cpp ..\ECGAnalyzer\modulewaves.cpp ..\ECGAnalyzer\viewmodulewaves.cpp ..\ECGAnalyzer\modulehrvdfa.cpp ..\ECGAnalyzer\viewmodulehrvdfa.cpp ..\ECGAnalyzer\modulestsegment.cpp ..\ECGAnalyzer\viewmodulestsegment.cpp ..\ECGAnalyzer\detectmorfology_emxutil.cpp ..\ECGAnalyzer\detectmorfology_emxapi.cpp ..\ECGAnalyzer\detectingmorfology.cpp ..\ECGAnalyzer\mainwindow.ui    
+	$(ZIP) ECGAnalyzer.zip $(SOURCES) $(DIST) ..\ECGAnalyzer\ECGAnalyzer.pro C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\spec_pre.prf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\qdevice.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\device_config.prf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\common\sanitize.conf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\common\gcc-base.conf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\common\g++-base.conf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\common\angle.conf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\win32\windows_vulkan_sdk.prf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\common\windows-vulkan.conf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\common\g++-win32.conf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\common\windows-desktop.conf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\qconfig.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3danimation.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3danimation_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dcore.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dcore_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dextras.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dextras_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dinput.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dinput_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dlogic.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dlogic_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dquick.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dquick_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dquickanimation.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dquickanimation_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dquickextras.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dquickextras_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dquickinput.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dquickinput_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dquickrender.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dquickrender_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dquickscene2d.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3dquickscene2d_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3drender.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_3drender_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_accessibility_support_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_axbase.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_axbase_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_axcontainer.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_axcontainer_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_axserver.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_axserver_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_bluetooth.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_bluetooth_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_bodymovin_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_bootstrap_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_charts.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_charts_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_concurrent.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_concurrent_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_core.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_core_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_datavisualization.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_datavisualization_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_dbus.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_dbus_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_designer.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_designer_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_designercomponents_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_devicediscovery_support_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_edid_support_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_egl_support_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_eventdispatcher_support_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_fb_support_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_fontdatabase_support_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_gamepad.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_gamepad_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_gui.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_gui_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_help.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_help_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_location.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_location_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_multimedia.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_multimedia_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_multimediawidgets.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_multimediawidgets_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_network.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_network_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_networkauth.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_networkauth_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_nfc.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_nfc_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_opengl.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_opengl_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_openglextensions.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_openglextensions_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_packetprotocol_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_platformcompositor_support_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_positioning.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_positioning_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_positioningquick.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_positioningquick_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_printsupport.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_printsupport_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_purchasing.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_purchasing_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_qml.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_qml_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_qmldebug_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_qmldevtools_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_qmlmodels.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_qmlmodels_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_qmltest.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_qmltest_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_qmlworkerscript.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_qmlworkerscript_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_qtmultimediaquicktools_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quick.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quick3d.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quick3d_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quick3dassetimport.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quick3dassetimport_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quick3drender.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quick3drender_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quick3druntimerender.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quick3druntimerender_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quick3dutils.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quick3dutils_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quick_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quickcontrols2.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quickcontrols2_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quickparticles_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quickshapes_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quicktemplates2.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quicktemplates2_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quickwidgets.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_quickwidgets_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_remoteobjects.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_remoteobjects_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_repparser.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_repparser_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_script.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_script_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_scripttools.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_scripttools_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_scxml.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_scxml_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_sensors.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_sensors_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_serialbus.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_serialbus_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_serialport.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_serialport_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_sql.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_sql_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_svg.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_svg_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_testlib.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_testlib_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_texttospeech.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_texttospeech_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_theme_support_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_uiplugin.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_uitools.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_uitools_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_virtualkeyboard.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_virtualkeyboard_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_vulkan_support_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_webchannel.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_webchannel_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_websockets.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_websockets_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_widgets.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_widgets_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_windowsuiautomation_support_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_winextras.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_winextras_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_xml.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_xml_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_xmlpatterns.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\modules\qt_lib_xmlpatterns_private.pri C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\qt_functions.prf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\qt_config.prf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\win32-g++\qmake.conf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\spec_post.prf .qmake.stash C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\exclusive_builds.prf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\toolchain.prf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\default_pre.prf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\win32\default_pre.prf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\resolve_config.prf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\default_post.prf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\qml_debug.prf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\precompile_header.prf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\warn_on.prf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\qt.prf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\resources_functions.prf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\resources.prf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\moc.prf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\win32\opengl.prf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\uic.prf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\qmake_use.prf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\file_copies.prf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\win32\windows.prf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\testcase_targets.prf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\exceptions.prf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\yacc.prf C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\lex.prf ..\ECGAnalyzer\ECGAnalyzer.pro C:\Qt-OS\5.14.0\mingw73_64\lib\Qt5Widgets.prl C:\Qt-OS\5.14.0\mingw73_64\lib\Qt5Gui.prl C:\Qt-OS\5.14.0\mingw73_64\lib\Qt5Core.prl C:\Qt-OS\5.14.0\mingw73_64\lib\qtmain.prl    C:\Qt-OS\5.14.0\mingw73_64\mkspecs\features\data\dummy.cpp ..\ECGAnalyzer\mainwindow.h ..\ECGAnalyzer\dfa.h ..\ECGAnalyzer\ecganalyzercontroller.h ..\ECGAnalyzer\dataloader.h ..\ECGAnalyzer\fftw3.h ..\ECGAnalyzer\module.h ..\ECGAnalyzer\datafile.h ..\ECGAnalyzer\modulebaseline.h ..\ECGAnalyzer\spline.h ..\ECGAnalyzer\viewmodule.h ..\ECGAnalyzer\viewmodulebaseline.h ..\ECGAnalyzer\modulerpeaks.h ..\ECGAnalyzer\viewmodulerpeaks.h ..\ECGAnalyzer\modulehrv1.h ..\ECGAnalyzer\viewmodulehrv1.h ..\ECGAnalyzer\modulehrv2.h ..\ECGAnalyzer\viewmodulehrv2.h ..\ECGAnalyzer\modulewaves.h ..\ECGAnalyzer\viewmodulewaves.h ..\ECGAnalyzer\modulehrvdfa.h ..\ECGAnalyzer\viewmodulehrvdfa.h ..\ECGAnalyzer\modulestsegment.h ..\ECGAnalyzer\viewmodulestsegment.h ..\ECGAnalyzer\detectmorfology_types.h ..\ECGAnalyzer\detectmorfology_emxutil.h ..\ECGAnalyzer\rtwtypes.h ..\ECGAnalyzer\detectmorfology_emxapi.h ..\ECGAnalyzer\detectingmorfology.h ..\ECGAnalyzer\tmwtypes.h  ..\ECGAnalyzer\main.cpp ..\ECGAnalyzer\dfa.cpp ..\ECGAnalyzer\mainwindow.cpp ..\ECGAnalyzer\ecganalyzercontroller.cpp ..\ECGAnalyzer\dataloader.cpp ..\ECGAnalyzer\module.cpp ..\ECGAnalyzer\datafile.cpp ..\ECGAnalyzer\modulebaseline.cpp ..\ECGAnalyzer\viewmodule.cpp ..\ECGAnalyzer\viewmodulebaseline.cpp ..\ECGAnalyzer\modulerpeaks.cpp ..\ECGAnalyzer\viewmodulerpeaks.cpp ..\ECGAnalyzer\modulehrv1.cpp ..\ECGAnalyzer\viewmodulehrv1.cpp ..\ECGAnalyzer\modulehrv2.cpp ..\ECGAnalyzer\viewmodulehrv2.cpp ..\ECGAnalyzer\modulewaves.cpp ..\ECGAnalyzer\viewmodulewaves.cpp ..\ECGAnalyzer\modulehrvdfa.cpp ..\ECGAnalyzer\viewmodulehrvdfa.cpp ..\ECGAnalyzer\modulestsegment.cpp ..\ECGAnalyzer\viewmodulestsegment.cpp ..\ECGAnalyzer\detectmorfology_emxutil.cpp ..\ECGAnalyzer\detectmorfology_emxapi.cpp ..\ECGAnalyzer\detectingmorfology.cpp ..\ECGAnalyzer\mainwindow.ui    
 
 clean: compiler_clean 
 	-$(DEL_FILE) main.o dfa.o mainwindow.o ecganalyzercontroller.o dataloader.o module.o datafile.o modulebaseline.o viewmodule.o viewmodulebaseline.o modulerpeaks.o viewmodulerpeaks.o modulehrv1.o viewmodulehrv1.o modulehrv2.o viewmodulehrv2.o modulewaves.o viewmodulewaves.o modulehrvdfa.o viewmodulehrvdfa.o modulestsegment.o viewmodulestsegment.o detectmorfology_emxutil.o detectmorfology_emxapi.o detectingmorfology.o moc_mainwindow.o moc_ecganalyzercontroller.o moc_dataloader.o moc_module.o moc_datafile.o moc_viewmodule.o moc_viewmodulebaseline.o moc_viewmodulerpeaks.o moc_viewmodulehrv1.o moc_viewmodulehrv2.o moc_viewmodulewaves.o moc_viewmodulehrvdfa.o moc_viewmodulestsegment.o
@@ -750,185 +750,185 @@ moc_mainwindow.cpp: ../ECGAnalyzer/mainwindow.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qtabwidget.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qicon.h \
 		moc_predefs.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/bin/moc.exe
-	C:\Qt\Qt5.14.0\5.14.0\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/Weronika/Desktop/dadm-cpp/src/build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug/moc_predefs.h -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/mkspecs/win32-g++ -IC:/Users/Weronika/Desktop/dadm-cpp/src/ECGAnalyzer -IC:/Users/Weronika/Desktop/dadm-cpp/eigen-3.3.7 -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtWidgets -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtANGLE -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore -I. -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.14.0/Tools/mingw730_64/x86_64-w64-mingw32/include ..\ECGAnalyzer\mainwindow.h -o moc_mainwindow.cpp
+		C:/Qt-OS/5.14.0/mingw73_64/bin/moc.exe
+	C:\Qt-OS\5.14.0\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/K/Desktop/Projekty/dadm-cpp/src/build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug/moc_predefs.h -IC:/Qt-OS/5.14.0/mingw73_64/mkspecs/win32-g++ -IC:/Users/K/Desktop/Projekty/dadm-cpp/src/ECGAnalyzer -IC:/Users/K/Desktop/Projekty/dadm-cpp/eigen-3.3.7 -IC:/Qt-OS/5.14.0/mingw73_64/include -IC:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets -IC:/Qt-OS/5.14.0/mingw73_64/include/QtGui -IC:/Qt-OS/5.14.0/mingw73_64/include/QtANGLE -IC:/Qt-OS/5.14.0/mingw73_64/include/QtCore -I. -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.14.0/Tools/mingw730_64/x86_64-w64-mingw32/include ..\ECGAnalyzer\mainwindow.h -o moc_mainwindow.cpp
 
 moc_ecganalyzercontroller.cpp: ../ECGAnalyzer/ecganalyzercontroller.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QObject \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobject.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobjectdefs.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qnamespace.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qglobal.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qconfig.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtcore-config.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsystemdetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qprocessordetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcompilerdetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtypeinfo.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsysinfo.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlogging.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qflags.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbasicatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_bootstrap.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qgenericatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_cxx11.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_msvc.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qglobalstatic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmutex.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qnumeric.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qversiontagging.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobjectdefs_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstring.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qchar.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbytearray.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qrefcount.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qarraydata.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringliteral.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringalgorithms.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringview.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringbuilder.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qalgorithms.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qiterator.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qhashfunctions.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qpair.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvector.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontainertools_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qpoint.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbytearraylist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringlist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qregexp.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringmatcher.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcoreevent.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qscopedpointer.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmetatype.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvarlengtharray.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QObject \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnamespace.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobal.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtcore-config.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsystemdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qprocessordetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcompilerdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtypeinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsysinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlogging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qflags.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbasicatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qgenericatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_cxx11.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_msvc.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobalstatic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmutex.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnumeric.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qversiontagging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstring.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qchar.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qrefcount.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qarraydata.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringliteral.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringview.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringbuilder.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qiterator.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qhashfunctions.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpair.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvector.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainertools_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpoint.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearraylist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qregexp.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringmatcher.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcoreevent.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qscopedpointer.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmetatype.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvarlengtharray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
 		../ECGAnalyzer/dataloader.h \
 		../ECGAnalyzer/datafile.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QMetaType \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QVector \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QDataStream \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qdatastream.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qiodevice.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QFile \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qfile.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qfiledevice.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QString \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QTextStream \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtextstream.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlocale.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvariant.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmap.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qdebug.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qhash.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qset.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontiguouscache.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsharedpointer.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qshareddata.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsharedpointer_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QStringRef \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QDebug \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QMetaType \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QVector \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QDataStream \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qdatastream.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qiodevice.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QFile \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qfile.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qfiledevice.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QString \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QTextStream \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtextstream.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlocale.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvariant.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qdebug.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qhash.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qset.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontiguouscache.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsharedpointer.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qshareddata.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsharedpointer_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QStringRef \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QDebug \
 		../ECGAnalyzer/modulebaseline.h \
 		../ECGAnalyzer/module.h \
 		../ECGAnalyzer/modulehrv1.h \
 		../ECGAnalyzer/spline.h \
 		../ECGAnalyzer/fftw3.h \
 		../ECGAnalyzer/modulehrv2.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QtMath \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmath.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QtMath \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmath.h \
 		../ECGAnalyzer/modulehrvdfa.h \
 		../ECGAnalyzer/modulerpeaks.h \
 		../ECGAnalyzer/modulestsegment.h \
 		../ECGAnalyzer/modulewaves.h \
 		moc_predefs.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/bin/moc.exe
-	C:\Qt\Qt5.14.0\5.14.0\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/Weronika/Desktop/dadm-cpp/src/build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug/moc_predefs.h -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/mkspecs/win32-g++ -IC:/Users/Weronika/Desktop/dadm-cpp/src/ECGAnalyzer -IC:/Users/Weronika/Desktop/dadm-cpp/eigen-3.3.7 -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtWidgets -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtANGLE -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore -I. -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.14.0/Tools/mingw730_64/x86_64-w64-mingw32/include ..\ECGAnalyzer\ecganalyzercontroller.h -o moc_ecganalyzercontroller.cpp
+		C:/Qt-OS/5.14.0/mingw73_64/bin/moc.exe
+	C:\Qt-OS\5.14.0\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/K/Desktop/Projekty/dadm-cpp/src/build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug/moc_predefs.h -IC:/Qt-OS/5.14.0/mingw73_64/mkspecs/win32-g++ -IC:/Users/K/Desktop/Projekty/dadm-cpp/src/ECGAnalyzer -IC:/Users/K/Desktop/Projekty/dadm-cpp/eigen-3.3.7 -IC:/Qt-OS/5.14.0/mingw73_64/include -IC:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets -IC:/Qt-OS/5.14.0/mingw73_64/include/QtGui -IC:/Qt-OS/5.14.0/mingw73_64/include/QtANGLE -IC:/Qt-OS/5.14.0/mingw73_64/include/QtCore -I. -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.14.0/Tools/mingw730_64/x86_64-w64-mingw32/include ..\ECGAnalyzer\ecganalyzercontroller.h -o moc_ecganalyzercontroller.cpp
 
 moc_dataloader.cpp: ../ECGAnalyzer/dataloader.h \
 		../ECGAnalyzer/datafile.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QObject \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobject.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobjectdefs.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qnamespace.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qglobal.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qconfig.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtcore-config.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsystemdetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qprocessordetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcompilerdetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtypeinfo.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsysinfo.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlogging.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qflags.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbasicatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_bootstrap.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qgenericatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_cxx11.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_msvc.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qglobalstatic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmutex.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qnumeric.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qversiontagging.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobjectdefs_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstring.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qchar.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbytearray.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qrefcount.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qarraydata.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringliteral.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringalgorithms.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringview.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringbuilder.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qalgorithms.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qiterator.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qhashfunctions.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qpair.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvector.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontainertools_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qpoint.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbytearraylist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringlist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qregexp.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringmatcher.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcoreevent.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qscopedpointer.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmetatype.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvarlengtharray.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QMetaType \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QVector \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QDataStream \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qdatastream.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qiodevice.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QFile \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qfile.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qfiledevice.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QString \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QTextStream \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtextstream.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlocale.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvariant.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmap.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qdebug.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qhash.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qset.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontiguouscache.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsharedpointer.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qshareddata.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsharedpointer_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QStringRef \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QDebug \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QObject \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnamespace.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobal.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtcore-config.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsystemdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qprocessordetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcompilerdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtypeinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsysinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlogging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qflags.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbasicatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qgenericatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_cxx11.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_msvc.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobalstatic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmutex.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnumeric.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qversiontagging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstring.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qchar.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qrefcount.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qarraydata.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringliteral.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringview.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringbuilder.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qiterator.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qhashfunctions.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpair.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvector.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainertools_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpoint.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearraylist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qregexp.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringmatcher.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcoreevent.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qscopedpointer.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmetatype.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvarlengtharray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QMetaType \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QVector \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QDataStream \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qdatastream.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qiodevice.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QFile \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qfile.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qfiledevice.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QString \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QTextStream \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtextstream.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlocale.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvariant.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qdebug.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qhash.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qset.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontiguouscache.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsharedpointer.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qshareddata.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsharedpointer_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QStringRef \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QDebug \
 		moc_predefs.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/bin/moc.exe
-	C:\Qt\Qt5.14.0\5.14.0\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/Weronika/Desktop/dadm-cpp/src/build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug/moc_predefs.h -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/mkspecs/win32-g++ -IC:/Users/Weronika/Desktop/dadm-cpp/src/ECGAnalyzer -IC:/Users/Weronika/Desktop/dadm-cpp/eigen-3.3.7 -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtWidgets -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtANGLE -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore -I. -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.14.0/Tools/mingw730_64/x86_64-w64-mingw32/include ..\ECGAnalyzer\dataloader.h -o moc_dataloader.cpp
+		C:/Qt-OS/5.14.0/mingw73_64/bin/moc.exe
+	C:\Qt-OS\5.14.0\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/K/Desktop/Projekty/dadm-cpp/src/build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug/moc_predefs.h -IC:/Qt-OS/5.14.0/mingw73_64/mkspecs/win32-g++ -IC:/Users/K/Desktop/Projekty/dadm-cpp/src/ECGAnalyzer -IC:/Users/K/Desktop/Projekty/dadm-cpp/eigen-3.3.7 -IC:/Qt-OS/5.14.0/mingw73_64/include -IC:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets -IC:/Qt-OS/5.14.0/mingw73_64/include/QtGui -IC:/Qt-OS/5.14.0/mingw73_64/include/QtANGLE -IC:/Qt-OS/5.14.0/mingw73_64/include/QtCore -I. -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.14.0/Tools/mingw730_64/x86_64-w64-mingw32/include ..\ECGAnalyzer\dataloader.h -o moc_dataloader.cpp
 
 moc_module.cpp: ../ECGAnalyzer/module.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QObject \
@@ -985,89 +985,89 @@ moc_module.cpp: ../ECGAnalyzer/module.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
 		moc_predefs.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/bin/moc.exe
-	C:\Qt\Qt5.14.0\5.14.0\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/Weronika/Desktop/dadm-cpp/src/build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug/moc_predefs.h -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/mkspecs/win32-g++ -IC:/Users/Weronika/Desktop/dadm-cpp/src/ECGAnalyzer -IC:/Users/Weronika/Desktop/dadm-cpp/eigen-3.3.7 -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtWidgets -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtANGLE -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore -I. -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.14.0/Tools/mingw730_64/x86_64-w64-mingw32/include ..\ECGAnalyzer\module.h -o moc_module.cpp
+		C:/Qt-OS/5.14.0/mingw73_64/bin/moc.exe
+	C:\Qt-OS\5.14.0\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/K/Desktop/Projekty/dadm-cpp/src/build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug/moc_predefs.h -IC:/Qt-OS/5.14.0/mingw73_64/mkspecs/win32-g++ -IC:/Users/K/Desktop/Projekty/dadm-cpp/src/ECGAnalyzer -IC:/Users/K/Desktop/Projekty/dadm-cpp/eigen-3.3.7 -IC:/Qt-OS/5.14.0/mingw73_64/include -IC:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets -IC:/Qt-OS/5.14.0/mingw73_64/include/QtGui -IC:/Qt-OS/5.14.0/mingw73_64/include/QtANGLE -IC:/Qt-OS/5.14.0/mingw73_64/include/QtCore -I. -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.14.0/Tools/mingw730_64/x86_64-w64-mingw32/include ..\ECGAnalyzer\module.h -o moc_module.cpp
 
 moc_datafile.cpp: ../ECGAnalyzer/datafile.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QObject \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobject.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobjectdefs.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qnamespace.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qglobal.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qconfig.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtcore-config.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsystemdetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qprocessordetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcompilerdetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtypeinfo.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsysinfo.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlogging.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qflags.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbasicatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_bootstrap.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qgenericatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_cxx11.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_msvc.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qglobalstatic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmutex.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qnumeric.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qversiontagging.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobjectdefs_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstring.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qchar.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbytearray.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qrefcount.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qarraydata.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringliteral.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringalgorithms.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringview.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringbuilder.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qalgorithms.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qiterator.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qhashfunctions.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qpair.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvector.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontainertools_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qpoint.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbytearraylist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringlist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qregexp.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringmatcher.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcoreevent.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qscopedpointer.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmetatype.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvarlengtharray.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QMetaType \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QVector \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QDataStream \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qdatastream.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qiodevice.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QFile \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qfile.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qfiledevice.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QString \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QTextStream \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtextstream.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlocale.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvariant.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmap.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qdebug.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qhash.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qset.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontiguouscache.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsharedpointer.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qshareddata.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsharedpointer_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QStringRef \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QDebug \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QObject \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnamespace.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobal.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtcore-config.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsystemdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qprocessordetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcompilerdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtypeinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsysinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlogging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qflags.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbasicatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qgenericatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_cxx11.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_msvc.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobalstatic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmutex.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnumeric.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qversiontagging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstring.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qchar.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qrefcount.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qarraydata.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringliteral.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringview.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringbuilder.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qiterator.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qhashfunctions.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpair.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvector.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainertools_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpoint.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearraylist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qregexp.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringmatcher.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcoreevent.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qscopedpointer.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmetatype.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvarlengtharray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QMetaType \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QVector \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QDataStream \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qdatastream.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qiodevice.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QFile \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qfile.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qfiledevice.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QString \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QTextStream \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtextstream.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlocale.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvariant.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qdebug.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qhash.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qset.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontiguouscache.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsharedpointer.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qshareddata.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsharedpointer_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QStringRef \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QDebug \
 		moc_predefs.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/bin/moc.exe
-	C:\Qt\Qt5.14.0\5.14.0\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/Weronika/Desktop/dadm-cpp/src/build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug/moc_predefs.h -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/mkspecs/win32-g++ -IC:/Users/Weronika/Desktop/dadm-cpp/src/ECGAnalyzer -IC:/Users/Weronika/Desktop/dadm-cpp/eigen-3.3.7 -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtWidgets -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtANGLE -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore -I. -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.14.0/Tools/mingw730_64/x86_64-w64-mingw32/include ..\ECGAnalyzer\datafile.h -o moc_datafile.cpp
+		C:/Qt-OS/5.14.0/mingw73_64/bin/moc.exe
+	C:\Qt-OS\5.14.0\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/K/Desktop/Projekty/dadm-cpp/src/build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug/moc_predefs.h -IC:/Qt-OS/5.14.0/mingw73_64/mkspecs/win32-g++ -IC:/Users/K/Desktop/Projekty/dadm-cpp/src/ECGAnalyzer -IC:/Users/K/Desktop/Projekty/dadm-cpp/eigen-3.3.7 -IC:/Qt-OS/5.14.0/mingw73_64/include -IC:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets -IC:/Qt-OS/5.14.0/mingw73_64/include/QtGui -IC:/Qt-OS/5.14.0/mingw73_64/include/QtANGLE -IC:/Qt-OS/5.14.0/mingw73_64/include/QtCore -I. -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.14.0/Tools/mingw730_64/x86_64-w64-mingw32/include ..\ECGAnalyzer\datafile.h -o moc_datafile.cpp
 
 moc_viewmodule.cpp: ../ECGAnalyzer/viewmodule.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/QWidget \
@@ -1175,8 +1175,8 @@ moc_viewmodule.cpp: ../ECGAnalyzer/viewmodule.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qvector2d.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qtouchdevice.h \
 		moc_predefs.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/bin/moc.exe
-	C:\Qt\Qt5.14.0\5.14.0\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/Weronika/Desktop/dadm-cpp/src/build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug/moc_predefs.h -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/mkspecs/win32-g++ -IC:/Users/Weronika/Desktop/dadm-cpp/src/ECGAnalyzer -IC:/Users/Weronika/Desktop/dadm-cpp/eigen-3.3.7 -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtWidgets -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtANGLE -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore -I. -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.14.0/Tools/mingw730_64/x86_64-w64-mingw32/include ..\ECGAnalyzer\viewmodule.h -o moc_viewmodule.cpp
+		C:/Qt-OS/5.14.0/mingw73_64/bin/moc.exe
+	C:\Qt-OS\5.14.0\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/K/Desktop/Projekty/dadm-cpp/src/build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug/moc_predefs.h -IC:/Qt-OS/5.14.0/mingw73_64/mkspecs/win32-g++ -IC:/Users/K/Desktop/Projekty/dadm-cpp/src/ECGAnalyzer -IC:/Users/K/Desktop/Projekty/dadm-cpp/eigen-3.3.7 -IC:/Qt-OS/5.14.0/mingw73_64/include -IC:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets -IC:/Qt-OS/5.14.0/mingw73_64/include/QtGui -IC:/Qt-OS/5.14.0/mingw73_64/include/QtANGLE -IC:/Qt-OS/5.14.0/mingw73_64/include/QtCore -I. -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.14.0/Tools/mingw730_64/x86_64-w64-mingw32/include ..\ECGAnalyzer\viewmodule.h -o moc_viewmodule.cpp
 
 moc_viewmodulebaseline.cpp: ../ECGAnalyzer/viewmodulebaseline.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/QWidget \
@@ -1285,8 +1285,8 @@ moc_viewmodulebaseline.cpp: ../ECGAnalyzer/viewmodulebaseline.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qtouchdevice.h \
 		../ECGAnalyzer/viewmodule.h \
 		moc_predefs.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/bin/moc.exe
-	C:\Qt\Qt5.14.0\5.14.0\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/Weronika/Desktop/dadm-cpp/src/build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug/moc_predefs.h -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/mkspecs/win32-g++ -IC:/Users/Weronika/Desktop/dadm-cpp/src/ECGAnalyzer -IC:/Users/Weronika/Desktop/dadm-cpp/eigen-3.3.7 -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtWidgets -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtANGLE -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore -I. -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.14.0/Tools/mingw730_64/x86_64-w64-mingw32/include ..\ECGAnalyzer\viewmodulebaseline.h -o moc_viewmodulebaseline.cpp
+		C:/Qt-OS/5.14.0/mingw73_64/bin/moc.exe
+	C:\Qt-OS\5.14.0\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/K/Desktop/Projekty/dadm-cpp/src/build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug/moc_predefs.h -IC:/Qt-OS/5.14.0/mingw73_64/mkspecs/win32-g++ -IC:/Users/K/Desktop/Projekty/dadm-cpp/src/ECGAnalyzer -IC:/Users/K/Desktop/Projekty/dadm-cpp/eigen-3.3.7 -IC:/Qt-OS/5.14.0/mingw73_64/include -IC:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets -IC:/Qt-OS/5.14.0/mingw73_64/include/QtGui -IC:/Qt-OS/5.14.0/mingw73_64/include/QtANGLE -IC:/Qt-OS/5.14.0/mingw73_64/include/QtCore -I. -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.14.0/Tools/mingw730_64/x86_64-w64-mingw32/include ..\ECGAnalyzer\viewmodulebaseline.h -o moc_viewmodulebaseline.cpp
 
 moc_viewmodulerpeaks.cpp: ../ECGAnalyzer/viewmodulerpeaks.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/QWidget \
@@ -1395,8 +1395,8 @@ moc_viewmodulerpeaks.cpp: ../ECGAnalyzer/viewmodulerpeaks.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qtouchdevice.h \
 		../ECGAnalyzer/viewmodule.h \
 		moc_predefs.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/bin/moc.exe
-	C:\Qt\Qt5.14.0\5.14.0\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/Weronika/Desktop/dadm-cpp/src/build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug/moc_predefs.h -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/mkspecs/win32-g++ -IC:/Users/Weronika/Desktop/dadm-cpp/src/ECGAnalyzer -IC:/Users/Weronika/Desktop/dadm-cpp/eigen-3.3.7 -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtWidgets -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtANGLE -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore -I. -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.14.0/Tools/mingw730_64/x86_64-w64-mingw32/include ..\ECGAnalyzer\viewmodulerpeaks.h -o moc_viewmodulerpeaks.cpp
+		C:/Qt-OS/5.14.0/mingw73_64/bin/moc.exe
+	C:\Qt-OS\5.14.0\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/K/Desktop/Projekty/dadm-cpp/src/build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug/moc_predefs.h -IC:/Qt-OS/5.14.0/mingw73_64/mkspecs/win32-g++ -IC:/Users/K/Desktop/Projekty/dadm-cpp/src/ECGAnalyzer -IC:/Users/K/Desktop/Projekty/dadm-cpp/eigen-3.3.7 -IC:/Qt-OS/5.14.0/mingw73_64/include -IC:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets -IC:/Qt-OS/5.14.0/mingw73_64/include/QtGui -IC:/Qt-OS/5.14.0/mingw73_64/include/QtANGLE -IC:/Qt-OS/5.14.0/mingw73_64/include/QtCore -I. -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.14.0/Tools/mingw730_64/x86_64-w64-mingw32/include ..\ECGAnalyzer\viewmodulerpeaks.h -o moc_viewmodulerpeaks.cpp
 
 moc_viewmodulehrv1.cpp: ../ECGAnalyzer/viewmodulehrv1.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/QWidget \
@@ -1505,8 +1505,8 @@ moc_viewmodulehrv1.cpp: ../ECGAnalyzer/viewmodulehrv1.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qtouchdevice.h \
 		../ECGAnalyzer/viewmodule.h \
 		moc_predefs.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/bin/moc.exe
-	C:\Qt\Qt5.14.0\5.14.0\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/Weronika/Desktop/dadm-cpp/src/build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug/moc_predefs.h -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/mkspecs/win32-g++ -IC:/Users/Weronika/Desktop/dadm-cpp/src/ECGAnalyzer -IC:/Users/Weronika/Desktop/dadm-cpp/eigen-3.3.7 -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtWidgets -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtANGLE -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore -I. -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.14.0/Tools/mingw730_64/x86_64-w64-mingw32/include ..\ECGAnalyzer\viewmodulehrv1.h -o moc_viewmodulehrv1.cpp
+		C:/Qt-OS/5.14.0/mingw73_64/bin/moc.exe
+	C:\Qt-OS\5.14.0\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/K/Desktop/Projekty/dadm-cpp/src/build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug/moc_predefs.h -IC:/Qt-OS/5.14.0/mingw73_64/mkspecs/win32-g++ -IC:/Users/K/Desktop/Projekty/dadm-cpp/src/ECGAnalyzer -IC:/Users/K/Desktop/Projekty/dadm-cpp/eigen-3.3.7 -IC:/Qt-OS/5.14.0/mingw73_64/include -IC:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets -IC:/Qt-OS/5.14.0/mingw73_64/include/QtGui -IC:/Qt-OS/5.14.0/mingw73_64/include/QtANGLE -IC:/Qt-OS/5.14.0/mingw73_64/include/QtCore -I. -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.14.0/Tools/mingw730_64/x86_64-w64-mingw32/include ..\ECGAnalyzer\viewmodulehrv1.h -o moc_viewmodulehrv1.cpp
 
 moc_viewmodulehrv2.cpp: ../ECGAnalyzer/viewmodulehrv2.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/QWidget \
@@ -1615,8 +1615,8 @@ moc_viewmodulehrv2.cpp: ../ECGAnalyzer/viewmodulehrv2.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qtouchdevice.h \
 		../ECGAnalyzer/viewmodule.h \
 		moc_predefs.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/bin/moc.exe
-	C:\Qt\Qt5.14.0\5.14.0\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/Weronika/Desktop/dadm-cpp/src/build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug/moc_predefs.h -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/mkspecs/win32-g++ -IC:/Users/Weronika/Desktop/dadm-cpp/src/ECGAnalyzer -IC:/Users/Weronika/Desktop/dadm-cpp/eigen-3.3.7 -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtWidgets -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtANGLE -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore -I. -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.14.0/Tools/mingw730_64/x86_64-w64-mingw32/include ..\ECGAnalyzer\viewmodulehrv2.h -o moc_viewmodulehrv2.cpp
+		C:/Qt-OS/5.14.0/mingw73_64/bin/moc.exe
+	C:\Qt-OS\5.14.0\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/K/Desktop/Projekty/dadm-cpp/src/build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug/moc_predefs.h -IC:/Qt-OS/5.14.0/mingw73_64/mkspecs/win32-g++ -IC:/Users/K/Desktop/Projekty/dadm-cpp/src/ECGAnalyzer -IC:/Users/K/Desktop/Projekty/dadm-cpp/eigen-3.3.7 -IC:/Qt-OS/5.14.0/mingw73_64/include -IC:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets -IC:/Qt-OS/5.14.0/mingw73_64/include/QtGui -IC:/Qt-OS/5.14.0/mingw73_64/include/QtANGLE -IC:/Qt-OS/5.14.0/mingw73_64/include/QtCore -I. -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.14.0/Tools/mingw730_64/x86_64-w64-mingw32/include ..\ECGAnalyzer\viewmodulehrv2.h -o moc_viewmodulehrv2.cpp
 
 moc_viewmodulewaves.cpp: ../ECGAnalyzer/viewmodulewaves.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/QWidget \
@@ -1725,8 +1725,8 @@ moc_viewmodulewaves.cpp: ../ECGAnalyzer/viewmodulewaves.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qtouchdevice.h \
 		../ECGAnalyzer/viewmodule.h \
 		moc_predefs.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/bin/moc.exe
-	C:\Qt\Qt5.14.0\5.14.0\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/Weronika/Desktop/dadm-cpp/src/build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug/moc_predefs.h -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/mkspecs/win32-g++ -IC:/Users/Weronika/Desktop/dadm-cpp/src/ECGAnalyzer -IC:/Users/Weronika/Desktop/dadm-cpp/eigen-3.3.7 -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtWidgets -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtANGLE -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore -I. -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.14.0/Tools/mingw730_64/x86_64-w64-mingw32/include ..\ECGAnalyzer\viewmodulewaves.h -o moc_viewmodulewaves.cpp
+		C:/Qt-OS/5.14.0/mingw73_64/bin/moc.exe
+	C:\Qt-OS\5.14.0\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/K/Desktop/Projekty/dadm-cpp/src/build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug/moc_predefs.h -IC:/Qt-OS/5.14.0/mingw73_64/mkspecs/win32-g++ -IC:/Users/K/Desktop/Projekty/dadm-cpp/src/ECGAnalyzer -IC:/Users/K/Desktop/Projekty/dadm-cpp/eigen-3.3.7 -IC:/Qt-OS/5.14.0/mingw73_64/include -IC:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets -IC:/Qt-OS/5.14.0/mingw73_64/include/QtGui -IC:/Qt-OS/5.14.0/mingw73_64/include/QtANGLE -IC:/Qt-OS/5.14.0/mingw73_64/include/QtCore -I. -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.14.0/Tools/mingw730_64/x86_64-w64-mingw32/include ..\ECGAnalyzer\viewmodulewaves.h -o moc_viewmodulewaves.cpp
 
 moc_viewmodulehrvdfa.cpp: ../ECGAnalyzer/viewmodulehrvdfa.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/QWidget \
@@ -1835,8 +1835,8 @@ moc_viewmodulehrvdfa.cpp: ../ECGAnalyzer/viewmodulehrvdfa.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qtouchdevice.h \
 		../ECGAnalyzer/viewmodule.h \
 		moc_predefs.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/bin/moc.exe
-	C:\Qt\Qt5.14.0\5.14.0\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/Weronika/Desktop/dadm-cpp/src/build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug/moc_predefs.h -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/mkspecs/win32-g++ -IC:/Users/Weronika/Desktop/dadm-cpp/src/ECGAnalyzer -IC:/Users/Weronika/Desktop/dadm-cpp/eigen-3.3.7 -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtWidgets -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtANGLE -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore -I. -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.14.0/Tools/mingw730_64/x86_64-w64-mingw32/include ..\ECGAnalyzer\viewmodulehrvdfa.h -o moc_viewmodulehrvdfa.cpp
+		C:/Qt-OS/5.14.0/mingw73_64/bin/moc.exe
+	C:\Qt-OS\5.14.0\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/K/Desktop/Projekty/dadm-cpp/src/build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug/moc_predefs.h -IC:/Qt-OS/5.14.0/mingw73_64/mkspecs/win32-g++ -IC:/Users/K/Desktop/Projekty/dadm-cpp/src/ECGAnalyzer -IC:/Users/K/Desktop/Projekty/dadm-cpp/eigen-3.3.7 -IC:/Qt-OS/5.14.0/mingw73_64/include -IC:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets -IC:/Qt-OS/5.14.0/mingw73_64/include/QtGui -IC:/Qt-OS/5.14.0/mingw73_64/include/QtANGLE -IC:/Qt-OS/5.14.0/mingw73_64/include/QtCore -I. -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.14.0/Tools/mingw730_64/x86_64-w64-mingw32/include ..\ECGAnalyzer\viewmodulehrvdfa.h -o moc_viewmodulehrvdfa.cpp
 
 moc_viewmodulestsegment.cpp: ../ECGAnalyzer/viewmodulestsegment.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/QWidget \
@@ -1945,8 +1945,8 @@ moc_viewmodulestsegment.cpp: ../ECGAnalyzer/viewmodulestsegment.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qtouchdevice.h \
 		../ECGAnalyzer/viewmodule.h \
 		moc_predefs.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/bin/moc.exe
-	C:\Qt\Qt5.14.0\5.14.0\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/Weronika/Desktop/dadm-cpp/src/build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug/moc_predefs.h -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/mkspecs/win32-g++ -IC:/Users/Weronika/Desktop/dadm-cpp/src/ECGAnalyzer -IC:/Users/Weronika/Desktop/dadm-cpp/eigen-3.3.7 -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtWidgets -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtANGLE -IC:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore -I. -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.14.0/Tools/mingw730_64/x86_64-w64-mingw32/include ..\ECGAnalyzer\viewmodulestsegment.h -o moc_viewmodulestsegment.cpp
+		C:/Qt-OS/5.14.0/mingw73_64/bin/moc.exe
+	C:\Qt-OS\5.14.0\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/K/Desktop/Projekty/dadm-cpp/src/build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug/moc_predefs.h -IC:/Qt-OS/5.14.0/mingw73_64/mkspecs/win32-g++ -IC:/Users/K/Desktop/Projekty/dadm-cpp/src/ECGAnalyzer -IC:/Users/K/Desktop/Projekty/dadm-cpp/eigen-3.3.7 -IC:/Qt-OS/5.14.0/mingw73_64/include -IC:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets -IC:/Qt-OS/5.14.0/mingw73_64/include/QtGui -IC:/Qt-OS/5.14.0/mingw73_64/include/QtANGLE -IC:/Qt-OS/5.14.0/mingw73_64/include/QtCore -I. -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.14.0/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.14.0/Tools/mingw730_64/x86_64-w64-mingw32/include ..\ECGAnalyzer\viewmodulestsegment.h -o moc_viewmodulestsegment.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -1972,130 +1972,130 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 ####### Compile
 
 main.o: ../ECGAnalyzer/main.cpp ../ECGAnalyzer/mainwindow.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtWidgets/QMainWindow \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtWidgets/qmainwindow.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtWidgets/qtwidgetsglobal.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qtguiglobal.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qglobal.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qconfig.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtcore-config.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsystemdetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qprocessordetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcompilerdetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtypeinfo.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsysinfo.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlogging.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qflags.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbasicatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_bootstrap.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qgenericatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_cxx11.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_msvc.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qglobalstatic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmutex.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qnumeric.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qversiontagging.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qtgui-config.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtWidgets/qtwidgets-config.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtWidgets/qwidget.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qwindowdefs.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobjectdefs.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qnamespace.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobjectdefs_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qwindowdefs_win.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobject.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstring.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qchar.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbytearray.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qrefcount.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qarraydata.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringliteral.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringalgorithms.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringview.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringbuilder.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qalgorithms.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qiterator.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qhashfunctions.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qpair.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvector.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontainertools_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qpoint.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbytearraylist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringlist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qregexp.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringmatcher.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcoreevent.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qscopedpointer.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmetatype.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvarlengtharray.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmargins.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qpaintdevice.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qrect.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsize.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qpalette.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qcolor.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qrgb.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qrgba64.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qbrush.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qmatrix.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qpolygon.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qregion.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qdatastream.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qiodevice.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qline.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qtransform.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qpainterpath.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qimage.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qpixelformat.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qpixmap.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsharedpointer.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qshareddata.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qhash.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsharedpointer_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qfont.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qfontmetrics.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qfontinfo.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtWidgets/qsizepolicy.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qcursor.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qkeysequence.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qevent.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvariant.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmap.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qdebug.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtextstream.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlocale.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qset.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontiguouscache.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qurl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qurlquery.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qfile.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qfiledevice.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qvector2d.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qtouchdevice.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtWidgets/qtabwidget.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qicon.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtWidgets/QApplication \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtWidgets/qapplication.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcoreapplication.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qeventloop.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qguiapplication.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtGui/qinputmethod.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/QMainWindow \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qmainwindow.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qtwidgetsglobal.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qtguiglobal.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobal.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtcore-config.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsystemdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qprocessordetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcompilerdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtypeinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsysinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlogging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qflags.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbasicatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qgenericatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_cxx11.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_msvc.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobalstatic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmutex.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnumeric.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qversiontagging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qtgui-config.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qtwidgets-config.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qwidget.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qwindowdefs.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnamespace.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qwindowdefs_win.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstring.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qchar.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qrefcount.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qarraydata.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringliteral.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringview.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringbuilder.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qiterator.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qhashfunctions.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpair.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvector.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainertools_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpoint.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearraylist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qregexp.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringmatcher.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcoreevent.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qscopedpointer.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmetatype.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvarlengtharray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmargins.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qpaintdevice.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qrect.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsize.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qpalette.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qcolor.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qrgb.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qrgba64.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qbrush.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qmatrix.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qpolygon.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qregion.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qdatastream.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qiodevice.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qline.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qtransform.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qpainterpath.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qimage.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qpixelformat.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qpixmap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsharedpointer.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qshareddata.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qhash.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsharedpointer_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qfont.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qfontmetrics.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qfontinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qsizepolicy.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qcursor.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qkeysequence.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qevent.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvariant.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qdebug.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtextstream.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlocale.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qset.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontiguouscache.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qurl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qurlquery.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qfile.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qfiledevice.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qvector2d.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qtouchdevice.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qtabwidget.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qicon.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/QApplication \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qapplication.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcoreapplication.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qeventloop.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qdesktopwidget.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qguiapplication.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qinputmethod.h \
 		../ECGAnalyzer/datafile.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QObject \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QMetaType \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QVector \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QDataStream \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QFile \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QString \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QTextStream \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QStringRef \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QDebug
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QObject \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QMetaType \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QVector \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QDataStream \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QFile \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QString \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QTextStream \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QStringRef \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ..\ECGAnalyzer\main.cpp
 
 dfa.o: ../ECGAnalyzer/dfa.cpp ../ECGAnalyzer/dfa.h \
@@ -2307,63 +2307,63 @@ dfa.o: ../ECGAnalyzer/dfa.cpp ../ECGAnalyzer/dfa.h \
 		../../eigen-3.3.7/Eigen/src/Eigenvalues/ComplexSchur_LAPACKE.h \
 		../../eigen-3.3.7/Eigen/src/Eigenvalues/SelfAdjointEigenSolver_LAPACKE.h \
 		../ECGAnalyzer/modulehrv1.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QObject \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobject.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobjectdefs.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qnamespace.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qglobal.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qconfig.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtcore-config.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsystemdetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qprocessordetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcompilerdetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtypeinfo.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsysinfo.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlogging.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qflags.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbasicatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_bootstrap.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qgenericatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_cxx11.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_msvc.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qglobalstatic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmutex.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qnumeric.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qversiontagging.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobjectdefs_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstring.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qchar.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbytearray.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qrefcount.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qarraydata.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringliteral.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringalgorithms.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringview.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringbuilder.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qalgorithms.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qiterator.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qhashfunctions.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qpair.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvector.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontainertools_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qpoint.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbytearraylist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringlist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qregexp.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringmatcher.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcoreevent.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qscopedpointer.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmetatype.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvarlengtharray.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QObject \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnamespace.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobal.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtcore-config.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsystemdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qprocessordetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcompilerdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtypeinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsysinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlogging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qflags.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbasicatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qgenericatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_cxx11.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_msvc.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobalstatic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmutex.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnumeric.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qversiontagging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstring.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qchar.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qrefcount.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qarraydata.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringliteral.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringview.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringbuilder.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qiterator.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qhashfunctions.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpair.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvector.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainertools_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpoint.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearraylist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qregexp.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringmatcher.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcoreevent.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qscopedpointer.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmetatype.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvarlengtharray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
 		../ECGAnalyzer/module.h \
 		../ECGAnalyzer/spline.h \
 		../ECGAnalyzer/fftw3.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QVector
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QVector
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o dfa.o ..\ECGAnalyzer\dfa.cpp
 
 mainwindow.o: ../ECGAnalyzer/mainwindow.cpp ../ECGAnalyzer/mainwindow.h \
@@ -2483,13 +2483,52 @@ mainwindow.o: ../ECGAnalyzer/mainwindow.cpp ../ECGAnalyzer/mainwindow.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qdesktopwidget.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qguiapplication.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qinputmethod.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/QComboBox \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qcombobox.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qstyleoption.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qvalidator.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qregularexpression.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qslider.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qabstractslider.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qstyle.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qtabbar.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qrubberband.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qframe.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qabstractitemmodel.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/QGraphicsView \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qgraphicsview.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qpainter.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qtextoption.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qpen.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qscrollarea.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qgraphicsscene.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/QHeaderView \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qheaderview.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qabstractitemview.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qitemselectionmodel.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/QLabel \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qlabel.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/QListView \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qlistview.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/QMenuBar \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qmenubar.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qmenu.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qaction.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qactiongroup.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/QPushButton \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/QSpinBox \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qspinbox.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/QStatusBar \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qstatusbar.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/QTabWidget \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/QTableWidget \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qtablewidget.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qtableview.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/QToolBar \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qtoolbar.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/QWidget \
@@ -2504,92 +2543,92 @@ mainwindow.o: ../ECGAnalyzer/mainwindow.cpp ../ECGAnalyzer/mainwindow.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ..\ECGAnalyzer\mainwindow.cpp
 
 ecganalyzercontroller.o: ../ECGAnalyzer/ecganalyzercontroller.cpp ../ECGAnalyzer/ecganalyzercontroller.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QObject \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobject.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobjectdefs.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qnamespace.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qglobal.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qconfig.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtcore-config.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsystemdetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qprocessordetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcompilerdetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtypeinfo.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsysinfo.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlogging.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qflags.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbasicatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_bootstrap.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qgenericatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_cxx11.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_msvc.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qglobalstatic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmutex.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qnumeric.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qversiontagging.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobjectdefs_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstring.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qchar.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbytearray.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qrefcount.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qarraydata.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringliteral.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringalgorithms.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringview.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringbuilder.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qalgorithms.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qiterator.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qhashfunctions.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qpair.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvector.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontainertools_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qpoint.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbytearraylist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringlist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qregexp.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringmatcher.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcoreevent.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qscopedpointer.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmetatype.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvarlengtharray.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QObject \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnamespace.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobal.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtcore-config.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsystemdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qprocessordetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcompilerdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtypeinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsysinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlogging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qflags.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbasicatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qgenericatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_cxx11.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_msvc.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobalstatic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmutex.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnumeric.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qversiontagging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstring.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qchar.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qrefcount.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qarraydata.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringliteral.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringview.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringbuilder.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qiterator.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qhashfunctions.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpair.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvector.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainertools_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpoint.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearraylist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qregexp.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringmatcher.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcoreevent.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qscopedpointer.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmetatype.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvarlengtharray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
 		../ECGAnalyzer/dataloader.h \
 		../ECGAnalyzer/datafile.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QMetaType \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QVector \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QDataStream \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qdatastream.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qiodevice.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QFile \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qfile.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qfiledevice.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QString \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QTextStream \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtextstream.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlocale.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvariant.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmap.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qdebug.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qhash.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qset.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontiguouscache.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsharedpointer.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qshareddata.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsharedpointer_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QStringRef \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QDebug \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QMetaType \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QVector \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QDataStream \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qdatastream.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qiodevice.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QFile \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qfile.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qfiledevice.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QString \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QTextStream \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtextstream.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlocale.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvariant.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qdebug.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qhash.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qset.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontiguouscache.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsharedpointer.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qshareddata.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsharedpointer_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QStringRef \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QDebug \
 		../ECGAnalyzer/modulebaseline.h \
 		../ECGAnalyzer/module.h \
 		../ECGAnalyzer/modulehrv1.h \
 		../ECGAnalyzer/spline.h \
 		../ECGAnalyzer/fftw3.h \
 		../ECGAnalyzer/modulehrv2.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QtMath \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmath.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QtMath \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmath.h \
 		../ECGAnalyzer/modulehrvdfa.h \
 		../ECGAnalyzer/modulerpeaks.h \
 		../ECGAnalyzer/modulestsegment.h \
@@ -2598,82 +2637,82 @@ ecganalyzercontroller.o: ../ECGAnalyzer/ecganalyzercontroller.cpp ../ECGAnalyzer
 
 dataloader.o: ../ECGAnalyzer/dataloader.cpp ../ECGAnalyzer/dataloader.h \
 		../ECGAnalyzer/datafile.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QObject \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobject.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobjectdefs.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qnamespace.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qglobal.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qconfig.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtcore-config.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsystemdetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qprocessordetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcompilerdetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtypeinfo.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsysinfo.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlogging.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qflags.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbasicatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_bootstrap.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qgenericatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_cxx11.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_msvc.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qglobalstatic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmutex.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qnumeric.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qversiontagging.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobjectdefs_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstring.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qchar.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbytearray.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qrefcount.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qarraydata.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringliteral.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringalgorithms.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringview.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringbuilder.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qalgorithms.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qiterator.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qhashfunctions.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qpair.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvector.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontainertools_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qpoint.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbytearraylist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringlist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qregexp.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringmatcher.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcoreevent.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qscopedpointer.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmetatype.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvarlengtharray.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QMetaType \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QVector \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QDataStream \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qdatastream.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qiodevice.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QFile \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qfile.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qfiledevice.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QString \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QTextStream \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtextstream.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlocale.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvariant.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmap.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qdebug.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qhash.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qset.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontiguouscache.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsharedpointer.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qshareddata.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsharedpointer_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QStringRef \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QDebug
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QObject \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnamespace.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobal.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtcore-config.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsystemdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qprocessordetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcompilerdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtypeinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsysinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlogging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qflags.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbasicatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qgenericatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_cxx11.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_msvc.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobalstatic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmutex.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnumeric.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qversiontagging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstring.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qchar.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qrefcount.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qarraydata.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringliteral.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringview.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringbuilder.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qiterator.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qhashfunctions.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpair.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvector.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainertools_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpoint.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearraylist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qregexp.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringmatcher.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcoreevent.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qscopedpointer.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmetatype.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvarlengtharray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QMetaType \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QVector \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QDataStream \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qdatastream.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qiodevice.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QFile \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qfile.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qfiledevice.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QString \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QTextStream \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtextstream.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlocale.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvariant.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qdebug.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qhash.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qset.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontiguouscache.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsharedpointer.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qshareddata.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsharedpointer_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QStringRef \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o dataloader.o ..\ECGAnalyzer\dataloader.cpp
 
 module.o: ../ECGAnalyzer/module.cpp ../ECGAnalyzer/module.h \
@@ -2733,151 +2772,151 @@ module.o: ../ECGAnalyzer/module.cpp ../ECGAnalyzer/module.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o module.o ..\ECGAnalyzer\module.cpp
 
 datafile.o: ../ECGAnalyzer/datafile.cpp ../ECGAnalyzer/datafile.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QObject \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobject.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobjectdefs.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qnamespace.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qglobal.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qconfig.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtcore-config.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsystemdetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qprocessordetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcompilerdetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtypeinfo.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsysinfo.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlogging.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qflags.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbasicatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_bootstrap.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qgenericatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_cxx11.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_msvc.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qglobalstatic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmutex.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qnumeric.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qversiontagging.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobjectdefs_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstring.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qchar.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbytearray.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qrefcount.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qarraydata.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringliteral.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringalgorithms.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringview.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringbuilder.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qalgorithms.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qiterator.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qhashfunctions.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qpair.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvector.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontainertools_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qpoint.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbytearraylist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringlist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qregexp.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringmatcher.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcoreevent.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qscopedpointer.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmetatype.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvarlengtharray.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QMetaType \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QVector \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QDataStream \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qdatastream.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qiodevice.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QFile \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qfile.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qfiledevice.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QString \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QTextStream \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtextstream.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlocale.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvariant.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmap.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qdebug.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qhash.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qset.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontiguouscache.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsharedpointer.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qshareddata.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsharedpointer_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QStringRef \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QDebug
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QObject \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnamespace.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobal.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtcore-config.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsystemdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qprocessordetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcompilerdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtypeinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsysinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlogging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qflags.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbasicatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qgenericatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_cxx11.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_msvc.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobalstatic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmutex.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnumeric.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qversiontagging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstring.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qchar.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qrefcount.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qarraydata.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringliteral.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringview.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringbuilder.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qiterator.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qhashfunctions.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpair.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvector.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainertools_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpoint.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearraylist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qregexp.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringmatcher.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcoreevent.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qscopedpointer.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmetatype.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvarlengtharray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QMetaType \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QVector \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QDataStream \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qdatastream.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qiodevice.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QFile \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qfile.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qfiledevice.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QString \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QTextStream \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtextstream.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlocale.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvariant.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qdebug.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qhash.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qset.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontiguouscache.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsharedpointer.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qshareddata.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsharedpointer_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QStringRef \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o datafile.o ..\ECGAnalyzer\datafile.cpp
 
 modulebaseline.o: ../ECGAnalyzer/modulebaseline.cpp ../ECGAnalyzer/modulebaseline.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QObject \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobject.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobjectdefs.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qnamespace.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qglobal.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qconfig.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtcore-config.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsystemdetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qprocessordetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcompilerdetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtypeinfo.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsysinfo.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlogging.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qflags.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbasicatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_bootstrap.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qgenericatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_cxx11.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_msvc.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qglobalstatic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmutex.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qnumeric.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qversiontagging.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobjectdefs_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstring.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qchar.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbytearray.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qrefcount.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qarraydata.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringliteral.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringalgorithms.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringview.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringbuilder.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qalgorithms.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qiterator.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qhashfunctions.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qpair.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvector.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontainertools_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qpoint.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbytearraylist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringlist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qregexp.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringmatcher.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcoreevent.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qscopedpointer.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmetatype.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvarlengtharray.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QDebug \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qdebug.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qhash.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmap.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtextstream.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qiodevice.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlocale.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvariant.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qshareddata.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qset.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontiguouscache.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsharedpointer.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsharedpointer_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QObject \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnamespace.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobal.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtcore-config.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsystemdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qprocessordetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcompilerdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtypeinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsysinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlogging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qflags.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbasicatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qgenericatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_cxx11.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_msvc.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobalstatic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmutex.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnumeric.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qversiontagging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstring.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qchar.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qrefcount.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qarraydata.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringliteral.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringview.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringbuilder.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qiterator.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qhashfunctions.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpair.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvector.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainertools_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpoint.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearraylist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qregexp.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringmatcher.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcoreevent.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qscopedpointer.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmetatype.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvarlengtharray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QDebug \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qdebug.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qhash.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtextstream.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qiodevice.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlocale.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvariant.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qshareddata.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qset.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontiguouscache.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsharedpointer.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsharedpointer_impl.h \
 		../ECGAnalyzer/module.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o modulebaseline.o ..\ECGAnalyzer\modulebaseline.cpp
 
@@ -3430,76 +3469,76 @@ viewmodulehrv1.o: ../ECGAnalyzer/viewmodulehrv1.cpp ../ECGAnalyzer/viewmodulehrv
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o viewmodulehrv1.o ..\ECGAnalyzer\viewmodulehrv1.cpp
 
 modulehrv2.o: ../ECGAnalyzer/modulehrv2.cpp ../ECGAnalyzer/modulehrv2.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QObject \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobject.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobjectdefs.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qnamespace.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qglobal.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qconfig.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtcore-config.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsystemdetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qprocessordetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcompilerdetection.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtypeinfo.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsysinfo.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlogging.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qflags.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbasicatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_bootstrap.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qgenericatomic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_cxx11.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qatomic_msvc.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qglobalstatic.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmutex.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qnumeric.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qversiontagging.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobjectdefs_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstring.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qchar.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbytearray.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qrefcount.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qarraydata.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringliteral.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringalgorithms.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringview.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringbuilder.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qalgorithms.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qiterator.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qhashfunctions.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qpair.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvector.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontainertools_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qpoint.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qbytearraylist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringlist.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qregexp.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qstringmatcher.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcoreevent.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qscopedpointer.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmetatype.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvarlengtharray.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QVector \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QDebug \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qdebug.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qhash.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmap.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qtextstream.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qiodevice.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qlocale.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qvariant.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qshareddata.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qset.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qcontiguouscache.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsharedpointer.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qsharedpointer_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QObject \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnamespace.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobal.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtcore-config.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsystemdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qprocessordetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcompilerdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtypeinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsysinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlogging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qflags.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbasicatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qgenericatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_cxx11.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_msvc.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobalstatic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmutex.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnumeric.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qversiontagging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstring.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qchar.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qrefcount.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qarraydata.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringliteral.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringview.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringbuilder.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qiterator.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qhashfunctions.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpair.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvector.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainertools_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpoint.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearraylist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qregexp.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringmatcher.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcoreevent.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qscopedpointer.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmetatype.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvarlengtharray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QVector \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QDebug \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qdebug.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qhash.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtextstream.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qiodevice.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlocale.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvariant.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qshareddata.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qset.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontiguouscache.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsharedpointer.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsharedpointer_impl.h \
 		../ECGAnalyzer/module.h \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/QtMath \
-		C:/Qt/Qt5.14.0/5.14.0/mingw73_64/include/QtCore/qmath.h
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QtMath \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmath.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o modulehrv2.o ..\ECGAnalyzer\modulehrv2.cpp
 
 viewmodulehrv2.o: ../ECGAnalyzer/viewmodulehrv2.cpp ../ECGAnalyzer/viewmodulehrv2.h \
@@ -4230,10 +4269,440 @@ detectmorfology_emxapi.o: ../ECGAnalyzer/detectmorfology_emxapi.cpp ../ECGAnalyz
 		../ECGAnalyzer/modulewaves.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o detectmorfology_emxapi.o ..\ECGAnalyzer\detectmorfology_emxapi.cpp
 
-detectingmorfology.o: ../ECGAnalyzer/detectingmorfology.cpp ../ECGAnalyzer/detectingmorfology.h \
-		../ECGAnalyzer/rtwtypes.h \
-		../ECGAnalyzer/tmwtypes.h \
-		../ECGAnalyzer/detectmorfology_types.h \
+viewmodule.o: ../ECGAnalyzer/viewmodule.cpp ../ECGAnalyzer/viewmodule.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/QWidget \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qwidget.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qtwidgetsglobal.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qtguiglobal.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobal.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtcore-config.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsystemdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qprocessordetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcompilerdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtypeinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsysinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlogging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qflags.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbasicatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qgenericatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_cxx11.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_msvc.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobalstatic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmutex.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnumeric.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qversiontagging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qtgui-config.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qtwidgets-config.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qwindowdefs.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnamespace.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qwindowdefs_win.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstring.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qchar.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qrefcount.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qarraydata.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringliteral.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringview.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringbuilder.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qiterator.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qhashfunctions.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpair.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvector.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainertools_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpoint.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearraylist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qregexp.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringmatcher.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcoreevent.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qscopedpointer.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmetatype.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvarlengtharray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmargins.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qpaintdevice.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qrect.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsize.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qpalette.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qcolor.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qrgb.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qrgba64.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qbrush.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qmatrix.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qpolygon.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qregion.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qdatastream.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qiodevice.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qline.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qtransform.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qpainterpath.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qimage.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qpixelformat.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qpixmap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsharedpointer.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qshareddata.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qhash.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsharedpointer_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qfont.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qfontmetrics.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qfontinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qsizepolicy.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qcursor.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qkeysequence.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qevent.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvariant.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qdebug.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtextstream.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlocale.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qset.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontiguouscache.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qurl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qurlquery.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qfile.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qfiledevice.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qvector2d.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qtouchdevice.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o viewmodule.o ..\ECGAnalyzer\viewmodule.cpp
+
+viewmodulebaseline.o: ../ECGAnalyzer/viewmodulebaseline.cpp ../ECGAnalyzer/viewmodulebaseline.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/QWidget \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qwidget.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qtwidgetsglobal.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qtguiglobal.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobal.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtcore-config.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsystemdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qprocessordetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcompilerdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtypeinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsysinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlogging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qflags.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbasicatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qgenericatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_cxx11.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_msvc.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobalstatic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmutex.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnumeric.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qversiontagging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qtgui-config.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qtwidgets-config.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qwindowdefs.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnamespace.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qwindowdefs_win.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstring.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qchar.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qrefcount.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qarraydata.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringliteral.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringview.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringbuilder.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qiterator.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qhashfunctions.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpair.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvector.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainertools_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpoint.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearraylist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qregexp.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringmatcher.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcoreevent.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qscopedpointer.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmetatype.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvarlengtharray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmargins.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qpaintdevice.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qrect.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsize.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qpalette.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qcolor.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qrgb.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qrgba64.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qbrush.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qmatrix.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qpolygon.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qregion.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qdatastream.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qiodevice.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qline.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qtransform.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qpainterpath.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qimage.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qpixelformat.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qpixmap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsharedpointer.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qshareddata.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qhash.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsharedpointer_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qfont.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qfontmetrics.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qfontinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qsizepolicy.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qcursor.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qkeysequence.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qevent.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvariant.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qdebug.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtextstream.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlocale.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qset.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontiguouscache.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qurl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qurlquery.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qfile.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qfiledevice.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qvector2d.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qtouchdevice.h \
+		../ECGAnalyzer/viewmodule.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o viewmodulebaseline.o ..\ECGAnalyzer\viewmodulebaseline.cpp
+
+modulerpeaks.o: ../ECGAnalyzer/modulerpeaks.cpp ../ECGAnalyzer/modulerpeaks.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QObject \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnamespace.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobal.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtcore-config.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsystemdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qprocessordetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcompilerdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtypeinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsysinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlogging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qflags.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbasicatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qgenericatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_cxx11.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_msvc.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobalstatic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmutex.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnumeric.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qversiontagging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstring.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qchar.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qrefcount.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qarraydata.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringliteral.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringview.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringbuilder.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qiterator.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qhashfunctions.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpair.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvector.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainertools_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpoint.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearraylist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qregexp.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringmatcher.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcoreevent.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qscopedpointer.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmetatype.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvarlengtharray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
+		../ECGAnalyzer/module.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o modulerpeaks.o ..\ECGAnalyzer\modulerpeaks.cpp
+
+viewmodulerpeaks.o: ../ECGAnalyzer/viewmodulerpeaks.cpp ../ECGAnalyzer/viewmodulerpeaks.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/QWidget \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qwidget.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qtwidgetsglobal.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qtguiglobal.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobal.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtcore-config.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsystemdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qprocessordetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcompilerdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtypeinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsysinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlogging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qflags.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbasicatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qgenericatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_cxx11.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_msvc.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobalstatic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmutex.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnumeric.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qversiontagging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qtgui-config.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qtwidgets-config.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qwindowdefs.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnamespace.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qwindowdefs_win.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstring.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qchar.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qrefcount.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qarraydata.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringliteral.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringview.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringbuilder.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qiterator.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qhashfunctions.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpair.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvector.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainertools_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpoint.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearraylist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qregexp.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringmatcher.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcoreevent.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qscopedpointer.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmetatype.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvarlengtharray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmargins.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qpaintdevice.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qrect.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsize.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qpalette.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qcolor.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qrgb.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qrgba64.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qbrush.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qmatrix.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qpolygon.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qregion.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qdatastream.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qiodevice.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qline.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qtransform.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qpainterpath.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qimage.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qpixelformat.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qpixmap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsharedpointer.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qshareddata.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qhash.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsharedpointer_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qfont.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qfontmetrics.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qfontinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtWidgets/qsizepolicy.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qcursor.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qkeysequence.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qevent.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvariant.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qdebug.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtextstream.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlocale.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qset.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontiguouscache.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qurl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qurlquery.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qfile.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qfiledevice.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qvector2d.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtGui/qtouchdevice.h \
+		../ECGAnalyzer/viewmodule.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o viewmodulerpeaks.o ..\ECGAnalyzer\viewmodulerpeaks.cpp
+
+modulehrv1.o: ../ECGAnalyzer/modulehrv1.cpp ../ECGAnalyzer/modulehrv1.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QObject \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnamespace.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobal.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qconfig.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtcore-config.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsystemdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qprocessordetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcompilerdetection.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qtypeinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qsysinfo.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlogging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qflags.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbasicatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qgenericatomic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_cxx11.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qatomic_msvc.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qglobalstatic.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmutex.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qnumeric.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qversiontagging.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobjectdefs_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstring.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qchar.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qrefcount.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qarraydata.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringliteral.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringview.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringbuilder.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qalgorithms.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qiterator.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qhashfunctions.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpair.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvector.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainertools_impl.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qpoint.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qbytearraylist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringlist.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qregexp.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qstringmatcher.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcoreevent.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qscopedpointer.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qmetatype.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qvarlengtharray.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qcontainerfwd.h \
+		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject_impl.h \
 		../ECGAnalyzer/module.h \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/QObject \
 		C:/Qt-OS/5.14.0/mingw73_64/include/QtCore/qobject.h \

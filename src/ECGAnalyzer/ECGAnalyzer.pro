@@ -70,5 +70,5 @@ HEADERS  += mainwindow.h \
     tmwtypes.h
 
 FORMS    += mainwindow.ui
-LIBS+= "C:\Users\Weronika\Desktop\dadm-cpp\src\build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug\libfftw3-3.dll"
-INCLUDEPATH += "C:\Users\Weronika\Desktop\dadm-cpp\eigen-3.3.7"
+LIBS+= "C:\Users\K\\Desktop\Projekty\dadm-cpp\src\build-ECGAnalyzer-Desktop_Qt_5_14_0_MinGW_64_bit-Debug\libfftw3-3.dll"
+INCLUDEPATH += "C:\Users\K\\Desktop\Projekty\dadm-cpp\eigen-3.3.7"

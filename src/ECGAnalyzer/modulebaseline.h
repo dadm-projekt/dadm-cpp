@@ -33,7 +33,8 @@ public:
 
 
 
-
+    void setFilterType(int filterType);
+    void setFrequency(int frequency);
     void AnalyzeSignal();
     QVector<double> ButterworthFilter(QVector<double>, QVector<double>, QVector<double>);
     QVector<double> ButterworthFilterHP(QVector<double>,QVector<double>,QVector<double>);

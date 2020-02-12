@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.14.0
+** Created by: Qt User Interface Compiler version 5.12.6
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -349,86 +349,86 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        comboBox_2->setItemText(0, QCoreApplication::translate("MainWindow", "Butterworth", nullptr));
-        comboBox_2->setItemText(1, QCoreApplication::translate("MainWindow", "ButterworthHP", nullptr));
-        comboBox_2->setItemText(2, QCoreApplication::translate("MainWindow", "Blackmann", nullptr));
-        comboBox_2->setItemText(3, QCoreApplication::translate("MainWindow", "Eliptic", nullptr));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
+        comboBox_2->setItemText(0, QApplication::translate("MainWindow", "Butterworth", nullptr));
+        comboBox_2->setItemText(1, QApplication::translate("MainWindow", "ButterworthHP", nullptr));
+        comboBox_2->setItemText(2, QApplication::translate("MainWindow", "Blackmann", nullptr));
+        comboBox_2->setItemText(3, QApplication::translate("MainWindow", "Eliptic", nullptr));
 
-        comboBox_3->setItemText(0, QCoreApplication::translate("MainWindow", "100", nullptr));
-        comboBox_3->setItemText(1, QCoreApplication::translate("MainWindow", "150", nullptr));
-        comboBox_3->setItemText(2, QCoreApplication::translate("MainWindow", "200", nullptr));
-        comboBox_3->setItemText(3, QCoreApplication::translate("MainWindow", "250", nullptr));
-        comboBox_3->setItemText(4, QCoreApplication::translate("MainWindow", "360", nullptr));
+        comboBox_3->setItemText(0, QApplication::translate("MainWindow", "100", nullptr));
+        comboBox_3->setItemText(1, QApplication::translate("MainWindow", "150", nullptr));
+        comboBox_3->setItemText(2, QApplication::translate("MainWindow", "200", nullptr));
+        comboBox_3->setItemText(3, QApplication::translate("MainWindow", "250", nullptr));
+        comboBox_3->setItemText(4, QApplication::translate("MainWindow", "360", nullptr));
 
-        label_4->setText(QCoreApplication::translate("MainWindow", "Filter type", nullptr));
-        label_5->setText(QCoreApplication::translate("MainWindow", "Sampel frequency", nullptr));
-        ECGBaseline_Start->setText(QCoreApplication::translate("MainWindow", "START", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab1), QCoreApplication::translate("MainWindow", "ECG Baseline", nullptr));
-        rPeaks_Start->setText(QCoreApplication::translate("MainWindow", "START", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab2), QCoreApplication::translate("MainWindow", "R_Peaks", nullptr));
-        tabWidget_2->setTabText(tabWidget_2->indexOf(tab), QCoreApplication::translate("MainWindow", "Plots", nullptr));
+        label_4->setText(QApplication::translate("MainWindow", "Filter type", nullptr));
+        label_5->setText(QApplication::translate("MainWindow", "Sampel frequency", nullptr));
+        ECGBaseline_Start->setText(QApplication::translate("MainWindow", "START", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab1), QApplication::translate("MainWindow", "ECG Baseline", nullptr));
+        rPeaks_Start->setText(QApplication::translate("MainWindow", "START", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab2), QApplication::translate("MainWindow", "R_Peaks", nullptr));
+        tabWidget_2->setTabText(tabWidget_2->indexOf(tab), QApplication::translate("MainWindow", "Plots", nullptr));
         QTableWidgetItem *___qtablewidgetitem = tableWidget->verticalHeaderItem(0);
-        ___qtablewidgetitem->setText(QCoreApplication::translate("MainWindow", "RR[ms]", nullptr));
+        ___qtablewidgetitem->setText(QApplication::translate("MainWindow", "RR[ms]", nullptr));
         QTableWidgetItem *___qtablewidgetitem1 = tableWidget->verticalHeaderItem(1);
-        ___qtablewidgetitem1->setText(QCoreApplication::translate("MainWindow", "SDNN[ms]", nullptr));
+        ___qtablewidgetitem1->setText(QApplication::translate("MainWindow", "SDNN[ms]", nullptr));
         QTableWidgetItem *___qtablewidgetitem2 = tableWidget->verticalHeaderItem(2);
-        ___qtablewidgetitem2->setText(QCoreApplication::translate("MainWindow", "RMSSD[ms]", nullptr));
+        ___qtablewidgetitem2->setText(QApplication::translate("MainWindow", "RMSSD[ms]", nullptr));
         QTableWidgetItem *___qtablewidgetitem3 = tableWidget->verticalHeaderItem(3);
-        ___qtablewidgetitem3->setText(QCoreApplication::translate("MainWindow", "NN50[-]", nullptr));
+        ___qtablewidgetitem3->setText(QApplication::translate("MainWindow", "NN50[-]", nullptr));
         QTableWidgetItem *___qtablewidgetitem4 = tableWidget->verticalHeaderItem(4);
-        ___qtablewidgetitem4->setText(QCoreApplication::translate("MainWindow", "pNN50[%]", nullptr));
+        ___qtablewidgetitem4->setText(QApplication::translate("MainWindow", "pNN50[%]", nullptr));
         QTableWidgetItem *___qtablewidgetitem5 = tableWidget->verticalHeaderItem(5);
-        ___qtablewidgetitem5->setText(QCoreApplication::translate("MainWindow", "SDANNsrstd[ms]", nullptr));
+        ___qtablewidgetitem5->setText(QApplication::translate("MainWindow", "SDANNsrstd[ms]", nullptr));
         QTableWidgetItem *___qtablewidgetitem6 = tableWidget->verticalHeaderItem(6);
-        ___qtablewidgetitem6->setText(QCoreApplication::translate("MainWindow", "SDANNstdsr[ms]", nullptr));
+        ___qtablewidgetitem6->setText(QApplication::translate("MainWindow", "SDANNstdsr[ms]", nullptr));
         QTableWidgetItem *___qtablewidgetitem7 = tableWidget->verticalHeaderItem(7);
-        ___qtablewidgetitem7->setText(QCoreApplication::translate("MainWindow", "SDSD[ms]", nullptr));
+        ___qtablewidgetitem7->setText(QApplication::translate("MainWindow", "SDSD[ms]", nullptr));
         QTableWidgetItem *___qtablewidgetitem8 = tableWidget_2->verticalHeaderItem(0);
-        ___qtablewidgetitem8->setText(QCoreApplication::translate("MainWindow", "Power[ms^2]", nullptr));
+        ___qtablewidgetitem8->setText(QApplication::translate("MainWindow", "Power[ms^2]", nullptr));
         QTableWidgetItem *___qtablewidgetitem9 = tableWidget_2->verticalHeaderItem(1);
-        ___qtablewidgetitem9->setText(QCoreApplication::translate("MainWindow", "HV[ms^2]", nullptr));
+        ___qtablewidgetitem9->setText(QApplication::translate("MainWindow", "HV[ms^2]", nullptr));
         QTableWidgetItem *___qtablewidgetitem10 = tableWidget_2->verticalHeaderItem(2);
-        ___qtablewidgetitem10->setText(QCoreApplication::translate("MainWindow", "LF[ms^2]", nullptr));
+        ___qtablewidgetitem10->setText(QApplication::translate("MainWindow", "LF[ms^2]", nullptr));
         QTableWidgetItem *___qtablewidgetitem11 = tableWidget_2->verticalHeaderItem(3);
-        ___qtablewidgetitem11->setText(QCoreApplication::translate("MainWindow", "VLF[ms^2]", nullptr));
+        ___qtablewidgetitem11->setText(QApplication::translate("MainWindow", "VLF[ms^2]", nullptr));
         QTableWidgetItem *___qtablewidgetitem12 = tableWidget_2->verticalHeaderItem(4);
-        ___qtablewidgetitem12->setText(QCoreApplication::translate("MainWindow", "ULF[ms^2]", nullptr));
+        ___qtablewidgetitem12->setText(QApplication::translate("MainWindow", "ULF[ms^2]", nullptr));
         QTableWidgetItem *___qtablewidgetitem13 = tableWidget_2->verticalHeaderItem(5);
-        ___qtablewidgetitem13->setText(QCoreApplication::translate("MainWindow", "LF/HF[-]", nullptr));
-        label_6->setText(QCoreApplication::translate("MainWindow", "Time", nullptr));
-        label_7->setText(QCoreApplication::translate("MainWindow", "Frequency", nullptr));
-        HRV1_Start->setText(QCoreApplication::translate("MainWindow", "START", nullptr));
-        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_2), QCoreApplication::translate("MainWindow", "Tables", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab3), QCoreApplication::translate("MainWindow", "HRV 1", nullptr));
-        label_8->setText(QCoreApplication::translate("MainWindow", "Histogram", nullptr));
-        label_9->setText(QCoreApplication::translate("MainWindow", "Poincare", nullptr));
-        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_3), QCoreApplication::translate("MainWindow", "Plots", nullptr));
+        ___qtablewidgetitem13->setText(QApplication::translate("MainWindow", "LF/HF[-]", nullptr));
+        label_6->setText(QApplication::translate("MainWindow", "Time", nullptr));
+        label_7->setText(QApplication::translate("MainWindow", "Frequency", nullptr));
+        HRV1_Start->setText(QApplication::translate("MainWindow", "START", nullptr));
+        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_2), QApplication::translate("MainWindow", "Tables", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab3), QApplication::translate("MainWindow", "HRV 1", nullptr));
+        label_8->setText(QApplication::translate("MainWindow", "Histogram", nullptr));
+        label_9->setText(QApplication::translate("MainWindow", "Poincare", nullptr));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_3), QApplication::translate("MainWindow", "Plots", nullptr));
         QTableWidgetItem *___qtablewidgetitem14 = tableWidget_3->verticalHeaderItem(0);
-        ___qtablewidgetitem14->setText(QCoreApplication::translate("MainWindow", "HRV Index", nullptr));
+        ___qtablewidgetitem14->setText(QApplication::translate("MainWindow", "HRV Index", nullptr));
         QTableWidgetItem *___qtablewidgetitem15 = tableWidget_3->verticalHeaderItem(1);
-        ___qtablewidgetitem15->setText(QCoreApplication::translate("MainWindow", "Nowy wiersz", nullptr));
+        ___qtablewidgetitem15->setText(QApplication::translate("MainWindow", "Nowy wiersz", nullptr));
         QTableWidgetItem *___qtablewidgetitem16 = tableWidget_3->verticalHeaderItem(2);
-        ___qtablewidgetitem16->setText(QCoreApplication::translate("MainWindow", "SD1", nullptr));
+        ___qtablewidgetitem16->setText(QApplication::translate("MainWindow", "SD1", nullptr));
         QTableWidgetItem *___qtablewidgetitem17 = tableWidget_3->verticalHeaderItem(3);
-        ___qtablewidgetitem17->setText(QCoreApplication::translate("MainWindow", "SD2", nullptr));
-        HRV2_Start->setText(QCoreApplication::translate("MainWindow", "START", nullptr));
-        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_4), QCoreApplication::translate("MainWindow", "Table", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab4), QCoreApplication::translate("MainWindow", "HRV 2", nullptr));
-        Waves_Start->setText(QCoreApplication::translate("MainWindow", "START", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab5), QCoreApplication::translate("MainWindow", "Waves", nullptr));
-        STSegment_Start->setText(QCoreApplication::translate("MainWindow", "START", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab6), QCoreApplication::translate("MainWindow", "ST Segment", nullptr));
-        DFA_Start->setText(QCoreApplication::translate("MainWindow", "START", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab7), QCoreApplication::translate("MainWindow", "HRV DFA", nullptr));
-        label->setText(QCoreApplication::translate("MainWindow", "Patient", nullptr));
-        label_2->setText(QCoreApplication::translate("MainWindow", "Sex", nullptr));
-        label_3->setText(QCoreApplication::translate("MainWindow", "Age", nullptr));
-        comboBox->setItemText(0, QCoreApplication::translate("MainWindow", "Male", nullptr));
-        comboBox->setItemText(1, QCoreApplication::translate("MainWindow", "Female", nullptr));
+        ___qtablewidgetitem17->setText(QApplication::translate("MainWindow", "SD2", nullptr));
+        HRV2_Start->setText(QApplication::translate("MainWindow", "START", nullptr));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_4), QApplication::translate("MainWindow", "Table", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab4), QApplication::translate("MainWindow", "HRV 2", nullptr));
+        Waves_Start->setText(QApplication::translate("MainWindow", "START", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab5), QApplication::translate("MainWindow", "Waves", nullptr));
+        STSegment_Start->setText(QApplication::translate("MainWindow", "START", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab6), QApplication::translate("MainWindow", "ST Segment", nullptr));
+        DFA_Start->setText(QApplication::translate("MainWindow", "START", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab7), QApplication::translate("MainWindow", "HRV DFA", nullptr));
+        label->setText(QApplication::translate("MainWindow", "Patient", nullptr));
+        label_2->setText(QApplication::translate("MainWindow", "Sex", nullptr));
+        label_3->setText(QApplication::translate("MainWindow", "Age", nullptr));
+        comboBox->setItemText(0, QApplication::translate("MainWindow", "Male", nullptr));
+        comboBox->setItemText(1, QApplication::translate("MainWindow", "Female", nullptr));
 
-        pushButton->setText(QCoreApplication::translate("MainWindow", "START", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("MainWindow", "CHOOSE DATA", nullptr));
+        pushButton->setText(QApplication::translate("MainWindow", "START", nullptr));
+        pushButton_2->setText(QApplication::translate("MainWindow", "CHOOSE DATA", nullptr));
     } // retranslateUi
 
 };
