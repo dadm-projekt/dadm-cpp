@@ -57,6 +57,12 @@ void MainWindow::on_tableWidget_3_cellActivated(int row, int column)
     qDebug() << "Frequency" << column;
 }
 
+void MainWindow::on_baseline_Start_clicked()
+{
+    ModuleBaseline *baseline = new ModuleBaseline(data);
+    baseline->AnalyzeSignal();
+
+}
 void MainWindow::on_rPeaks_Start_clicked()
 {
     ModuleRPeaks *rPeaks = new ModuleRPeaks(data);
@@ -67,17 +73,20 @@ void MainWindow::on_rPeaks_Start_clicked()
 void MainWindow::on_HRV1_Start_clicked()
 {
     ModuleHrv1 *hrv = new ModuleHrv1(RPeaksData);
+    hrv->AnalyzeSignal();
 
 }
 
 void MainWindow::on_HRV2_Start_clicked()
 {
     ModuleHrv2 *hrv2 = new ModuleHrv2(RPeaksData);
+    hrv2->AnalyzeSignal();
 }
 
 void MainWindow::on_Waves_Start_clicked()
 {
     ModuleWaves *waves = new ModuleWaves(data, RPeaksData);
+    waves->AnalyzeSignal();
 }
 
 
@@ -85,9 +94,11 @@ void MainWindow::on_Waves_Start_clicked()
 void MainWindow::on_STSegment_Start_clicked()
 {
     ModuleStSegment *stSegment = new ModuleStSegment();
+    stSegment->AnalyzeSignal();
 }
 
 void MainWindow::on_DFA_Start_clicked()
 {
-
+    ModuleStSegment *dfa = new ModuleStSegment();
+    dfa->AnalyzeSignal();
 }
