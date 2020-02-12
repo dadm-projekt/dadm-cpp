@@ -339,7 +339,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(6);
+        tabWidget->setCurrentIndex(0);
         tabWidget_2->setCurrentIndex(1);
         tabWidget_3->setCurrentIndex(1);
 

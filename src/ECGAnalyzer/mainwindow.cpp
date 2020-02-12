@@ -59,8 +59,8 @@ void MainWindow::on_tableWidget_3_cellActivated(int row, int column)
 
 void MainWindow::on_baseline_Start_clicked()
 {
-    ModuleBaseline *baseline = new ModuleBaseline(data);
-    baseline->AnalyzeSignal();
+//    ModuleBaseline *baseline = new ModuleBaseline(data);
+//    baseline->AnalyzeSignal();
 
 }
 void MainWindow::on_rPeaks_Start_clicked()
