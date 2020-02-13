@@ -15,7 +15,7 @@ CONFIG += c++14
 
 SOURCES += main.cpp\
     dfa.cpp \
-        mainwindow.cpp \
+    mainwindow.cpp \
     ecganalyzercontroller.cpp \
     dataloader.cpp \
     module.cpp \
