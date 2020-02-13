@@ -87,6 +87,7 @@ void ModuleRPeaks::PanTompkins()
                 Pomocniczy.clear();
             }
         }
+    this->setoutputData(Rpiki);
 }
 
 void ModuleRPeaks::AnalyzeSignal()
